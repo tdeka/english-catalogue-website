@@ -1,0 +1,12 @@
+{
+  "hash": "79da4a3354ff06b63daa4129997dd2dc",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Entry Captures\"\nformat: html\n---\n\n::: {#ca50c5ea .cell execution_count=1}\n\n::: {.cell-output .cell-output-display}\n![](entrycapture_files/figure-html/cell-2-output-1.png){width=758 height=566}\n:::\n:::\n\n\n",
+    "supporting": [
+      "entrycapture_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

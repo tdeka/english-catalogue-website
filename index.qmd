@@ -1,0 +1,44 @@
+---
+title: Home
+format: html
+---
+
+# Welcome to The English Catalogue of Books!
+
+Check out these pages:
+
+<p>
+  <a href="publishers.html" style="text-decoration:none;">
+    <button style="
+      background-color:#4CAF50;
+      border:none;
+      color:white;
+      padding:10px 24px;
+      text-align:center;
+      text-decoration:none;
+      display:inline-block;
+      font-size:16px;
+      margin:4px 2px;
+      cursor:pointer;
+      border-radius:5px;">
+      Top Publishers
+    </button>
+  </a>
+
+  <a href="authors.html" style="text-decoration:none;">
+    <button style="
+      background-color:#008CBA;
+      border:none;
+      color:white;
+      padding:10px 24px;
+      text-align:center;
+      text-decoration:none;
+      display:inline-block;
+      font-size:16px;
+      margin:4px 2px;
+      cursor:pointer;
+      border-radius:5px;">
+      Top Authors
+    </button>
+  </a>
+</p>

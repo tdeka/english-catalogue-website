@@ -1,0 +1,47 @@
+---
+title: "Top Authors by Year"
+format: html
+
+---
+```{python}
+
+#| echo: false
+import pandas as pd
+import matplotlib.pyplot as plt
+from IPython.display import display, Markdown
+
+years = [1912, 1913, 1914, 1915]
+
+for year in years:
+    try:
+        # Construct file name and load data
+        file_path = f"df_{year}.csv"
+        df = pd.read_csv(file_path)
+
+        # Clean data
+        df['author_name'] = df['author_name'].astype(str).str.strip()
+
+        df['author_name'] = df['author_name'].replace(['', 'nan', 'NA', '<NA>'], pd.NA)
+
+        df_clean = df.dropna(subset=['author_name'])
+
+        # Get top 15 publishers
+        top_authors = df_clean['author_name'].value_counts().head(15)
+
+        # Add heading
+        display(Markdown(f"## {year}"))
+
+        # Plot
+        plt.figure(figsize=(10, 6))
+        top_authors.plot(kind='bar')
+        plt.title(f"Top 15 Authors in {year}")
+        plt.xlabel("Author")
+        plt.ylabel("Number of Publications")
+        plt.xticks(rotation=45, ha='right')
+        plt.tight_layout()
+        plt.show()
+
+    except FileNotFoundError:
+        print(f"File for {year} not found. Skipping.")
+
+```

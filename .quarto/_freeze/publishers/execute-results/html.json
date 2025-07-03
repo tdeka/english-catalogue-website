@@ -1,0 +1,12 @@
+{
+  "hash": "639ff3c9f393e194ff73557bbc3f5a17",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Top Publishers by Year\"\nformat: html\n---\n\n::: {#5ae2376b .cell execution_count=1}\n\n::: {.cell-output .cell-output-display .cell-output-markdown}\n## 1912\n:::\n\n::: {.cell-output .cell-output-display}\n![](publishers_files/figure-html/cell-2-output-2.png){width=950 height=567}\n:::\n\n::: {.cell-output .cell-output-display .cell-output-markdown}\n## 1913\n:::\n\n::: {.cell-output .cell-output-display}\n![](publishers_files/figure-html/cell-2-output-4.png){width=950 height=567}\n:::\n\n::: {.cell-output .cell-output-display .cell-output-markdown}\n## 1914\n:::\n\n::: {.cell-output .cell-output-display}\n![](publishers_files/figure-html/cell-2-output-6.png){width=950 height=567}\n:::\n\n::: {.cell-output .cell-output-display .cell-output-markdown}\n## 1915\n:::\n\n::: {.cell-output .cell-output-display}\n![](publishers_files/figure-html/cell-2-output-8.png){width=950 height=567}\n:::\n:::\n\n\n",
+    "supporting": [
+      "publishers_files/figure-html"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

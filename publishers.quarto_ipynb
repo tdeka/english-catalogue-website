@@ -1,0 +1,68 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "title: \"Top Publishers by Year\"\n",
+        "format: html\n",
+        "---"
+      ],
+      "id": "a01545ac"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "import matplotlib.pyplot as plt\n",
+        "from IPython.display import display, Markdown\n",
+        "\n",
+        "years = [1912, 1913, 1914, 1915]\n",
+        "\n",
+        "for year in years:\n",
+        "    try:\n",
+        "        # Construct file name and load data\n",
+        "        file_path = f\"df_{year}.csv\"\n",
+        "        df = pd.read_csv(file_path)\n",
+        "\n",
+        "        # Clean data\n",
+        "        df['publisher'] = df['publisher'].astype(str).str.strip()\n",
+        "\n",
+        "        # Get top 15 publishers\n",
+        "        top_publishers = df['publisher'].value_counts().head(15)\n",
+        "\n",
+        "        # Add heading\n",
+        "        display(Markdown(f\"## {year}\"))\n",
+        "\n",
+        "        # Plot\n",
+        "        plt.figure(figsize=(10, 6))\n",
+        "        top_publishers.plot(kind='bar')\n",
+        "        plt.title(f\"Top 15 Publishers in {year}\")\n",
+        "        plt.xlabel(\"Publisher\")\n",
+        "        plt.ylabel(\"Number of Publications\")\n",
+        "        plt.xticks(rotation=45, ha='right')\n",
+        "        plt.tight_layout()\n",
+        "        plt.show()\n",
+        "\n",
+        "    except FileNotFoundError:\n",
+        "        print(f\"File for {year} not found. Skipping.\")"
+      ],
+      "id": "4e0e7ce1",
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "python3",
+      "language": "python",
+      "display_name": "Python 3 (ipykernel)",
+      "path": "/Users/tanishadeka/Downloads/quarto_website_test/.venv/share/jupyter/kernels/python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}

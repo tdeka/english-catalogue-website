@@ -1,0 +1,12 @@
+{
+  "hash": "9a5d7771f2bd59666c2207c0826e34bd",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Top Authors by Year\"\nformat: html\n\n---\n\n::: {#37f37dc0 .cell execution_count=1}\n\n::: {.cell-output .cell-output-display .cell-output-markdown}\n## 1912\n:::\n\n::: {.cell-output .cell-output-display}\n![](authors_files/figure-html/cell-2-output-2.png){width=946 height=565}\n:::\n\n::: {.cell-output .cell-output-display .cell-output-markdown}\n## 1913\n:::\n\n::: {.cell-output .cell-output-display}\n![](authors_files/figure-html/cell-2-output-4.png){width=946 height=565}\n:::\n\n::: {.cell-output .cell-output-display .cell-output-markdown}\n## 1914\n:::\n\n::: {.cell-output .cell-output-display}\n![](authors_files/figure-html/cell-2-output-6.png){width=946 height=565}\n:::\n\n::: {.cell-output .cell-output-display .cell-output-markdown}\n## 1915\n:::\n\n::: {.cell-output .cell-output-display}\n![](authors_files/figure-html/cell-2-output-8.png){width=946 height=566}\n:::\n:::\n\n\n",
+    "supporting": [
+      "authors_files/figure-html"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

@@ -1,0 +1,27 @@
+project:
+  type: website
+
+website:
+  title: "English Catalogue of Books - Top Authors and Publishers by Year"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: publishers.qmd
+        text: Top Publishers
+      - href: authors.qmd
+        text: Top Authors
+      - href: entrycapture.qmd
+        text: Our Entry Captures
+
+format:
+  html:
+    theme: flatly
+    css: styles.css
+    toc: true
+
+metadata-files:
+  - _params.yml
+
+
+
