@@ -1,0 +1,390 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "title: \"Our Data\"\n",
+        "format: html\n",
+        "page-layout: full\n",
+        "toc: false\n",
+        "---\n",
+        "\n",
+        "<details>\n",
+        "<summary>1912</summary>\n",
+        "\n",
+        "![](1912_english_catalogue_cover.jpeg){.centered-image width=500px}\n",
+        "\n",
+        "# Data Table "
+      ],
+      "id": "1609dfe4"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "\n",
+        "# Load CSV\n",
+        "df = pd.read_csv(\"df_1912.csv\")\n",
+        "\n",
+        "df.head(15).to_html(classes=\"my-table\")"
+      ],
+      "id": "67b86b51",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "<a href=\"df_1912.csv\" download>Download full CSV</a>\n",
+        "\n",
+        "</details>\n",
+        "\n",
+        "<details>\n",
+        "<summary>1913</summary>\n",
+        "\n",
+        "![](1913_english_catalogue_cover.jpeg){.centered-image width=500px}\n",
+        "\n",
+        "\n",
+        "# Data Table "
+      ],
+      "id": "6b20e627"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "\n",
+        "# Load CSV\n",
+        "df = pd.read_csv(\"df_1913.csv\")\n",
+        "\n",
+        "df.head(15).to_html(classes=\"my-table\")"
+      ],
+      "id": "d2cc76ae",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "<a href=\"df_1913.csv\" download>Download full CSV</a>\n",
+        "\n",
+        "</details>\n",
+        "\n",
+        "<details>\n",
+        "<summary>1914</summary>\n",
+        "\n",
+        "![](1914_english_catalogue_cover.jpeg){.centered-image width=500px}\n",
+        "\n",
+        "# Data Table "
+      ],
+      "id": "4019bbaa"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "\n",
+        "# Load CSV\n",
+        "df = pd.read_csv(\"df_1914.csv\")\n",
+        "\n",
+        "df.head(15).to_html(classes=\"my-table\")"
+      ],
+      "id": "7819b175",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "<a href=\"df_1914.csv\" download>Download full CSV</a>\n",
+        "\n",
+        "</details>\n",
+        "\n",
+        "<details>\n",
+        "<summary>1915</summary>\n",
+        "\n",
+        "![](1915_english_catalogue_cover.jpeg){.centered-image width=500px}\n",
+        "# Data Table "
+      ],
+      "id": "29d88efb"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "\n",
+        "# Load CSV\n",
+        "df = pd.read_csv(\"df_1915.csv\")\n",
+        "\n",
+        "df.head(15).to_html(classes=\"my-table\")"
+      ],
+      "id": "8a984696",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "<a href=\"df_1915.csv\" download>Download full CSV</a>\n",
+        "\n",
+        "</details>\n",
+        "\n",
+        "<details>\n",
+        "<summary>1916</summary>\n",
+        "\n",
+        "![](1916_english_catalogue_cover.jpeg){.centered-image width=500px}\n",
+        "\n",
+        "# Data Table "
+      ],
+      "id": "5eee307b"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "\n",
+        "# Load CSV\n",
+        "df = pd.read_csv(\"df_1916.csv\")\n",
+        "\n",
+        "df.head(15).to_html(classes=\"my-table\")"
+      ],
+      "id": "9df4c7d2",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "<a href=\"df_1916.csv\" download>Download full CSV</a>\n",
+        "\n",
+        "</details>\n",
+        "\n",
+        "<details>\n",
+        "<summary>1917</summary>\n",
+        "\n",
+        "![](1917_english_catalogue_cover.jpeg){.centered-image width=500px}\n",
+        "\n",
+        "# Data Table "
+      ],
+      "id": "1c5b9ddd"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "\n",
+        "# Load CSV\n",
+        "df = pd.read_csv(\"df_1917.csv\")\n",
+        "\n",
+        "df.head(15).to_html(classes=\"my-table\")"
+      ],
+      "id": "777c0dfc",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "<a href=\"df_1917.csv\" download>Download full CSV</a>\n",
+        "\n",
+        "</details>\n",
+        "\n",
+        "<details>\n",
+        "<summary>1918</summary>\n",
+        "\n",
+        "![](1918_english_catalogue_cover.jpeg){.centered-image width=500px}\n",
+        "\n",
+        "# Data Table "
+      ],
+      "id": "41fdaa7c"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "\n",
+        "# Load CSV\n",
+        "df = pd.read_csv(\"df_1918.csv\")\n",
+        "\n",
+        "df.head(15).to_html(classes=\"my-table\")"
+      ],
+      "id": "9ac964e2",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "<a href=\"df_1918.csv\" download>Download full CSV</a>\n",
+        "\n",
+        "</details>\n",
+        "\n",
+        "<details>\n",
+        "<summary>1919</summary>\n",
+        "\n",
+        "![](1919_english_catalogue_cover.jpeg){.centered-image width=500px}\n",
+        "\n",
+        "# Data Table "
+      ],
+      "id": "96e10100"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "\n",
+        "# Load CSV\n",
+        "df = pd.read_csv(\"df_1919.csv\")\n",
+        "\n",
+        "df.head(15).to_html(classes=\"my-table\")"
+      ],
+      "id": "22fdcae0",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "<a href=\"df_1919.csv\" download>Download full CSV</a>\n",
+        "\n",
+        "</details>\n",
+        "\n",
+        "<details>\n",
+        "<summary>1920</summary>\n",
+        "\n",
+        "![](1920_english_catalogue_cover.jpeg){.centered-image width=500px}\n",
+        "\n",
+        "# Data Table "
+      ],
+      "id": "363598e0"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "\n",
+        "# Load CSV\n",
+        "df = pd.read_csv(\"df_1920.csv\")\n",
+        "\n",
+        "df.head(15).to_html(classes=\"my-table\")"
+      ],
+      "id": "d9df97de",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "<a href=\"df_1920.csv\" download>Download full CSV</a>\n",
+        "\n",
+        "</details>\n",
+        "\n",
+        "<details>\n",
+        "<summary>1921</summary>\n",
+        "\n",
+        "![](1921_english_catalogue_cover.jpeg){.centered-image width=500px}\n",
+        "\n",
+        "# Data Table "
+      ],
+      "id": "2a673de9"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "\n",
+        "# Load CSV\n",
+        "df = pd.read_csv(\"df_1921.csv\")\n",
+        "\n",
+        "df.head(15).to_html(classes=\"my-table\")"
+      ],
+      "id": "85f326dc",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "<a href=\"df_1921.csv\" download>Download full CSV</a>\n",
+        "\n",
+        "</details>\n",
+        "\n",
+        "<details>\n",
+        "<summary>1922</summary>\n",
+        "\n",
+        "![](1922_english_catalogue_cover.jpeg){.centered-image width=500px}\n",
+        "\n",
+        "# Data Table "
+      ],
+      "id": "51d910dd"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "\n",
+        "# Load CSV\n",
+        "df = pd.read_csv(\"df_1922.csv\")\n",
+        "\n",
+        "df.head(15).to_html(classes=\"my-table\")"
+      ],
+      "id": "693f87be",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "<a href=\"df_1922.csv\" download>Download full CSV</a>\n",
+        "\n",
+        "</details>"
+      ],
+      "id": "b88fd959"
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "python3",
+      "language": "python",
+      "display_name": "Python 3 (ipykernel)",
+      "path": "/Users/tanishadeka/Downloads/quarto_website_test/.venv/share/jupyter/kernels/python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}

@@ -1,0 +1,248 @@
+---
+title: "Our Data"
+format: html
+page-layout: full
+toc: false
+---
+
+<details>
+<summary>1912</summary>
+
+![](1912_english_catalogue_cover.jpeg){.centered-image width=500px}
+
+# Data Table 
+
+```{python}
+
+#| echo: false
+import pandas as pd
+
+# Load CSV
+df = pd.read_csv("df_1912.csv")
+
+df.head(15).to_html(classes="my-table")
+```
+
+<a href="df_1912.csv" download>Download full CSV</a>
+
+</details>
+
+<details>
+<summary>1913</summary>
+
+![](1913_english_catalogue_cover.jpeg){.centered-image width=500px}
+
+
+# Data Table 
+
+```{python}
+
+#| echo: false
+import pandas as pd
+
+# Load CSV
+df = pd.read_csv("df_1913.csv")
+
+df.head(15).to_html(classes="my-table")
+```
+
+<a href="df_1913.csv" download>Download full CSV</a>
+
+</details>
+
+<details>
+<summary>1914</summary>
+
+![](1914_english_catalogue_cover.jpeg){.centered-image width=500px}
+
+# Data Table 
+
+```{python}
+
+#| echo: false
+import pandas as pd
+
+# Load CSV
+df = pd.read_csv("df_1914.csv")
+
+df.head(15).to_html(classes="my-table")
+```
+
+<a href="df_1914.csv" download>Download full CSV</a>
+
+</details>
+
+<details>
+<summary>1915</summary>
+
+![](1915_english_catalogue_cover.jpeg){.centered-image width=500px}
+# Data Table 
+
+```{python}
+
+#| echo: false
+import pandas as pd
+
+# Load CSV
+df = pd.read_csv("df_1915.csv")
+
+df.head(15).to_html(classes="my-table")
+```
+
+<a href="df_1915.csv" download>Download full CSV</a>
+
+</details>
+
+<details>
+<summary>1916</summary>
+
+![](1916_english_catalogue_cover.jpeg){.centered-image width=500px}
+
+# Data Table 
+
+```{python}
+
+#| echo: false
+import pandas as pd
+
+# Load CSV
+df = pd.read_csv("df_1916.csv")
+
+df.head(15).to_html(classes="my-table")
+```
+
+<a href="df_1916.csv" download>Download full CSV</a>
+
+</details>
+
+<details>
+<summary>1917</summary>
+
+![](1917_english_catalogue_cover.jpeg){.centered-image width=500px}
+
+# Data Table 
+
+```{python}
+
+#| echo: false
+import pandas as pd
+
+# Load CSV
+df = pd.read_csv("df_1917.csv")
+
+df.head(15).to_html(classes="my-table")
+```
+
+<a href="df_1917.csv" download>Download full CSV</a>
+
+</details>
+
+<details>
+<summary>1918</summary>
+
+![](1918_english_catalogue_cover.jpeg){.centered-image width=500px}
+
+# Data Table 
+
+```{python}
+
+#| echo: false
+import pandas as pd
+
+# Load CSV
+df = pd.read_csv("df_1918.csv")
+
+df.head(15).to_html(classes="my-table")
+```
+
+<a href="df_1918.csv" download>Download full CSV</a>
+
+</details>
+
+<details>
+<summary>1919</summary>
+
+![](1919_english_catalogue_cover.jpeg){.centered-image width=500px}
+
+# Data Table 
+
+```{python}
+
+#| echo: false
+import pandas as pd
+
+# Load CSV
+df = pd.read_csv("df_1919.csv")
+
+df.head(15).to_html(classes="my-table")
+```
+
+<a href="df_1919.csv" download>Download full CSV</a>
+
+</details>
+
+<details>
+<summary>1920</summary>
+
+![](1920_english_catalogue_cover.jpeg){.centered-image width=500px}
+
+# Data Table 
+
+```{python}
+
+#| echo: false
+import pandas as pd
+
+# Load CSV
+df = pd.read_csv("df_1920.csv")
+
+df.head(15).to_html(classes="my-table")
+```
+
+<a href="df_1920.csv" download>Download full CSV</a>
+
+</details>
+
+<details>
+<summary>1921</summary>
+
+![](1921_english_catalogue_cover.jpeg){.centered-image width=500px}
+
+# Data Table 
+
+```{python}
+
+#| echo: false
+import pandas as pd
+
+# Load CSV
+df = pd.read_csv("df_1921.csv")
+
+df.head(15).to_html(classes="my-table")
+```
+
+<a href="df_1921.csv" download>Download full CSV</a>
+
+</details>
+
+<details>
+<summary>1922</summary>
+
+![](1922_english_catalogue_cover.jpeg){.centered-image width=500px}
+
+# Data Table 
+
+```{python}
+
+#| echo: false
+import pandas as pd
+
+# Load CSV
+df = pd.read_csv("df_1922.csv")
+
+df.head(15).to_html(classes="my-table")
+```
+
+<a href="df_1922.csv" download>Download full CSV</a>
+
+</details>

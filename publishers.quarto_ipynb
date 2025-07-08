@@ -7,9 +7,12 @@
         "---\n",
         "title: \"Top Publishers by Year\"\n",
         "format: html\n",
-        "---"
+        "---\n",
+        "\n",
+        "<details>\n",
+        "<summary><strong>1912</strong></summary>"
       ],
-      "id": "a01545ac"
+      "id": "bdd4ae44"
     },
     {
       "cell_type": "code",
@@ -18,41 +21,434 @@
         "#| echo: false\n",
         "import pandas as pd\n",
         "import matplotlib.pyplot as plt\n",
-        "from IPython.display import display, Markdown\n",
         "\n",
-        "years = [1912, 1913, 1914, 1915]\n",
+        "df = pd.read_csv(\"df_1912.csv\")\n",
+        "df['publisher'] = df['publisher'].astype(str).str.strip()\n",
+        "df['publisher'] = df['publisher'].replace(['', 'nan', 'NA', '<NA>'], pd.NA)\n",
+        "df_clean = df.dropna(subset=['publisher'])\n",
         "\n",
-        "for year in years:\n",
-        "    try:\n",
-        "        # Construct file name and load data\n",
-        "        file_path = f\"df_{year}.csv\"\n",
-        "        df = pd.read_csv(file_path)\n",
+        "top_publishers = df_clean['publisher'].value_counts().head(15)\n",
         "\n",
-        "        # Clean data\n",
-        "        df['publisher'] = df['publisher'].astype(str).str.strip()\n",
-        "\n",
-        "        # Get top 15 publishers\n",
-        "        top_publishers = df['publisher'].value_counts().head(15)\n",
-        "\n",
-        "        # Add heading\n",
-        "        display(Markdown(f\"## {year}\"))\n",
-        "\n",
-        "        # Plot\n",
-        "        plt.figure(figsize=(10, 6))\n",
-        "        top_publishers.plot(kind='bar')\n",
-        "        plt.title(f\"Top 15 Publishers in {year}\")\n",
-        "        plt.xlabel(\"Publisher\")\n",
-        "        plt.ylabel(\"Number of Publications\")\n",
-        "        plt.xticks(rotation=45, ha='right')\n",
-        "        plt.tight_layout()\n",
-        "        plt.show()\n",
-        "\n",
-        "    except FileNotFoundError:\n",
-        "        print(f\"File for {year} not found. Skipping.\")"
+        "plt.figure(figsize=(8, 6))\n",
+        "top_publishers.plot(kind='bar')\n",
+        "plt.title(\"Top 15 Publishers in 1912\")\n",
+        "plt.xlabel(\"Publisher\")\n",
+        "plt.ylabel(\"Number of Publications\")\n",
+        "plt.xticks(rotation=45, ha='right')\n",
+        "plt.tight_layout()\n",
+        "plt.show()"
       ],
-      "id": "4e0e7ce1",
+      "id": "3ef00d1f",
       "execution_count": null,
       "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "</details> \n",
+        "\n",
+        "\n",
+        "<details>\n",
+        "<summary><strong>1913</strong></summary>"
+      ],
+      "id": "0e3ffa9b"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "import matplotlib.pyplot as plt\n",
+        "\n",
+        "df = pd.read_csv(\"df_1913.csv\")\n",
+        "df['publisher'] = df['publisher'].astype(str).str.strip()\n",
+        "df['publisher'] = df['publisher'].replace(['', 'nan', 'NA', '<NA>'], pd.NA)\n",
+        "df_clean = df.dropna(subset=['publisher'])\n",
+        "\n",
+        "top_publishers = df_clean['publisher'].value_counts().head(15)\n",
+        "\n",
+        "plt.figure(figsize=(8, 6))\n",
+        "top_publishers.plot(kind='bar')\n",
+        "plt.title(\"Top 15 Publishers in 1913\")\n",
+        "plt.xlabel(\"Publisher\")\n",
+        "plt.ylabel(\"Number of Publications\")\n",
+        "plt.xticks(rotation=45, ha='right')\n",
+        "plt.tight_layout()\n",
+        "plt.show()"
+      ],
+      "id": "ad34691a",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "</details> \n",
+        "\n",
+        "\n",
+        "<details>\n",
+        "<summary><strong>1914</strong></summary>"
+      ],
+      "id": "c6f7d5ec"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "import matplotlib.pyplot as plt\n",
+        "\n",
+        "df = pd.read_csv(\"df_1914.csv\")\n",
+        "df['publisher'] = df['publisher'].astype(str).str.strip()\n",
+        "df['publisher'] = df['publisher'].replace(['', 'nan', 'NA', '<NA>'], pd.NA)\n",
+        "df_clean = df.dropna(subset=['publisher'])\n",
+        "\n",
+        "top_publishers = df_clean['publisher'].value_counts().head(15)\n",
+        "\n",
+        "plt.figure(figsize=(8, 6))\n",
+        "top_publishers.plot(kind='bar')\n",
+        "plt.title(\"Top 15 Publishers in 1914\")\n",
+        "plt.xlabel(\"Publisher\")\n",
+        "plt.ylabel(\"Number of Publications\")\n",
+        "plt.xticks(rotation=45, ha='right')\n",
+        "plt.tight_layout()\n",
+        "plt.show()"
+      ],
+      "id": "9f9c1a3f",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "</details> \n",
+        "\n",
+        "\n",
+        "<details>\n",
+        "<summary><strong>1915</strong></summary>"
+      ],
+      "id": "f2f26dcc"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "import matplotlib.pyplot as plt\n",
+        "\n",
+        "df = pd.read_csv(\"df_1915.csv\")\n",
+        "df['publisher'] = df['publisher'].astype(str).str.strip()\n",
+        "df['publisher'] = df['publisher'].replace(['', 'nan', 'NA', '<NA>'], pd.NA)\n",
+        "df_clean = df.dropna(subset=['publisher'])\n",
+        "\n",
+        "top_publishers = df_clean['publisher'].value_counts().head(15)\n",
+        "\n",
+        "plt.figure(figsize=(8, 6))\n",
+        "top_publishers.plot(kind='bar')\n",
+        "plt.title(\"Top 15 Publishers in 1915\")\n",
+        "plt.xlabel(\"Publisher\")\n",
+        "plt.ylabel(\"Number of Publications\")\n",
+        "plt.xticks(rotation=45, ha='right')\n",
+        "plt.tight_layout()\n",
+        "plt.show()"
+      ],
+      "id": "46a2521f",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "</details> \n",
+        "\n",
+        "\n",
+        "<details>\n",
+        "<summary><strong>1916</strong></summary>"
+      ],
+      "id": "10301deb"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "import matplotlib.pyplot as plt\n",
+        "\n",
+        "df = pd.read_csv(\"df_1916.csv\")\n",
+        "df['publisher'] = df['publisher'].astype(str).str.strip()\n",
+        "df['publisher'] = df['publisher'].replace(['', 'nan', 'NA', '<NA>'], pd.NA)\n",
+        "df_clean = df.dropna(subset=['publisher'])\n",
+        "\n",
+        "top_publishers = df_clean['publisher'].value_counts().head(15)\n",
+        "\n",
+        "plt.figure(figsize=(8, 6))\n",
+        "top_publishers.plot(kind='bar')\n",
+        "plt.title(\"Top 15 Publishers in 1916\")\n",
+        "plt.xlabel(\"Publisher\")\n",
+        "plt.ylabel(\"Number of Publications\")\n",
+        "plt.xticks(rotation=45, ha='right')\n",
+        "plt.tight_layout()\n",
+        "plt.show()"
+      ],
+      "id": "686cee36",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "</details> \n",
+        "\n",
+        "\n",
+        "<details>\n",
+        "<summary><strong>1917</strong></summary>"
+      ],
+      "id": "2f1642f3"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "import matplotlib.pyplot as plt\n",
+        "\n",
+        "df = pd.read_csv(\"df_1917.csv\")\n",
+        "df['publisher'] = df['publisher'].astype(str).str.strip()\n",
+        "df['publisher'] = df['publisher'].replace(['', 'nan', 'NA', '<NA>'], pd.NA)\n",
+        "df_clean = df.dropna(subset=['publisher'])\n",
+        "\n",
+        "top_publishers = df_clean['publisher'].value_counts().head(15)\n",
+        "\n",
+        "plt.figure(figsize=(8, 6))\n",
+        "top_publishers.plot(kind='bar')\n",
+        "plt.title(\"Top 15 Publishers in 1917\")\n",
+        "plt.xlabel(\"Publisher\")\n",
+        "plt.ylabel(\"Number of Publications\")\n",
+        "plt.xticks(rotation=45, ha='right')\n",
+        "plt.tight_layout()\n",
+        "plt.show()"
+      ],
+      "id": "3e3c2157",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "</details> \n",
+        "\n",
+        "\n",
+        "<details>\n",
+        "<summary><strong>1918</strong></summary>"
+      ],
+      "id": "e2865d44"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "import matplotlib.pyplot as plt\n",
+        "\n",
+        "df = pd.read_csv(\"df_1918.csv\")\n",
+        "df['publisher'] = df['publisher'].astype(str).str.strip()\n",
+        "df['publisher'] = df['publisher'].replace(['', 'nan', 'NA', '<NA>'], pd.NA)\n",
+        "df_clean = df.dropna(subset=['publisher'])\n",
+        "\n",
+        "top_publishers = df_clean['publisher'].value_counts().head(15)\n",
+        "\n",
+        "plt.figure(figsize=(8, 6))\n",
+        "top_publishers.plot(kind='bar')\n",
+        "plt.title(\"Top 15 Publishers in 1918\")\n",
+        "plt.xlabel(\"Publisher\")\n",
+        "plt.ylabel(\"Number of Publications\")\n",
+        "plt.xticks(rotation=45, ha='right')\n",
+        "plt.tight_layout()\n",
+        "plt.show()"
+      ],
+      "id": "1f6bb585",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "</details> \n",
+        "\n",
+        "\n",
+        "<details>\n",
+        "<summary><strong>1919</strong></summary>"
+      ],
+      "id": "ede24382"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "import matplotlib.pyplot as plt\n",
+        "\n",
+        "df = pd.read_csv(\"df_1919.csv\")\n",
+        "df['publisher'] = df['publisher'].astype(str).str.strip()\n",
+        "df['publisher'] = df['publisher'].replace(['', 'nan', 'NA', '<NA>'], pd.NA)\n",
+        "df_clean = df.dropna(subset=['publisher'])\n",
+        "\n",
+        "top_publishers = df_clean['publisher'].value_counts().head(15)\n",
+        "\n",
+        "plt.figure(figsize=(8, 6))\n",
+        "top_publishers.plot(kind='bar')\n",
+        "plt.title(\"Top 15 Publishers in 1919\")\n",
+        "plt.xlabel(\"Publisher\")\n",
+        "plt.ylabel(\"Number of Publications\")\n",
+        "plt.xticks(rotation=45, ha='right')\n",
+        "plt.tight_layout()\n",
+        "plt.show()"
+      ],
+      "id": "eb7b1424",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "</details> \n",
+        "\n",
+        "\n",
+        "<details>\n",
+        "<summary><strong>1920</strong></summary>"
+      ],
+      "id": "683071eb"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "import matplotlib.pyplot as plt\n",
+        "\n",
+        "df = pd.read_csv(\"df_1920.csv\")\n",
+        "df['publisher'] = df['publisher'].astype(str).str.strip()\n",
+        "df['publisher'] = df['publisher'].replace(['', 'nan', 'NA', '<NA>'], pd.NA)\n",
+        "df_clean = df.dropna(subset=['publisher'])\n",
+        "\n",
+        "top_publishers = df_clean['publisher'].value_counts().head(15)\n",
+        "\n",
+        "plt.figure(figsize=(8, 6))\n",
+        "top_publishers.plot(kind='bar')\n",
+        "plt.title(\"Top 15 Publishers in 1920\")\n",
+        "plt.xlabel(\"Publisher\")\n",
+        "plt.ylabel(\"Number of Publications\")\n",
+        "plt.xticks(rotation=45, ha='right')\n",
+        "plt.tight_layout()\n",
+        "plt.show()"
+      ],
+      "id": "4daa8616",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "</details> \n",
+        "\n",
+        "\n",
+        "<details>\n",
+        "<summary><strong>1921</strong></summary>"
+      ],
+      "id": "117c833c"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "import matplotlib.pyplot as plt\n",
+        "\n",
+        "df = pd.read_csv(\"df_1921.csv\")\n",
+        "df['publisher'] = df['publisher'].astype(str).str.strip()\n",
+        "df['publisher'] = df['publisher'].replace(['', 'nan', 'NA', '<NA>'], pd.NA)\n",
+        "df_clean = df.dropna(subset=['publisher'])\n",
+        "\n",
+        "top_publishers = df_clean['publisher'].value_counts().head(15)\n",
+        "\n",
+        "plt.figure(figsize=(8, 6))\n",
+        "top_publishers.plot(kind='bar')\n",
+        "plt.title(\"Top 15 Publishers in 1921\")\n",
+        "plt.xlabel(\"Publisher\")\n",
+        "plt.ylabel(\"Number of Publications\")\n",
+        "plt.xticks(rotation=45, ha='right')\n",
+        "plt.tight_layout()\n",
+        "plt.show()"
+      ],
+      "id": "2a6616eb",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "</details> \n",
+        "\n",
+        "\n",
+        "<details>\n",
+        "<summary><strong>1922</strong></summary>"
+      ],
+      "id": "139c1434"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "import matplotlib.pyplot as plt\n",
+        "\n",
+        "df = pd.read_csv(\"df_1922.csv\")\n",
+        "df['publisher'] = df['publisher'].astype(str).str.strip()\n",
+        "df['publisher'] = df['publisher'].replace(['', 'nan', 'NA', '<NA>'], pd.NA)\n",
+        "df_clean = df.dropna(subset=['publisher'])\n",
+        "\n",
+        "top_publishers = df_clean['publisher'].value_counts().head(15)\n",
+        "\n",
+        "plt.figure(figsize=(8, 6))\n",
+        "top_publishers.plot(kind='bar')\n",
+        "plt.title(\"Top 15 Publishers in 1922\")\n",
+        "plt.xlabel(\"Publisher\")\n",
+        "plt.ylabel(\"Number of Publications\")\n",
+        "plt.xticks(rotation=45, ha='right')\n",
+        "plt.tight_layout()\n",
+        "plt.show()"
+      ],
+      "id": "8a37ba8c",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "</details> "
+      ],
+      "id": "29867040"
     }
   ],
   "metadata": {

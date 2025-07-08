@@ -2,17 +2,17 @@ project:
   type: website
 
 website:
-  title: "English Catalogue of Books - Top Authors and Publishers by Year"
+  title: "English Catalogue of Books"
   navbar:
     left:
-      - href: index.qmd
-        text: Home
       - href: publishers.qmd
-        text: Top Publishers
+        text: Top Publishers 
       - href: authors.qmd
         text: Top Authors
+      - href: our_data.qmd
+        text: Our Data
       - href: entrycapture.qmd
-        text: Our Entry Captures
+        text: Captured Entries
 
 format:
   html:

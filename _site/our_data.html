@@ -1,0 +1,12084 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Our Data – English Catalogue of Books</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-6bdd2aebeb936dcddaa5f935a5de481c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">English Catalogue of Books</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./publishers.html"> 
+<span class="menu-text">Top Publishers</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./authors.html"> 
+<span class="menu-text">Top Authors</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./our_data.html" aria-current="page"> 
+<span class="menu-text">Our Data</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./entrycapture.html"> 
+<span class="menu-text">Captured Entries</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content column-page" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Our Data</h1>
+</div>
+
+
+
+<div class="quarto-title-meta column-page">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<details>
+<summary>
+1912
+</summary>
+<p><img src="1912_english_catalogue_cover.jpeg" class="centered-image img-fluid" width="500"></p>
+<section id="data-table" class="level1">
+<h1>Data Table</h1>
+<div id="365f89de" class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display" data-execution_count="1">
+<table class="dataframe my-table table table-sm table-striped small">
+
+<thead>
+
+<tr>
+
+<th>
+</th>
+
+<th>
+entry
+</th>
+
+<th>
+last_name
+</th>
+
+<th>
+first_name
+</th>
+
+<th>
+title
+</th>
+
+<th>
+publisher
+</th>
+
+<th>
+price
+</th>
+
+<th>
+format
+</th>
+
+<th>
+original_entry
+</th>
+
+<th>
+author_name
+</th>
+
+<th>
+creators
+</th>
+
+<th>
+is_editor
+</th>
+
+<th>
+date
+</th>
+
+<th>
+catalogue_year
+</th>
+
+<th>
+is_net
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<th>
+0
+</th>
+
+<td>
+Abercromby (Hon.&nbsp;John)-A Study of the bronze age pottery of Great Britain and Ireland and its associated grave-goods. Illus. 2 vols. 4to. 63s, net (Clarendon Press) FROWDE, July 12
+</td>
+
+<td>
+Abercromby
+</td>
+
+<td>
+Hon.&nbsp;John
+</td>
+
+<td>
+A Study of the bronze age pottery of Great Britain and Ireland and its associated grave-goods
+</td>
+
+<td>
+FROWDE
+</td>
+
+<td>
+63s.
+</td>
+
+<td>
+4to.
+</td>
+
+<td>
+Abercromby (Hon.&nbsp;John)-A Study of the bronze age pottery of Great Britain and Ireland and its associated grave-goods. Illus. 2 vols. 4to. 63s, net (Clarendon Press) FROWDE, July 12
+</td>
+
+<td>
+Hon.&nbsp;John Abercromby
+</td>
+
+<td>
+['Abercromby (Hon.&nbsp;John)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+July 12
+</td>
+
+<td>
+1912
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+1
+</th>
+
+<td>
+Abernathy (M.)—The Ride of the Abernathy Boys. Cr. 8vo., 3s. 6d. HODDER &amp; S., Jan.&nbsp;12
+</td>
+
+<td>
+Abernathy
+</td>
+
+<td>
+M.
+</td>
+
+<td>
+The Ride of the Abernathy Boys
+</td>
+
+<td>
+HODDER &amp; S.
+</td>
+
+<td>
+3s. 6d.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abernathy (M.)—The Ride of the Abernathy Boys. Cr. 8vo., 35. 6d. HODDER &amp; S., Jan.&nbsp;12
+</td>
+
+<td>
+M. Abernathy
+</td>
+
+<td>
+['Abernathy (M.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Jan.&nbsp;12
+</td>
+
+<td>
+1912
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+2
+</th>
+
+<td>
+Abhedananda (Swami) —Vedanta Philosophy : Great Saviours of the world. Vol. 1. (Krishna, Zoroaster, Lâo-Tze, and their teachings, with portraits.) Cr. 8vo., pp.&nbsp;176, 4s. 6d. net LUZAC, Mar.&nbsp;12
+</td>
+
+<td>
+Abhedananda
+</td>
+
+<td>
+Swami
+</td>
+
+<td>
+Vedanta Philosophy : Great Saviours of the world
+</td>
+
+<td>
+LUZAC
+</td>
+
+<td>
+4s. 6d.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abhedananda (Swami) —Vedanta Philosophy : Great Saviours of the world. Vol. 1. (Krishna, Zoroaster, Lâo-Tze, and their teachings, with portraits.) Cr. 8vo., pp.&nbsp;176, 45. 6d. net LUZAC, Mar.&nbsp;12
+</td>
+
+<td>
+Swami Abhedananda
+</td>
+
+<td>
+['Abhedananda (Swami)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Mar.&nbsp;12
+</td>
+
+<td>
+1912
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+3
+</th>
+
+<td>
+Abhedananda (Swami) Vedanta philosophy : Human affection, and divine love. 12mo., pp.&nbsp;46, 1s. 6d. net ..LUZAC, Mar.&nbsp;12
+</td>
+
+<td>
+Abhedananda
+</td>
+
+<td>
+Swami
+</td>
+
+<td>
+Vedanta philosophy : Human affection, and divine love
+</td>
+
+<td>
+LUZAC
+</td>
+
+<td>
+1s. 6d.
+</td>
+
+<td>
+12mo.
+</td>
+
+<td>
+Abhedananda (Swami) Vedanta philosophy : Human affection, and divine love. 12mo., pp.&nbsp;46, Is. 6d. net ..LUZAC, Mar.&nbsp;12
+</td>
+
+<td>
+Swami Abhedananda
+</td>
+
+<td>
+['Abhedananda (Swami)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Mar.&nbsp;12
+</td>
+
+<td>
+1912
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+4
+</th>
+
+<td>
+Åbor, On the track of the, Millington (P.) 3s. 6d. net About us. Oblong 4to., bds. 2s. 6d. NISTER, Sep.&nbsp;12
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Åbor, On the track of the, Millington (P.)
+</td>
+
+<td>
+NISTER
+</td>
+
+<td>
+2s. 6d.
+</td>
+
+<td>
+4to.
+</td>
+
+<td>
+Åbor, On the track of the, Millington (P.) 35. 6d. net About us. Oblong 4to., bds. 25. 6d. NISTER, Sep.&nbsp;12
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Sep.&nbsp;12
+</td>
+
+<td>
+1912
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+5
+</th>
+
+<td>
+Abraham (Ashley P.)—Beautiful Lakeland. Illus. 4to. 111 X 81, pp.&nbsp;52, bds. 3s. 6d. G. P. ABRAHAM, June 12
+</td>
+
+<td>
+Abraham
+</td>
+
+<td>
+Ashley P.
+</td>
+
+<td>
+Beautiful Lakeland
+</td>
+
+<td>
+G. P. ABRAHAM
+</td>
+
+<td>
+3s. 6d.
+</td>
+
+<td>
+4to.
+</td>
+
+<td>
+Abraham (Ashley P.)—Beautiful Lakeland. Illus. 4to. 111 X 81, pp.&nbsp;52, bds. 35. 6d. G. P. ABRAHAM, June 12
+</td>
+
+<td>
+Ashley P. Abraham
+</td>
+
+<td>
+['Abraham (Ashley P.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+June 12
+</td>
+
+<td>
+1912
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+6
+</th>
+
+<td>
+Abraham (George D.)- British mountain climbs. Cheaper edit. 12mo., 7 X4, pp.&nbsp;464, 59. net MILLS &amp; B., Sep.&nbsp;12
+</td>
+
+<td>
+Abraham
+</td>
+
+<td>
+George D.
+</td>
+
+<td>
+British mountain climbs
+</td>
+
+<td>
+MILLS &amp; B.
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+12mo.
+</td>
+
+<td>
+Abraham (George D.)- British mountain climbs. Cheaper edit. 12mo., 7 X4, pp.&nbsp;464, 59. net MILLS &amp; B., Sep.&nbsp;12
+</td>
+
+<td>
+George D. Abraham
+</td>
+
+<td>
+['Abraham (George D.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Sep.&nbsp;12
+</td>
+
+<td>
+1912
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+7
+</th>
+
+<td>
+Abraham (George D.)-Swiss mountain climbs. Cheaper edit. 12mo. 7 X 4), pp.&nbsp;448, 5s. net MILLS &amp; B., Sep.'12
+</td>
+
+<td>
+Abraham
+</td>
+
+<td>
+George D.
+</td>
+
+<td>
+Swiss mountain climbs
+</td>
+
+<td>
+MILLS &amp; B.
+</td>
+
+<td>
+5s.
+</td>
+
+<td>
+12mo.
+</td>
+
+<td>
+Abraham (George D.)-Swiss mountain climbs. Cheaper edit. 12mo. 7 X 4), pp.&nbsp;448, 55. net MILLS &amp; B., Sep.'12
+</td>
+
+<td>
+George D. Abraham
+</td>
+
+<td>
+['Abraham (George D.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Sep.'12
+</td>
+
+<td>
+1912
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+8
+</th>
+
+<td>
+Abram (A.)-English life and manners in the later middle ages. Illus. Cr. 8vo. 74 X5, pp.&nbsp;368, 6s. … ROUTLEDGE, Dec.&nbsp;12
+</td>
+
+<td>
+Abram
+</td>
+
+<td>
+A.
+</td>
+
+<td>
+English life and manners in the later middle ages
+</td>
+
+<td>
+ROUTLEDGE
+</td>
+
+<td>
+6s.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abram (A.)-English life and manners in the later middle ages. Illus. Cr. 8vo. 74 X5, pp.&nbsp;368, 6s. … ROUTLEDGE, Dec.&nbsp;12
+</td>
+
+<td>
+A. Abram
+</td>
+
+<td>
+['Abram (A.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Dec.&nbsp;12
+</td>
+
+<td>
+1912
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+9
+</th>
+
+<td>
+Academy architecture and architectural review, 1911.-Vol. 40, Founded by Alex. Koch. 4to., 4s. rod. net, swd. 4s. net….SIMPKIN, Jan.&nbsp;12
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Academy architecture and architectural review
+</td>
+
+<td>
+SIMPKIN
+</td>
+
+<td>
+4s.
+</td>
+
+<td>
+4to.
+</td>
+
+<td>
+Academy architecture and architectural review, 1911.-Vol. 40, Founded by Alex. Koch. 4to., 45. rod. net, swd. 4s. net….SIMPKIN, Jan.&nbsp;12
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Jan.&nbsp;12
+</td>
+
+<td>
+1912
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+10
+</th>
+
+<td>
+Academy Architecture and architectural review. Vol. 41, 1912, part 1. 4to. 98 x74, pp.&nbsp;168, 4s. rod. net; swd, 4s, net SIMPKIN, July 12
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Academy Architecture and architectural review
+</td>
+
+<td>
+SIMPKIN
+</td>
+
+<td>
+4s.
+</td>
+
+<td>
+4to.
+</td>
+
+<td>
+Academy Architecture and architectural review. Vol. 41, 1912, part 1. 4to. 98 x74, pp.&nbsp;168, 45. rod. net; swd, 4s, net SIMPKIN, July 12
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+July 12
+</td>
+
+<td>
+1912
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+11
+</th>
+
+<td>
+ABC Guide to the practice of the Supreme Court, 1913. Cr. 8vo., 5s. net SWEET &amp; M., Oct.&nbsp;12
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+ABC Guide to the practice of the Supreme Court
+</td>
+
+<td>
+SWEET &amp; M.
+</td>
+
+<td>
+5s.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+ABC Guide to the practice of the Supreme Court, 1913. Cr. 8vo., 55. net SWEET &amp; M., Oct.&nbsp;12
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Oct.&nbsp;12
+</td>
+
+<td>
+1912
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+12
+</th>
+
+<td>
+A. L.–Animal making packet. A. M. O. assorted packet. 12 sheets oblong 4to. 6d. net E. J. ARNOLD, Dec.&nbsp;12
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+A. L.–Animal making packet
+</td>
+
+<td>
+E. J. ARNOLD
+</td>
+
+<td>
+6d.
+</td>
+
+<td>
+4to.
+</td>
+
+<td>
+A. L.–Animal making packet. A. M. O. assorted packet. 12 sheets oblong 4to. 6d. net E. J. ARNOLD, Dec.&nbsp;12
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Dec.&nbsp;12
+</td>
+
+<td>
+1912
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+13
+</th>
+
+<td>
+Aaron (C. D.)-Diseases of the stomach : with special reference to treatment. 8vo., 218. net CHURCHILL, Jan.&nbsp;12
+</td>
+
+<td>
+Aaron
+</td>
+
+<td>
+C. D.
+</td>
+
+<td>
+Diseases of the stomach : with special reference to treatment
+</td>
+
+<td>
+CHURCHILL
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Aaron (C. D.)-Diseases of the stomach : with special reference to treatment. 8vo., 218. net CHURCHILL, Jan.&nbsp;12
+</td>
+
+<td>
+C. D. Aaron
+</td>
+
+<td>
+['Aaron (C. D.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Jan.&nbsp;12
+</td>
+
+<td>
+1912
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+14
+</th>
+
+<td>
+Aarons (S. Jervois)—Aids to gynaecology. 5th edit. 12m10., pp.&nbsp;132, 2s. 6d. net, swd., 2s, net (Students' aids ser.) . BAILLIÈRE, Nov.&nbsp;12
+</td>
+
+<td>
+Aarons
+</td>
+
+<td>
+S. Jervois
+</td>
+
+<td>
+Aids to gynaecology
+</td>
+
+<td>
+BAILLIÈRE
+</td>
+
+<td>
+2s.
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Aarons (S. Jervois)—Aids to gynaecology. 5th edit. 12m10., pp.&nbsp;132, 25. 6d. net, swd., 2s, net (Students' aids ser.) . BAILLIÈRE, Nov.&nbsp;12
+</td>
+
+<td>
+S. Jervois Aarons
+</td>
+
+<td>
+['Aarons (S. Jervois)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Nov.&nbsp;12
+</td>
+
+<td>
+1912
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+</div>
+</div>
+<p><a href="df_1912.csv" download="">Download full CSV</a></p>
+</section></details>
+<details>
+<summary>
+1913
+</summary>
+<p><img src="1913_english_catalogue_cover.jpeg" class="centered-image img-fluid" width="500"></p>
+
+<section id="data-table-1" class="level1">
+<h1>Data Table</h1>
+<div id="70953569" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-display" data-execution_count="2">
+<table class="dataframe my-table table table-sm table-striped small">
+
+<thead>
+
+<tr>
+
+<th>
+</th>
+
+<th>
+entry
+</th>
+
+<th>
+last_name
+</th>
+
+<th>
+first_name
+</th>
+
+<th>
+title
+</th>
+
+<th>
+publisher
+</th>
+
+<th>
+price
+</th>
+
+<th>
+format
+</th>
+
+<th>
+original_entry
+</th>
+
+<th>
+author_name
+</th>
+
+<th>
+creators
+</th>
+
+<th>
+is_editor
+</th>
+
+<th>
+date
+</th>
+
+<th>
+catalogue_year
+</th>
+
+<th>
+is_net
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<th>
+0
+</th>
+
+<td>
+A B C fiscal handbook (The). 3rd edit. 8vo. 81 X5, pp.&nbsp;262, 1s, net FREE TRADE UNION, Jan.&nbsp;13
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+A B C fiscal handbook (The)
+</td>
+
+<td>
+FREE TRADE UNION
+</td>
+
+<td>
+1s.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+A B C fiscal handbook (The). 3rd edit. 8vo. 81 X5, pp.&nbsp;262, Is, net FREE TRADE UNION, Jan.&nbsp;13
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Jan.&nbsp;13
+</td>
+
+<td>
+1913
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+1
+</th>
+
+<td>
+A B C guide to patents for inventors. 8vo. 2s. 6d. net. BUTTERWORTH, Apr.&nbsp;13
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+A B C guide to patents for inventors
+</td>
+
+<td>
+BUTTERWORTH
+</td>
+
+<td>
+2s. 6d.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+A B C guide to patents for inventors. 8vo. 25. 6d. net. BUTTERWORTH, Apr.&nbsp;13
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Apr.&nbsp;13
+</td>
+
+<td>
+1913
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+2
+</th>
+
+<td>
+Abercrombie (Lascelles) –Speculative dialogues Cr. 8vo. 73 X5, pp.&nbsp;204, 5s. net M. SOCKER, Oct.&nbsp;13
+</td>
+
+<td>
+Abercrombie
+</td>
+
+<td>
+Lascelles
+</td>
+
+<td>
+Speculative dialogues
+</td>
+
+<td>
+M. SOCKER
+</td>
+
+<td>
+5s.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abercrombie (Lascelles) –Speculative dialogues Cr. 8vo. 73 X5, pp.&nbsp;204, 5s. net M. SOCKER, Oct.&nbsp;13
+</td>
+
+<td>
+Lascelles Abercrombie
+</td>
+
+<td>
+['Abercrombie (Lascelles)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Oct.&nbsp;13
+</td>
+
+<td>
+1913
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+3
+</th>
+
+<td>
+Abney (Sir William de W.)-Researches in colour vision and the trichromatic theory. 8vo. 9X58, pp.&nbsp;432, 213, net….LONGMANS, Jan.&nbsp;13
+</td>
+
+<td>
+Abney
+</td>
+
+<td>
+Sir William de W.
+</td>
+
+<td>
+Researches in colour vision and the trichromatic theory
+</td>
+
+<td>
+LONGMANS
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abney (Sir William de W.)-Researches in colour vision and the trichromatic theory. 8vo. 9X58, pp.&nbsp;432, 213, net….LONGMANS, Jan.&nbsp;13
+</td>
+
+<td>
+Sir William de W. Abney
+</td>
+
+<td>
+['Abney (Sir William de W.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Jan.&nbsp;13
+</td>
+
+<td>
+1913
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+4
+</th>
+
+<td>
+Aborigines of S. America, Church (G. E.) ios, 6d. net. About Edmond)-L'Homine à l'oreille Cassée. Cr. 8vo., 01s. 6d….. …RIVINGTON, May 13
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Aborigines of S. America, Church (G. E.) ios
+</td>
+
+<td>
+RIVINGTON
+</td>
+
+<td>
+6d.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Aborigines of S. America, Church (G. E.) ios, 6d. net. About Edmond)-L'Homine à l'oreille Cassée. Cr. 8vo., IS. 6d….. …RIVINGTON, May 13
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+May 13
+</td>
+
+<td>
+1913
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+5
+</th>
+
+<td>
+About (Edmond)–Le Nez d'un notaire. 12mo., pp.&nbsp;252, 1s, net. ……NELSON, Feb.&nbsp;13
+</td>
+
+<td>
+About
+</td>
+
+<td>
+Edmond
+</td>
+
+<td>
+Le Nez d'un notaire
+</td>
+
+<td>
+NELSON
+</td>
+
+<td>
+1s.
+</td>
+
+<td>
+12mo.
+</td>
+
+<td>
+About (Edmond)–Le Nez d'un notaire. 12mo., pp.&nbsp;252, Is, net. ……NELSON, Feb.&nbsp;13
+</td>
+
+<td>
+Edmond About
+</td>
+
+<td>
+['About (Edmond)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Feb.&nbsp;13
+</td>
+
+<td>
+1913
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+6
+</th>
+
+<td>
+Abraham (Ashley P.)-Some portraits of the Lake poets and their honies. Illus. Ryl. 8vo. 94 X6, pp.&nbsp;56, bds. 3s. 6d. net SIMPKIN, Aug.&nbsp;13
+</td>
+
+<td>
+Abraham
+</td>
+
+<td>
+Ashley P.
+</td>
+
+<td>
+Some portraits of the Lake poets and their honies
+</td>
+
+<td>
+SIMPKIN
+</td>
+
+<td>
+3s. 6d.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abraham (Ashley P.)-Some portraits of the Lake poets and their honies. Illus. Ryl. 8vo. 94 X6, pp.&nbsp;56, bds. 35. 6d. net SIMPKIN, Aug.&nbsp;13
+</td>
+
+<td>
+Ashley P. Abraham
+</td>
+
+<td>
+['Abraham (Ashley P.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Aug.&nbsp;13
+</td>
+
+<td>
+1913
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+7
+</th>
+
+<td>
+Abraham (George D.)-Motor ways in lakeland. 8vo. 9 X5), pp.&nbsp;320, 7s. 6d. net METHUEN, Aug.&nbsp;13
+</td>
+
+<td>
+Abraham
+</td>
+
+<td>
+George D.
+</td>
+
+<td>
+Motor ways in lakeland
+</td>
+
+<td>
+METHUEN
+</td>
+
+<td>
+7s. 6d.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abraham (George D.)-Motor ways in lakeland. 8vo. 9 X5), pp.&nbsp;320, 7s. 6d. net METHUEN, Aug.&nbsp;13
+</td>
+
+<td>
+George D. Abraham
+</td>
+
+<td>
+['Abraham (George D.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Aug.&nbsp;13
+</td>
+
+<td>
+1913
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+8
+</th>
+
+<td>
+Abraham (J. Johnston)-The Surgeon's log : impressions of the Far Fast. Re-issue. Cr. 8vo. 74 X5, pp.&nbsp;316, 2s. 6d. net CHAPMAN &amp; H., June 13
+</td>
+
+<td>
+Abraham
+</td>
+
+<td>
+J. Johnston
+</td>
+
+<td>
+The Surgeon's log : impressions of the Far Fast
+</td>
+
+<td>
+CHAPMAN &amp; H.
+</td>
+
+<td>
+2s. 6d.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abraham (J. Johnston)-The Surgeon's log : impressions of the Far Fast. Re-issue. Cr. 8vo. 74 X5, pp.&nbsp;316, 25. 6d. net CHAPMAN &amp; H., June 13
+</td>
+
+<td>
+J. Johnston Abraham
+</td>
+
+<td>
+['Abraham (J. Johnston)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+June 13
+</td>
+
+<td>
+1913
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+9
+</th>
+
+<td>
+Abraham (K.)—Steam economy in the sugar factory. Trans. from the German edit. by E. J. Bayle. Cr. 8vo., 6s. 6d. net CHAPMAN &amp; H., Jan, 13
+</td>
+
+<td>
+Abraham
+</td>
+
+<td>
+K.
+</td>
+
+<td>
+Steam economy in the sugar factory
+</td>
+
+<td>
+CHAPMAN &amp; H.
+</td>
+
+<td>
+6s. 6d.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abraham (K.)—Steam economy in the sugar factory. Trans. from the German edit. by E. J. Bayle. Cr. 8vo., 6s. 6d. net CHAPMAN &amp; H., Jan, 13
+</td>
+
+<td>
+K. Abraham
+</td>
+
+<td>
+['Abraham (K.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Jan, 13
+</td>
+
+<td>
+1913
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+10
+</th>
+
+<td>
+Abramowski (O. L. M.)— Eating for health. 3rd edit. Cr. 8vo., 38. 6d. net W. SCOTT, Aug.&nbsp;13
+</td>
+
+<td>
+Abramowski
+</td>
+
+<td>
+O. L. M.
+</td>
+
+<td>
+Eating for health
+</td>
+
+<td>
+W. SCOTT
+</td>
+
+<td>
+6d.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abramowski (O. L. M.)— Eating for health. 3rd edit. Cr. 8vo., 38. 6d. net W. SCOTT, Aug.&nbsp;13
+</td>
+
+<td>
+O. L. M. Abramowski
+</td>
+
+<td>
+['Abramowski (O. L. M.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Aug.&nbsp;13
+</td>
+
+<td>
+1913
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+11
+</th>
+
+<td>
+Academy Architecture and Architectural Review, 1913. Vol. 43. Edit. by Alex. Koch. 4to. 4s. rod. net, swd. 4s. net.. SIMPKIN, June 13
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Academy Architecture and Architectural Review
+</td>
+
+<td>
+SIMPKIN
+</td>
+
+<td>
+4s.
+</td>
+
+<td>
+4to.
+</td>
+
+<td>
+Academy Architecture and Architectural Review, 1913. Vol. 43. Edit. by Alex. Koch. 4to. 45. rod. net, swd. 45. net.. SIMPKIN, June 13
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+June 13
+</td>
+
+<td>
+1913
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+12
+</th>
+
+<td>
+Accountancy for retail traders, Wood (D.) 2s. 6d. net… Accountants' (Incorporated) Year book. 8vo. 71 x 41, pp.&nbsp;782, 2s. …SOCIETY, Oct.&nbsp;13
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Accountancy for retail traders, Wood (D.)
+</td>
+
+<td>
+SOCIETY
+</td>
+
+<td>
+2s.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Accountancy for retail traders, Wood (D.) 25. 6d. net… Accountants' (Incorporated) Year book. 8vo. 71 x 41, pp.&nbsp;782, 25. …SOCIETY, Oct.&nbsp;13
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Oct.&nbsp;13
+</td>
+
+<td>
+1913
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+13
+</th>
+
+<td>
+Accountants (Institute of Chartered) in England and Wales.-List of members, 1913, Royal Charter, and bye-laws. 8vo. 71 X 5, pp.&nbsp;780, 2s. GEE, Oct.&nbsp;13
+</td>
+
+<td>
+Accountants
+</td>
+
+<td>
+Institute of Chartered
+</td>
+
+<td>
+England and Wales
+</td>
+
+<td>
+GEE
+</td>
+
+<td>
+2s.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Accountants (Institute of Chartered) in England and Wales.-List of members, 1913, Royal Charter, and bye-laws. 8vo. 71 X 5, pp.&nbsp;780, 25. GEE, Oct.&nbsp;13
+</td>
+
+<td>
+Institute of Chartered Accountants
+</td>
+
+<td>
+['Accountants (Institute of Chartered)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Oct.&nbsp;13
+</td>
+
+<td>
+1913
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+14
+</th>
+
+<td>
+A. L.-School temperature register, No.&nbsp;3. 8d, net .E. J. ARNOLD, Jan.&nbsp;13
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+A. L.-School temperature register
+</td>
+
+<td>
+E. J. ARNOLD
+</td>
+
+<td>
+8d.
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+A. L.-School temperature register, No.&nbsp;3. 8d, net .E. J. ARNOLD, Jan.&nbsp;13
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Jan.&nbsp;13
+</td>
+
+<td>
+1913
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+</div>
+</div>
+<p><a href="df_1913.csv" download="">Download full CSV</a></p>
+</section></details>
+<details>
+<summary>
+1914
+</summary>
+<p><img src="1914_english_catalogue_cover.jpeg" class="centered-image img-fluid" width="500"></p>
+
+<section id="data-table-2" class="level1">
+<h1>Data Table</h1>
+<div id="fe3edfee" class="cell" data-execution_count="3">
+<div class="cell-output cell-output-display" data-execution_count="3">
+<table class="dataframe my-table table table-sm table-striped small">
+
+<thead>
+
+<tr>
+
+<th>
+</th>
+
+<th>
+entry
+</th>
+
+<th>
+last_name
+</th>
+
+<th>
+first_name
+</th>
+
+<th>
+title
+</th>
+
+<th>
+publisher
+</th>
+
+<th>
+price
+</th>
+
+<th>
+format
+</th>
+
+<th>
+original_entry
+</th>
+
+<th>
+author_name
+</th>
+
+<th>
+creators
+</th>
+
+<th>
+is_editor
+</th>
+
+<th>
+date
+</th>
+
+<th>
+catalogue_year
+</th>
+
+<th>
+is_net
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<th>
+0
+</th>
+
+<td>
+A. K. H. B. : selections, Boyd (A. K. H.) is. net A. L.” Welcome readers (The). Book Illa. 4to. 9d. net .E. J. ARNOLD, Aug.&nbsp;14
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+A. K. H. B. : selections, Boyd (A. K. H.) is
+</td>
+
+<td>
+E. J. ARNOLD
+</td>
+
+<td>
+9d.
+</td>
+
+<td>
+4to.
+</td>
+
+<td>
+A. K. H. B. : selections, Boyd (A. K. H.) is. net A. L.” Welcome readers (The). Book Illa. 4to. 9d. net .E. J. ARNOLD, Aug.&nbsp;14
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Aug.&nbsp;14
+</td>
+
+<td>
+1914
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+1
+</th>
+
+<td>
+A.L. Welcome readers (The). Books 4A &amp; 5A. 4to, ea. rod. net .E. J. ARNOLD, Sep.&nbsp;14
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+A.L. Welcome readers (The)
+</td>
+
+<td>
+E. J. ARNOLD
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+4to,
+</td>
+
+<td>
+A.L. Welcome readers (The). Books 4A &amp; 5A. 4to, ea. rod. net .E. J. ARNOLD, Sep.&nbsp;14
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Sep.&nbsp;14
+</td>
+
+<td>
+1914
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+2
+</th>
+
+<td>
+Abbey (John)—The Word of God and the use of intoxicating liquor. 2nd edit., enlarged. Cr. 8vo. 8} x 51, pp.&nbsp;160, 1s. net (37, Thorncliffe Rd., Oxford) AUTHOR, July 14
+</td>
+
+<td>
+Abbey
+</td>
+
+<td>
+John
+</td>
+
+<td>
+The Word of God and the use of intoxicating liquor
+</td>
+
+<td>
+AUTHOR
+</td>
+
+<td>
+1s.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abbey (John)—The Word of God and the use of intoxicating liquor. 2nd edit., enlarged. Cr. 8vo. 8} x 51, pp.&nbsp;160, Is. net (37, Thorncliffe Rd., Oxford) AUTHOR, July 14
+</td>
+
+<td>
+John Abbey
+</td>
+
+<td>
+['Abbey (John)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+July 14
+</td>
+
+<td>
+1914
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+3
+</th>
+
+<td>
+Abbot (Allen)-The Theorist : a novel. Cr. 8vo. 73x44, pp.&nbsp;320, 6s. ..A. MELROSE, May 14
+</td>
+
+<td>
+Abbot
+</td>
+
+<td>
+Allen
+</td>
+
+<td>
+The Theorist : a novel
+</td>
+
+<td>
+A. MELROSE
+</td>
+
+<td>
+6s.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abbot (Allen)-The Theorist : a novel. Cr. 8vo. 73x44, pp.&nbsp;320, 6s. ..A. MELROSE, May 14
+</td>
+
+<td>
+Allen Abbot
+</td>
+
+<td>
+['Abbot (Allen)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+May 14
+</td>
+
+<td>
+1914
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+4
+</th>
+
+<td>
+Abbott (Edwin A.)—The Fourfold gospel. Section II., The Beginning. 8vo. 9X5}, pp.&nbsp;480, 12s. éd. net CAMB. UNIV. PRESS, Feb.&nbsp;14
+</td>
+
+<td>
+Abbott
+</td>
+
+<td>
+Edwin A.
+</td>
+
+<td>
+The Fourfold gospel
+</td>
+
+<td>
+CAMB. UNIV. PRESS
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abbott (Edwin A.)—The Fourfold gospel. Section II., The Beginning. 8vo. 9X5}, pp.&nbsp;480, 125. éd. net CAMB. UNIV. PRESS, Feb.&nbsp;14
+</td>
+
+<td>
+Edwin A. Abbott
+</td>
+
+<td>
+['Abbott (Edwin A.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Feb.&nbsp;14
+</td>
+
+<td>
+1914
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+5
+</th>
+
+<td>
+Abbott (Eleanor Hallowell) — The White linen Cr. 8vo. 73 X5, pp.&nbsp;284, 6s. HODDER &amp; S., Feb.&nbsp;14
+</td>
+
+<td>
+Abbott
+</td>
+
+<td>
+Eleanor Hallowell
+</td>
+
+<td>
+The White linen
+</td>
+
+<td>
+HODDER &amp; S.
+</td>
+
+<td>
+6s.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abbott (Eleanor Hallowell) — The White linen Cr. 8vo. 73 X5, pp.&nbsp;284, 6s. HODDER &amp; S., Feb.&nbsp;14
+</td>
+
+<td>
+Eleanor Hallowell Abbott
+</td>
+
+<td>
+['Abbott (Eleanor Hallowell)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Feb.&nbsp;14
+</td>
+
+<td>
+1914
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+6
+</th>
+
+<td>
+Abbott (H. W.)–Vision : a book of lyrics. Cr. 8vo., 28. 6d. net … E. MATHEWS, May 14
+</td>
+
+<td>
+Abbott
+</td>
+
+<td>
+H. W.
+</td>
+
+<td>
+Vision : a book of lyrics
+</td>
+
+<td>
+E. MATHEWS
+</td>
+
+<td>
+6d.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abbott (H. W.)–Vision : a book of lyrics. Cr. 8vo., 28. 6d. net … E. MATHEWS, May 14
+</td>
+
+<td>
+H. W. Abbott
+</td>
+
+<td>
+['Abbott (H. W.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+May 14
+</td>
+
+<td>
+1914
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+7
+</th>
+
+<td>
+Abbott (J. F.)—The Elementary pr'nciples of general biology. Cr. 8vo., 6s. 6d. net MACMILLAN, Mar.&nbsp;14
+</td>
+
+<td>
+Abbott
+</td>
+
+<td>
+J. F.
+</td>
+
+<td>
+The Elementary pr'nciples of general biology
+</td>
+
+<td>
+MACMILLAN
+</td>
+
+<td>
+6s. 6d.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abbott (J. F.)—The Elementary pr'nciples of general biology. Cr. 8vo., 6s. 6d. net MACMILLAN, Mar.&nbsp;14
+</td>
+
+<td>
+J. F. Abbott
+</td>
+
+<td>
+['Abbott (J. F.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Mar.&nbsp;14
+</td>
+
+<td>
+1914
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+8
+</th>
+
+<td>
+Abbott (Willis J.)-Notable women in history. Illus. 8vo. 9} x 58, pp.&nbsp;450, 16s. net GREENING, Mar.&nbsp;14
+</td>
+
+<td>
+Abbott
+</td>
+
+<td>
+Willis J.
+</td>
+
+<td>
+Notable women in history
+</td>
+
+<td>
+GREENING
+</td>
+
+<td>
+16s.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abbott (Willis J.)-Notable women in history. Illus. 8vo. 9} x 58, pp.&nbsp;450, 16s. net GREENING, Mar.&nbsp;14
+</td>
+
+<td>
+Willis J. Abbott
+</td>
+
+<td>
+['Abbott (Willis J.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Mar.&nbsp;14
+</td>
+
+<td>
+1914
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+9
+</th>
+
+<td>
+Abderhalden (Emil)–Defensive ferments of the animal organism. 3rd enlarged edit. Cr. 8vo 71 X 5, pp.&nbsp;262, 7s. 6d. net .BALE, Apr.&nbsp;14
+</td>
+
+<td>
+Abderhalden
+</td>
+
+<td>
+Emil
+</td>
+
+<td>
+Defensive ferments of the animal organism
+</td>
+
+<td>
+BALE
+</td>
+
+<td>
+7s. 6d.
+</td>
+
+<td>
+8vo
+</td>
+
+<td>
+Abderhalden (Emil)–Defensive ferments of the animal organism. 3rd enlarged edit. Cr. 8vo 71 X 5, pp.&nbsp;262, 75. 6d. net .BALE, Apr.&nbsp;14
+</td>
+
+<td>
+Emil Abderhalden
+</td>
+
+<td>
+['Abderhalden (Emil)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Apr.&nbsp;14
+</td>
+
+<td>
+1914
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+10
+</th>
+
+<td>
+Abdur Rahman-Eine kritische Profung der Quellen des 1slamitischen Rechts : sources of Muslim law. Ryl. 8vo. 101 x 71, pp.&nbsp;236, 21s. net MILFORD, July 14
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Abdur Rahman-Eine kritische Profung der Quellen des
+</td>
+
+<td>
+MILFORD
+</td>
+
+<td>
+21s.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abdur Rahman-Eine kritische Profung der Quellen des Islamitischen Rechts : sources of Muslim law. Ryl. 8vo. 101 x 71, pp.&nbsp;236, 21s. net MILFORD, July 14
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+July 14
+</td>
+
+<td>
+1914
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+11
+</th>
+
+<td>
+Abell (Francis)-Prisoners of war in Britain 1765 to 1815: a record of their lives, their romance and their sufferings. Illus. 8vo. 9: X5, pp.&nbsp;472, 15s. net…. MILFORD, Nov.&nbsp;14
+</td>
+
+<td>
+Abell
+</td>
+
+<td>
+Francis
+</td>
+
+<td>
+Prisoners of war in Britain
+</td>
+
+<td>
+MILFORD
+</td>
+
+<td>
+15s.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abell (Francis)-Prisoners of war in Britain 1765 to 1815: a record of their lives, their romance and their sufferings. Illus. 8vo. 9: X5, pp.&nbsp;472, 155. net…. MILFORD, Nov.&nbsp;14
+</td>
+
+<td>
+Francis Abell
+</td>
+
+<td>
+['Abell (Francis)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Nov.&nbsp;14
+</td>
+
+<td>
+1914
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+12
+</th>
+
+<td>
+Abercrombie (Lascelles)— The Epic. 12mo., pp.&nbsp;96, is, net. (Art and craft of letters) M. SECKER, May 14
+</td>
+
+<td>
+Abercrombie
+</td>
+
+<td>
+Lascelles
+</td>
+
+<td>
+The Epic
+</td>
+
+<td>
+M. SECKER
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+12mo.
+</td>
+
+<td>
+Abercrombie (Lascelles)— The Epic. 12mo., pp.&nbsp;96, is, net. (Art and craft of letters) M. SECKER, May 14
+</td>
+
+<td>
+Lascelles Abercrombie
+</td>
+
+<td>
+['Abercrombie (Lascelles)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+May 14
+</td>
+
+<td>
+1914
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+13
+</th>
+
+<td>
+Abraham (Ashley P.)-Beautiful north Wales. Illus. 4to. 11X8}, pp.&nbsp;52, bds, 3s. 6d. net AUTHOR, May 14
+</td>
+
+<td>
+Abraham
+</td>
+
+<td>
+Ashley P.
+</td>
+
+<td>
+Beautiful north Wales
+</td>
+
+<td>
+AUTHOR
+</td>
+
+<td>
+3s. 6d.
+</td>
+
+<td>
+4to.
+</td>
+
+<td>
+Abraham (Ashley P.)-Beautiful north Wales. Illus. 4to. I1X8}, pp.&nbsp;52, bds, 3s. 6d. net AUTHOR, May 14
+</td>
+
+<td>
+Ashley P. Abraham
+</td>
+
+<td>
+['Abraham (Ashley P.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+May 14
+</td>
+
+<td>
+1914
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+14
+</th>
+
+<td>
+Abraham (J. Johnston)—The Night nurse. New and cheaper edit. Cr. 8vo. 7} 4, pp.&nbsp;322, 29. net CHAPMAN &amp; H., Sep.&nbsp;14
+</td>
+
+<td>
+Abraham
+</td>
+
+<td>
+J. Johnston
+</td>
+
+<td>
+The Night nurse
+</td>
+
+<td>
+CHAPMAN &amp; H.
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abraham (J. Johnston)—The Night nurse. New and cheaper edit. Cr. 8vo. 7} 4, pp.&nbsp;322, 29. net CHAPMAN &amp; H., Sep.&nbsp;14
+</td>
+
+<td>
+J. Johnston Abraham
+</td>
+
+<td>
+['Abraham (J. Johnston)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Sep.&nbsp;14
+</td>
+
+<td>
+1914
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+</div>
+</div>
+<p><a href="df_1914.csv" download="">Download full CSV</a></p>
+</section></details>
+<details>
+<summary>
+1915
+</summary>
+<p><img src="1915_english_catalogue_cover.jpeg" class="centered-image img-fluid" width="500"> # Data Table</p>
+<div id="54a61f9e" class="cell" data-execution_count="4">
+<div class="cell-output cell-output-display" data-execution_count="4">
+<table class="dataframe my-table table table-sm table-striped small">
+
+<thead>
+
+<tr>
+
+<th>
+</th>
+
+<th>
+entry
+</th>
+
+<th>
+last_name
+</th>
+
+<th>
+first_name
+</th>
+
+<th>
+title
+</th>
+
+<th>
+publisher
+</th>
+
+<th>
+price
+</th>
+
+<th>
+format
+</th>
+
+<th>
+original_entry
+</th>
+
+<th>
+author_name
+</th>
+
+<th>
+creators
+</th>
+
+<th>
+is_editor
+</th>
+
+<th>
+date
+</th>
+
+<th>
+catalogue_year
+</th>
+
+<th>
+is_net
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<th>
+0
+</th>
+
+<td>
+A B C of housekeeping, Herrick (c.&nbsp;T.) 2s. net A B C of income tax return making. By a Lay- man. 8vo., pp.&nbsp;80, 28. 6d. net (Bradford : 7a, Guy's Cliff) AUTHOR, June 15
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+A B C of housekeeping, Herrick (c
+</td>
+
+<td>
+AUTHOR
+</td>
+
+<td>
+6d.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+A B C of housekeeping, Herrick (c.&nbsp;T.) 25. net A B C of income tax return making. By a Lay- man. 8vo., pp.&nbsp;80, 28. 6d. net (Bradford : 7a, Guy's Cliff) AUTHOR, June 15
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+June 15
+</td>
+
+<td>
+1915
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+1
+</th>
+
+<td>
+ABC of Jolly Jack. 4to. bds. 1s. net GALE &amp; P., Oct.&nbsp;15
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+ABC of Jolly Jack
+</td>
+
+<td>
+GALE &amp; P.
+</td>
+
+<td>
+1s.
+</td>
+
+<td>
+4to.
+</td>
+
+<td>
+ABC of Jolly Jack. 4to. bds. Is. net GALE &amp; P., Oct.&nbsp;15
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Oct.&nbsp;15
+</td>
+
+<td>
+1915
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+2
+</th>
+
+<td>
+ABC of our soldiers. 4to., bds. is. net GALE &amp; P., Nov.&nbsp;15
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+ABC of our soldiers
+</td>
+
+<td>
+GALE &amp; P.
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+4to.
+</td>
+
+<td>
+ABC of our soldiers. 4to., bds. is. net GALE &amp; P., Nov.&nbsp;15
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Nov.&nbsp;15
+</td>
+
+<td>
+1915
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+3
+</th>
+
+<td>
+Abady (Jacques)-Clauses and precedents in electricity, gas and water legislation. 8vo., pp.&nbsp;383, 15s. net ……….W. KING, Mar.&nbsp;15
+</td>
+
+<td>
+Abady
+</td>
+
+<td>
+Jacques
+</td>
+
+<td>
+Clauses and precedents in electricity, gas and water legislation
+</td>
+
+<td>
+W. KING
+</td>
+
+<td>
+15s.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abady (Jacques)-Clauses and precedents in electricity, gas and water legislation. 8vo., pp.&nbsp;383, 155. net ……….W. KING, Mar.&nbsp;15
+</td>
+
+<td>
+Jacques Abady
+</td>
+
+<td>
+['Abady (Jacques)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Mar.&nbsp;15
+</td>
+
+<td>
+1915
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+4
+</th>
+
+<td>
+Abbott (Edwin A.)—The Fourfold Gospel. Sect. 3, The Proclamation of the New Kingdom. Demy 8vo., pp.&nbsp;572, 12s. 6d. net CAMB. UNIV. PR., Mar.&nbsp;15
+</td>
+
+<td>
+Abbott
+</td>
+
+<td>
+Edwin A.
+</td>
+
+<td>
+The Fourfold Gospel
+</td>
+
+<td>
+CAMB. UNIV. PR.
+</td>
+
+<td>
+12s. 6d.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abbott (Edwin A.)—The Fourfold Gospel. Sect. 3, The Proclamation of the New Kingdom. Demy 8vo., pp.&nbsp;572, 125. 6d. net CAMB. UNIV. PR., Mar.&nbsp;15
+</td>
+
+<td>
+Edwin A. Abbott
+</td>
+
+<td>
+['Abbott (Edwin A.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Mar.&nbsp;15
+</td>
+
+<td>
+1915
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+5
+</th>
+
+<td>
+Abbott (Edwin A.)-Miscellanea Evangelica. II, Christ's miracles of feeding. 8vo. 33. net CAMB, UNIV. PR., Aug.&nbsp;15
+</td>
+
+<td>
+Abbott
+</td>
+
+<td>
+Edwin A.
+</td>
+
+<td>
+Miscellanea Evangelica
+</td>
+
+<td>
+CAMB, UNIV. PR.
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abbott (Edwin A.)-Miscellanea Evangelica. II, Christ's miracles of feeding. 8vo. 33. net CAMB, UNIV. PR., Aug.&nbsp;15
+</td>
+
+<td>
+Edwin A. Abbott
+</td>
+
+<td>
+['Abbott (Edwin A.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Aug.&nbsp;15
+</td>
+
+<td>
+1915
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+6
+</th>
+
+<td>
+Abbott (Lyman)–How shall we think of our dead ? 18mo., pp.&nbsp;24, swd. 6d. net MELROSE, Oct.&nbsp;15
+</td>
+
+<td>
+Abbott
+</td>
+
+<td>
+Lyman
+</td>
+
+<td>
+How shall we think of our dead ?
+</td>
+
+<td>
+MELROSE
+</td>
+
+<td>
+6d.
+</td>
+
+<td>
+18mo.
+</td>
+
+<td>
+Abbott (Lyman)–How shall we think of our dead ? 18mo., pp.&nbsp;24, swd. 6d. net MELROSE, Oct.&nbsp;15
+</td>
+
+<td>
+Lyman Abbott
+</td>
+
+<td>
+['Abbott (Lyman)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Oct.&nbsp;15
+</td>
+
+<td>
+1915
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+7
+</th>
+
+<td>
+Abbott (Maude) ed.-Descriptive catalogue of the Medical Museum of McGill University arranged on a modified Decimal system of museum classification. Pt. 4, sec.&nbsp;1, The Hæmopoietic organs. Catalogue and didactic intro., by 0. C. Gruner. Ryl. 8vo. 98 x 6], pp.&nbsp;204, ios. 6d. net (Clarendon Pr.) MILFORD, July 15
+</td>
+
+<td>
+Abbott
+</td>
+
+<td>
+Maude
+</td>
+
+<td>
+Descriptive catalogue of the Medical Museum of McGill University arranged on a modified Decimal system of museum classification
+</td>
+
+<td>
+MILFORD
+</td>
+
+<td>
+6d.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abbott (Maude) ed.-Descriptive catalogue of the Medical Museum of McGill University arranged on a modified Decimal system of museum classification. Pt. 4, sec.&nbsp;1, The Hæmopoietic organs. Catalogue and didactic intro., by 0. C. Gruner. Ryl. 8vo. 98 x 6], pp.&nbsp;204, ios. 6d. net (Clarendon Pr.) MILFORD, July 15
+</td>
+
+<td>
+Maude Abbott
+</td>
+
+<td>
+['Abbott (Maude)']
+</td>
+
+<td>
+ed.
+</td>
+
+<td>
+July 15
+</td>
+
+<td>
+1915
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+8
+</th>
+
+<td>
+Abbott (P.)-Exercises in arithmetic and men- suration. Cr. 8vo., 38. 6d. w. answ. 4s. 60. LONGMANS, Jan.&nbsp;15
+</td>
+
+<td>
+Abbott
+</td>
+
+<td>
+P.
+</td>
+
+<td>
+Exercises in arithmetic and men- suration
+</td>
+
+<td>
+LONGMANS
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abbott (P.)-Exercises in arithmetic and men- suration. Cr. 8vo., 38. 6d. w. answ. 45. 60. LONGMANS, Jan.&nbsp;15
+</td>
+
+<td>
+P. Abbott
+</td>
+
+<td>
+['Abbott (P.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Jan.&nbsp;15
+</td>
+
+<td>
+1915
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+9
+</th>
+
+<td>
+Abbott (P.)- Exercises in arithmetic and mensu- ration. Re-issue. Sect. I and 2. Cr. 8vo. ea. 2s. LONGMANS, Apr.&nbsp;15
+</td>
+
+<td>
+Abbott
+</td>
+
+<td>
+P.
+</td>
+
+<td>
+Exercises in arithmetic and mensu- ration
+</td>
+
+<td>
+LONGMANS
+</td>
+
+<td>
+2s.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abbott (P.)- Exercises in arithmetic and mensu- ration. Re-issue. Sect. I and 2. Cr. 8vo. ea. 2s. LONGMANS, Apr.&nbsp;15
+</td>
+
+<td>
+P. Abbott
+</td>
+
+<td>
+['Abbott (P.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Apr.&nbsp;15
+</td>
+
+<td>
+1915
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+10
+</th>
+
+<td>
+Abbott (w.)-Commercial theory and practice. Cr. 8vo. 7*5, pp.&nbsp;360, 3s. 6d. MURRAY, Oct.&nbsp;15
+</td>
+
+<td>
+Abbott
+</td>
+
+<td>
+w.
+</td>
+
+<td>
+Commercial theory and practice
+</td>
+
+<td>
+MURRAY
+</td>
+
+<td>
+3s. 6d.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abbott (w.)-Commercial theory and practice. Cr. 8vo. 7*5, pp.&nbsp;360, 3s. 6d. MURRAY, Oct.&nbsp;15
+</td>
+
+<td>
+<ol start="23" type="a">
+<li>Abbott
+</li></ol></td>
+
+<td>
+['Abbott (w.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Oct.&nbsp;15
+</td>
+
+<td>
+1915
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+11
+</th>
+
+<td>
+Abdul Baha.-Talks by A. B., given in Paris, 2nd edit., with additions. Cr. 8vo. 71 x 5, pp.&nbsp;174, 28. 6d. net ….BELL, Apr.&nbsp;15
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Abdul Baha
+</td>
+
+<td>
+BELL
+</td>
+
+<td>
+6d.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abdul Baha.-Talks by A. B., given in Paris, 2nd edit., with additions. Cr. 8vo. 71 x 5, pp.&nbsp;174, 28. 6d. net ….BELL, Apr.&nbsp;15
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Apr.&nbsp;15
+</td>
+
+<td>
+1915
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+12
+</th>
+
+<td>
+Abel (George) -Wylins fae my wallet. Foreword by Prof.&nbsp;Stalker. With glossary. 8vo. 84 x 61, pp.&nbsp;150, 28. 6d. net …..GARDNER, Dec.&nbsp;15
+</td>
+
+<td>
+Abel
+</td>
+
+<td>
+George
+</td>
+
+<td>
+Wylins fae my wallet
+</td>
+
+<td>
+GARDNER
+</td>
+
+<td>
+6d.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abel (George) -Wylins fae my wallet. Foreword by Prof.&nbsp;Stalker. With glossary. 8vo. 84 x 61, pp.&nbsp;150, 28. 6d. net …..GARDNER, Dec.&nbsp;15
+</td>
+
+<td>
+George Abel
+</td>
+
+<td>
+['Abel (George)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Dec.&nbsp;15
+</td>
+
+<td>
+1915
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+13
+</th>
+
+<td>
+Aberdeen (Univ. of)-Annual report on the state of finances. 5d. … WYMAN, June 15
+</td>
+
+<td>
+Aberdeen
+</td>
+
+<td>
+Univ. of
+</td>
+
+<td>
+Annual report on the state of finances
+</td>
+
+<td>
+WYMAN
+</td>
+
+<td>
+5d.
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Aberdeen (Univ. of)-Annual report on the state of finances. 5d. … WYMAN, June 15
+</td>
+
+<td>
+Univ. of Aberdeen
+</td>
+
+<td>
+['Aberdeen (Univ. of)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+June 15
+</td>
+
+<td>
+1915
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+14
+</th>
+
+<td>
+Aberdeen University-Annual statistical report, 1913-14. Ifd. . WYMAN, Mar.&nbsp;15
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Aberdeen University-Annual statistical report
+</td>
+
+<td>
+WYMAN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Aberdeen University-Annual statistical report, 1913-14. Ifd. . WYMAN, Mar.&nbsp;15
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Mar.&nbsp;15
+</td>
+
+<td>
+1915
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<p>:::</p>
+<p>:::</p>
+<p><a href="df_1915.csv" download="">Download full CSV</a></p>
+</div></div></details>
+<details>
+<summary>
+1916
+</summary>
+<div>
+<figure class="figure">
+<p><img src="1916_english_catalogue_cover.jpeg" class="centered-image img-fluid figure-img" width="500"></p>
+</figure>
+</div>
+<section id="data-table-3" class="level1">
+<h1>Data Table</h1>
+<div id="e567e73e" class="cell" data-execution_count="5">
+<div class="cell-output cell-output-display" data-execution_count="5">
+<table class="dataframe my-table table table-sm table-striped small">
+
+<thead>
+
+<tr>
+
+<th>
+</th>
+
+<th>
+entry
+</th>
+
+<th>
+last_name
+</th>
+
+<th>
+first_name
+</th>
+
+<th>
+title
+</th>
+
+<th>
+publisher
+</th>
+
+<th>
+price
+</th>
+
+<th>
+format
+</th>
+
+<th>
+original_entry
+</th>
+
+<th>
+author_name
+</th>
+
+<th>
+creators
+</th>
+
+<th>
+is_editor
+</th>
+
+<th>
+date
+</th>
+
+<th>
+catalogue_year
+</th>
+
+<th>
+is_net
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<th>
+0
+</th>
+
+<td>
+. А A B C. Obl. 4to. 114x84, linen 38. 6d. net, ed.&nbsp;de luxe 5s. net; swd. is. net. ( Geographia' Brit. picture bks.) ..GEOGRAPHIA, Dec.&nbsp;16
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+A B C. Obl
+</td>
+
+<td>
+GEOGRAPHIA
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+4to.
+</td>
+
+<td>
+. А A B C. Obl. 4to. 114x84, linen 38. 6d. net, ed.&nbsp;de luxe 5s. net; swd. is. net. ( Geographia' Brit. picture bks.) ..GEOGRAPHIA, Dec.&nbsp;16
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Dec.&nbsp;16
+</td>
+
+<td>
+1916
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+1
+</th>
+
+<td>
+A B C guide for attested and unattested. 32mo. 4*X3, swd. id………….LARBY, June 16
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+A B C guide for attested and unattested
+</td>
+
+<td>
+LARBY
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+32mo.
+</td>
+
+<td>
+A B C guide for attested and unattested. 32mo. 4*X3, swd. id………….LARBY, June 16
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+June 16
+</td>
+
+<td>
+1916
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+2
+</th>
+
+<td>
+A B C guide to London, 1916. Cr. 8vo. 64 x 48, swd. 4d. .LARBY, Aug.&nbsp;16
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+A B C guide to London
+</td>
+
+<td>
+LARBY
+</td>
+
+<td>
+4d.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+A B C guide to London, 1916. Cr. 8vo. 64 x 48, swd. 4d. .LARBY, Aug.&nbsp;16
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Aug.&nbsp;16
+</td>
+
+<td>
+1916
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+3
+</th>
+
+<td>
+A B C of banking (The). By “L. S. D.” Cr. 8vo. 74 X 5, pp.&nbsp;150, 28. 6d. net BARNICOTT &amp; P., Jan.&nbsp;16
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+A B C of banking (The)
+</td>
+
+<td>
+BARNICOTT &amp; P.
+</td>
+
+<td>
+6d.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+A B C of banking (The). By “L. S. D.” Cr. 8vo. 74 X 5, pp.&nbsp;150, 28. 6d. net BARNICOTT &amp; P., Jan.&nbsp;16
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Jan.&nbsp;16
+</td>
+
+<td>
+1916
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+4
+</th>
+
+<td>
+A. L. Bright story readers. Grade 3. Cr. 8vo. 71 x 57, pp.&nbsp;63, swd. 3d. E. J. ARNOLD, July 16
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+A. L. Bright story readers
+</td>
+
+<td>
+E. J. ARNOLD
+</td>
+
+<td>
+3d.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+A. L. Bright story readers. Grade 3. Cr. 8vo. 71 x 57, pp.&nbsp;63, swd. 3d. E. J. ARNOLD, July 16
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+July 16
+</td>
+
+<td>
+1916
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+5
+</th>
+
+<td>
+A. L. Bright story readers. No.&nbsp;116, The Nightingale and the bottle neck. Cr. 8vo. 77 x 51, pp.&nbsp;32, swd, 2d. E. J. ARNOLD, Aug.&nbsp;16
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+A. L. Bright story readers
+</td>
+
+<td>
+E. J. ARNOLD
+</td>
+
+<td>
+2d.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+A. L. Bright story readers. No.&nbsp;116, The Nightingale and the bottle neck. Cr. 8vo. 77 x 51, pp.&nbsp;32, swd, 2d. E. J. ARNOLD, Aug.&nbsp;16
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Aug.&nbsp;16
+</td>
+
+<td>
+1916
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+6
+</th>
+
+<td>
+Abbot (Charles Greeley)-Arequipa pyrhelio- metry. 8vo. 98 x64, pp.&nbsp;24, is. net. (Smith- sonian Coll.) .WESLEY, Oct.&nbsp;16
+</td>
+
+<td>
+Abbot
+</td>
+
+<td>
+Charles Greeley
+</td>
+
+<td>
+Arequipa pyrhelio- metry
+</td>
+
+<td>
+WESLEY
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abbot (Charles Greeley)-Arequipa pyrhelio- metry. 8vo. 98 x64, pp.&nbsp;24, is. net. (Smith- sonian Coll.) .WESLEY, Oct.&nbsp;16
+</td>
+
+<td>
+Charles Greeley Abbot
+</td>
+
+<td>
+['Abbot (Charles Greeley)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Oct.&nbsp;16
+</td>
+
+<td>
+1916
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+7
+</th>
+
+<td>
+Abbot (Charles Greeley) and others On the distribution of radiation over the sun's disk and new evidences of the solar variability. ipl. 8vo. 93 X64, pp.&nbsp;24, swd. is. 6d. net. (Smith- sonian Coll.) .. WESLEY, Oct.&nbsp;16
+</td>
+
+<td>
+Abbot
+</td>
+
+<td>
+Charles Greeley
+</td>
+
+<td>
+On the distribution of radiation over the sun's disk and new evidences of the solar variability
+</td>
+
+<td>
+WESLEY
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abbot (Charles Greeley) and others On the distribution of radiation over the sun's disk and new evidences of the solar variability. ipl. 8vo. 93 X64, pp.&nbsp;24, swd. is. 6d. net. (Smith- sonian Coll.) .. WESLEY, Oct.&nbsp;16
+</td>
+
+<td>
+Charles Greeley Abbot
+</td>
+
+<td>
+['Abbot (Charles Greeley)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Oct.&nbsp;16
+</td>
+
+<td>
+1916
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+8
+</th>
+
+<td>
+Abbott (Edwin A.)-Diatessarica : Part 10, The Fourfold gospel ; Section 4. The Law of the new kingdom. 8vo. 9 5, 12s. 6d. net CAMB. UNIV. PR., Mar.&nbsp;16
+</td>
+
+<td>
+Abbott
+</td>
+
+<td>
+Edwin A.
+</td>
+
+<td>
+Diatessarica : Part
+</td>
+
+<td>
+CAMB. UNIV. PR.
+</td>
+
+<td>
+12s. 6d.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abbott (Edwin A.)-Diatessarica : Part 10, The Fourfold gospel ; Section 4. The Law of the new kingdom. 8vo. 9 5, 125. 6d. net CAMB. UNIV. PR., Mar.&nbsp;16
+</td>
+
+<td>
+Edwin A. Abbott
+</td>
+
+<td>
+['Abbott (Edwin A.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Mar.&nbsp;16
+</td>
+
+<td>
+1916
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+9
+</th>
+
+<td>
+Abbott (James Francis)- Japanese expansion and American policies. Cr. 8vo. 78 x 58, 6s. 6d. net (N. Y.) MACMILLAN, Feb.&nbsp;16
+</td>
+
+<td>
+Abbott
+</td>
+
+<td>
+James Francis
+</td>
+
+<td>
+Japanese expansion and American policies
+</td>
+
+<td>
+MACMILLAN
+</td>
+
+<td>
+6s. 6d.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abbott (James Francis)- Japanese expansion and American policies. Cr. 8vo. 78 x 58, 6s. 6d. net (N. Y.) MACMILLAN, Feb.&nbsp;16
+</td>
+
+<td>
+James Francis Abbott
+</td>
+
+<td>
+['Abbott (James Francis)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Feb.&nbsp;16
+</td>
+
+<td>
+1916
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+10
+</th>
+
+<td>
+Abbott (Lyman)–Reminiscences. Illus. 8vo. 9x6, pp.&nbsp;528, 15s. net.. CONSTABLE, Feb.&nbsp;16
+</td>
+
+<td>
+Abbott
+</td>
+
+<td>
+Lyman
+</td>
+
+<td>
+Reminiscences
+</td>
+
+<td>
+CONSTABLE
+</td>
+
+<td>
+15s.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abbott (Lyman)–Reminiscences. Illus. 8vo. 9x6, pp.&nbsp;528, 155. net.. CONSTABLE, Feb.&nbsp;16
+</td>
+
+<td>
+Lyman Abbott
+</td>
+
+<td>
+['Abbott (Lyman)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Feb.&nbsp;16
+</td>
+
+<td>
+1916
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+11
+</th>
+
+<td>
+Abbott-Brown (C., Maj.)—How to do it: the A.S.C. subaltern's and N.C.O.'s vade mecum ; also applic. for cavalry, artillery, engineers ard infantry. 44 X 31, pp.&nbsp;97, is. net F. GROOM, Aug.&nbsp;16
+</td>
+
+<td>
+Abbott-Brown
+</td>
+
+<td>
+C., Maj.
+</td>
+
+<td>
+How to do it: the A.S.C. subaltern's and N.C.O.'s vade mecum ; also applic
+</td>
+
+<td>
+F. GROOM
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Abbott-Brown (C., Maj.)—How to do it: the A.S.C. subaltern's and N.C.O.'s vade mecum ; also applic. for cavalry, artillery, engineers ard infantry. 44 X 31, pp.&nbsp;97, is. net F. GROOM, Aug.&nbsp;16
+</td>
+
+<td>
+C., Maj. Abbott-Brown
+</td>
+
+<td>
+['Abbott-Brown (C., Maj.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Aug.&nbsp;16
+</td>
+
+<td>
+1916
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+12
+</th>
+
+<td>
+Abdullah (Achmed)-The Red stain: a story of mystery and crime. Cr. 8vo. 74 X 5, pp.&nbsp;309, 6s. SIMPKIN, Sep.&nbsp;16
+</td>
+
+<td>
+Abdullah
+</td>
+
+<td>
+Achmed
+</td>
+
+<td>
+The Red stain: a story of mystery and crime
+</td>
+
+<td>
+SIMPKIN
+</td>
+
+<td>
+6s.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abdullah (Achmed)-The Red stain: a story of mystery and crime. Cr. 8vo. 74 X 5, pp.&nbsp;309, 6s. SIMPKIN, Sep.&nbsp;16
+</td>
+
+<td>
+Achmed Abdullah
+</td>
+
+<td>
+['Abdullah (Achmed)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Sep.&nbsp;16
+</td>
+
+<td>
+1916
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+13
+</th>
+
+<td>
+Accounts (Public), Ctte. of, 1916—Memo. by Comptroller and Auditor-Gen.&nbsp;for inform. of, rid. … WYMAN, Sept.&nbsp;16
+</td>
+
+<td>
+Accounts
+</td>
+
+<td>
+Public
+</td>
+
+<td>
+Ctte
+</td>
+
+<td>
+WYMAN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Accounts (Public), Ctte. of, 1916—Memo. by Comptroller and Auditor-Gen.&nbsp;for inform. of, rid. … WYMAN, Sept.&nbsp;16
+</td>
+
+<td>
+Public Accounts
+</td>
+
+<td>
+['Accounts (Public)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Sept.&nbsp;16
+</td>
+
+<td>
+1916
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+14
+</th>
+
+<td>
+Acland (Mrs.&nbsp;Arthur H. D.)-Child training. Cr. 8vo. 71 x 5, pp.&nbsp;179, 1s. net SIDGWICK &amp; J., Oct.&nbsp;16
+</td>
+
+<td>
+Acland
+</td>
+
+<td>
+Mrs.&nbsp;Arthur H. D.
+</td>
+
+<td>
+Child training
+</td>
+
+<td>
+SIDGWICK &amp; J.
+</td>
+
+<td>
+1s.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Acland (Mrs.&nbsp;Arthur H. D.)-Child training. Cr. 8vo. 71 x 5, pp.&nbsp;179, Is. net SIDGWICK &amp; J., Oct.&nbsp;16
+</td>
+
+<td>
+Mrs.&nbsp;Arthur H. D. Acland
+</td>
+
+<td>
+['Acland (Mrs.&nbsp;Arthur H. D.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Oct.&nbsp;16
+</td>
+
+<td>
+1916
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+</div>
+</div>
+<p><a href="df_1916.csv" download="">Download full CSV</a></p>
+</section></details>
+<details>
+<summary>
+1917
+</summary>
+<p><img src="1917_english_catalogue_cover.jpeg" class="centered-image img-fluid" width="500"></p>
+
+<section id="data-table-4" class="level1">
+<h1>Data Table</h1>
+<div id="a2186301" class="cell" data-execution_count="6">
+<div class="cell-output cell-output-display" data-execution_count="6">
+<table class="dataframe my-table table table-sm table-striped small">
+
+<thead>
+
+<tr>
+
+<th>
+</th>
+
+<th>
+entry
+</th>
+
+<th>
+last_name
+</th>
+
+<th>
+first_name
+</th>
+
+<th>
+title
+</th>
+
+<th>
+publisher
+</th>
+
+<th>
+price
+</th>
+
+<th>
+format
+</th>
+
+<th>
+original_entry
+</th>
+
+<th>
+author_name
+</th>
+
+<th>
+creators
+</th>
+
+<th>
+is_editor
+</th>
+
+<th>
+date
+</th>
+
+<th>
+catalogue_year
+</th>
+
+<th>
+is_net
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<th>
+0
+</th>
+
+<td>
+A B Ceasel painting box (The). 1s. net FROWDE AND H. &amp; S., Nov.&nbsp;'17
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+A B Ceasel painting box (The)
+</td>
+
+<td>
+FROWDE AND H. &amp; S.
+</td>
+
+<td>
+1s.
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+A B Ceasel painting box (The). Is. net FROWDE AND H. &amp; S., Nov.&nbsp;'17
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Nov.&nbsp;'17
+</td>
+
+<td>
+1917
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+1
+</th>
+
+<td>
+A B C guide to health resorts served by the Great Central Railway, 1917. 8vo. 84 x 58, pp.&nbsp;441, 01s. W. HILL, Aug.&nbsp;'17
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+A B C guide to health resorts served by the Great Central Railway
+</td>
+
+<td>
+W. HILL
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+A B C guide to health resorts served by the Great Central Railway, 1917. 8vo. 84 x 58, pp.&nbsp;441, IS. W. HILL, Aug.&nbsp;'17
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Aug.&nbsp;'17
+</td>
+
+<td>
+1917
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+2
+</th>
+
+<td>
+A.L. Table book (The): weights and meas- ures and metric system. 18mo. 54 x 44, pp.&nbsp;.E. J. ARNOLD, Aug.&nbsp;'17
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+A.L. Table book (The): weights and meas- ures and metric system
+</td>
+
+<td>
+E. J. ARNOLD
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+18mo.
+</td>
+
+<td>
+A.L. Table book (The): weights and meas- ures and metric system. 18mo. 54 x 44, pp.&nbsp;.E. J. ARNOLD, Aug.&nbsp;'17
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Aug.&nbsp;'17
+</td>
+
+<td>
+1917
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+3
+</th>
+
+<td>
+A.L. Welcome readers. Preparatory book A. Cr. 8vo. 71% 5, pp.&nbsp;76, 6d. net E. J. ARNOLD, Sep.&nbsp;'17
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+A.L. Welcome readers
+</td>
+
+<td>
+E. J. ARNOLD
+</td>
+
+<td>
+6d.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+A.L. Welcome readers. Preparatory book A. Cr. 8vo. 71% 5, pp.&nbsp;76, 6d. net E. J. ARNOLD, Sep.&nbsp;'17
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Sep.&nbsp;'17
+</td>
+
+<td>
+1917
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+4
+</th>
+
+<td>
+A.S.O.T.P. See P. (A.S.O.T.) Aaronsohn (Alexander)-With the Turks in Palestine. Cr. 8vo. 71 x 5, pp.&nbsp;125, 2s. net CONSTABLE, Apr.&nbsp;17
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+A.S.O.T.P. See P. (A.S.O.T.) Aaronsohn (Alexander)-With the Turks in Palestine
+</td>
+
+<td>
+CONSTABLE
+</td>
+
+<td>
+2s.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+A.S.O.T.P. See P. (A.S.O.T.) Aaronsohn (Alexander)-With the Turks in Palestine. Cr. 8vo. 71 x 5, pp.&nbsp;125, 25. net CONSTABLE, Apr.&nbsp;17
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Apr.&nbsp;17
+</td>
+
+<td>
+1917
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+5
+</th>
+
+<td>
+Abbott (E.) and Breckinridge (S. P.)-Truancy and non-attendance in the Chicago schools : a study of the social aspects of the compulsory education and child labor legislation of Illinois. Cr. 8vo. 8 X 5), pp.&nbsp;488, 9s. net CAMB. UNIV. PR., Apr.&nbsp;17
+</td>
+
+<td>
+Abbott
+</td>
+
+<td>
+E.
+</td>
+
+<td>
+Truancy and non-attendance in the Chicago schools : a study of the social aspects of the compulsory education and child labor legislation of Illinois
+</td>
+
+<td>
+CAMB. UNIV. PR.
+</td>
+
+<td>
+9s.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abbott (E.) and Breckinridge (S. P.)-Truancy and non-attendance in the Chicago schools : a study of the social aspects of the compulsory education and child labor legislation of Illinois. Cr. 8vo. 8 X 5), pp.&nbsp;488, 9s. net CAMB. UNIV. PR., Apr.&nbsp;17
+</td>
+
+<td>
+E. Abbott
+</td>
+
+<td>
+['Abbott (E.)', 'Breckinridge (S. P.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Apr.&nbsp;17
+</td>
+
+<td>
+1917
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+6
+</th>
+
+<td>
+Abbott (Edwin A.)-The Fourfold Gospel. Sect. V, The Founding of the New Kingdom; or, Life reached through death. (Diatessarica. Pt. X, sect. V. The completion of the work.] Demy 8vo. 74x59, pp.&nbsp;832, 16s. 6d. net CAMB. UNIV. PR., Sep.&nbsp;'17
+</td>
+
+<td>
+Abbott
+</td>
+
+<td>
+Edwin A.
+</td>
+
+<td>
+The Fourfold Gospel
+</td>
+
+<td>
+CAMB. UNIV. PR.
+</td>
+
+<td>
+16s. 6d.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abbott (Edwin A.)-The Fourfold Gospel. Sect. V, The Founding of the New Kingdom; or, Life reached through death. (Diatessarica. Pt. X, sect. V. The completion of the work.] Demy 8vo. 74x59, pp.&nbsp;832, 16s. 6d. net CAMB. UNIV. PR., Sep.&nbsp;'17
+</td>
+
+<td>
+Edwin A. Abbott
+</td>
+
+<td>
+['Abbott (Edwin A.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Sep.&nbsp;'17
+</td>
+
+<td>
+1917
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+7
+</th>
+
+<td>
+Abbott (Eleanor Hallowell)–Little Eve Edgarton. Cr. 8vo. 73 x 44, pp.&nbsp;248, is. net HODDER &amp; S., Jan.&nbsp;17
+</td>
+
+<td>
+Abbott
+</td>
+
+<td>
+Eleanor Hallowell
+</td>
+
+<td>
+Little Eve Edgarton
+</td>
+
+<td>
+HODDER &amp; S.
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abbott (Eleanor Hallowell)–Little Eve Edgarton. Cr. 8vo. 73 x 44, pp.&nbsp;248, is. net HODDER &amp; S., Jan.&nbsp;17
+</td>
+
+<td>
+Eleanor Hallowell Abbott
+</td>
+
+<td>
+['Abbott (Eleanor Hallowell)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Jan.&nbsp;17
+</td>
+
+<td>
+1917
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+8
+</th>
+
+<td>
+Abraham (J. Johnston)-The Night nurse. New and cheaper ed.&nbsp;Cr. 8vo. 7X41, pp.&nbsp;311, 18. net CHAPMAN &amp; H., Jan, 17
+</td>
+
+<td>
+Abraham
+</td>
+
+<td>
+J. Johnston
+</td>
+
+<td>
+The Night nurse
+</td>
+
+<td>
+CHAPMAN &amp; H.
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abraham (J. Johnston)-The Night nurse. New and cheaper ed.&nbsp;Cr. 8vo. 7X41, pp.&nbsp;311, 18. net CHAPMAN &amp; H., Jan, 17
+</td>
+
+<td>
+J. Johnston Abraham
+</td>
+
+<td>
+['Abraham (J. Johnston)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Jan, 17
+</td>
+
+<td>
+1917
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+9
+</th>
+
+<td>
+Abrahams (I.)-Studies in Pharisaism and the Gospels. Demy 8vo. 81 x 51, pp.&nbsp;188, 6s. 6d. net… CAMB. UNIV. PR., May 17
+</td>
+
+<td>
+Abrahams
+</td>
+
+<td>
+I.
+</td>
+
+<td>
+Studies in Pharisaism and the Gospels
+</td>
+
+<td>
+CAMB. UNIV. PR.
+</td>
+
+<td>
+6s. 6d.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abrahams (I.)-Studies in Pharisaism and the Gospels. Demy 8vo. 81 x 51, pp.&nbsp;188, 6s. 6d. net… CAMB. UNIV. PR., May 17
+</td>
+
+<td>
+I. Abrahams
+</td>
+
+<td>
+['Abrahams (I.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+May 17
+</td>
+
+<td>
+1917
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+10
+</th>
+
+<td>
+Accounts (Public) Ctte. of-Index and Digest of evidence, Session 1916. 4d. .. WYMAN, Jan.&nbsp;17
+</td>
+
+<td>
+Accounts
+</td>
+
+<td>
+Public
+</td>
+
+<td>
+Ctte
+</td>
+
+<td>
+WYMAN
+</td>
+
+<td>
+4d.
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Accounts (Public) Ctte. of-Index and Digest of evidence, Session 1916. 4d. .. WYMAN, Jan.&nbsp;17
+</td>
+
+<td>
+Public Accounts
+</td>
+
+<td>
+['Accounts (Public)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Jan.&nbsp;17
+</td>
+
+<td>
+1917
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+11
+</th>
+
+<td>
+Accounts (Public) Ctte.-Report, 2d. ; do., w. proc., minutes of evid. and appen., 2s. H.M. STATIONERY OFF., Aug.'17
+</td>
+
+<td>
+Accounts
+</td>
+
+<td>
+Public
+</td>
+
+<td>
+Ctte
+</td>
+
+<td>
+H.M. STATIONERY OFF.
+</td>
+
+<td>
+2s.
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Accounts (Public) Ctte.-Report, 2d. ; do., w. proc., minutes of evid. and appen., 25. H.M. STATIONERY OFF., Aug.'17
+</td>
+
+<td>
+Public Accounts
+</td>
+
+<td>
+['Accounts (Public)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Aug.'17
+</td>
+
+<td>
+1917
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+12
+</th>
+
+<td>
+“Achad ha-Am” see Ginzberg (A.) Achărya (Sri Ananda)-Brahmadarsanam; or, Intuition of the absolute : being an intro. to the study of Hindu philosophy. Cr. 8vo. 74 x 5, pp.&nbsp;222, 4s. 6d. net ……MACMILLAN, Sep.&nbsp;'17
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Achad ha-Am” see Ginzberg (A.) Achărya (Sri Ananda)-Brahmadarsanam; or, Intuition of the absolute : being an intro
+</td>
+
+<td>
+MACMILLAN
+</td>
+
+<td>
+4s. 6d.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+“Achad ha-Am” see Ginzberg (A.) Achărya (Sri Ananda)-Brahmadarsanam; or, Intuition of the absolute : being an intro. to the study of Hindu philosophy. Cr. 8vo. 74 x 5, pp.&nbsp;222, 45. 6d. net ……MACMILLAN, Sep.&nbsp;'17
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Sep.&nbsp;'17
+</td>
+
+<td>
+1917
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+13
+</th>
+
+<td>
+Achilles Tatius. With an Eng. tr. by S. Gaselee. 18mo. 61 X41. pp.&nbsp;461, 5s, net, Ithr. 6s. 6d. net (Locb classical“lib.) ..HEINEMANN, May 17
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Achilles Tatius
+</td>
+
+<td>
+HEINEMANN
+</td>
+
+<td>
+6s. 6d.
+</td>
+
+<td>
+18mo.
+</td>
+
+<td>
+Achilles Tatius. With an Eng. tr. by S. Gaselee. 18mo. 61 X41. pp.&nbsp;461, 5s, net, Ithr. 6s. 6d. net (Locb classical“lib.) ..HEINEMANN, May 17
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+May 17
+</td>
+
+<td>
+1917
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+14
+</th>
+
+<td>
+Ackerley (Fred G.)-A Rumanian manual for self-tuition. Cr. 8vo. 71 x 5, pp.&nbsp;145, 2s. net K. PAUL, Mar.&nbsp;17
+</td>
+
+<td>
+Ackerley
+</td>
+
+<td>
+Fred G.
+</td>
+
+<td>
+A Rumanian manual for self-tuition
+</td>
+
+<td>
+K. PAUL
+</td>
+
+<td>
+2s.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Ackerley (Fred G.)-A Rumanian manual for self-tuition. Cr. 8vo. 71 x 5, pp.&nbsp;145, 25. net K. PAUL, Mar.&nbsp;17
+</td>
+
+<td>
+Fred G. Ackerley
+</td>
+
+<td>
+['Ackerley (Fred G.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Mar.&nbsp;17
+</td>
+
+<td>
+1917
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+</div>
+</div>
+<p><a href="df_1917.csv" download="">Download full CSV</a></p>
+</section></details>
+<details>
+<summary>
+1918
+</summary>
+<p><img src="1918_english_catalogue_cover.jpeg" class="centered-image img-fluid" width="500"></p>
+
+<section id="data-table-5" class="level1">
+<h1>Data Table</h1>
+<div id="1f8761d6" class="cell" data-execution_count="7">
+<div class="cell-output cell-output-display" data-execution_count="7">
+<table class="dataframe my-table table table-sm table-striped small">
+
+<thead>
+
+<tr>
+
+<th>
+</th>
+
+<th>
+entry
+</th>
+
+<th>
+last_name
+</th>
+
+<th>
+first_name
+</th>
+
+<th>
+title
+</th>
+
+<th>
+publisher
+</th>
+
+<th>
+price
+</th>
+
+<th>
+format
+</th>
+
+<th>
+original_entry
+</th>
+
+<th>
+author_name
+</th>
+
+<th>
+creators
+</th>
+
+<th>
+is_editor
+</th>
+
+<th>
+date
+</th>
+
+<th>
+catalogue_year
+</th>
+
+<th>
+is_net
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<th>
+0
+</th>
+
+<td>
+A. H. See H. (A.) A. P. See P. (A.) Abadie (J.)- Uounds of the abdomen. Pref. hs J.L. Faure. Ed., w. pref., by Sir W'. Arbutlinot Lane. Cr. *vo. 7} X 5, pp.&nbsp;289, 7s. 6d. net (Military melical manvals) UNIV. CF LONDON PR., A pr.'18
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+A. H. See H. (A.) A. P. See P. (A.) Abadie (J.)- Uounds of the abdomen
+</td>
+
+<td>
+UNIV. CF LONDON PR.
+</td>
+
+<td>
+7s. 6d.
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+A. H. See H. (A.) A. P. See P. (A.) Abadie (J.)- Uounds of the abdomen. Pref. hs J.L. Faure. Ed., w. pref., by Sir W'. Arbutlinot Lane. Cr. *vo. 7} X 5, pp.&nbsp;289, 7s. 6d. net (Military melical manvals) UNIV. CF LONDON PR., A pr.'18
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+A pr.'18
+</td>
+
+<td>
+1918
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+1
+</th>
+
+<td>
+(Orpington : “ The Maples,” Goddington Lane) J. ABBEY, Jan.&nbsp;'18
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+J. ABBEY
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+(Orpington : “ The Maples,” Goddington Lane) J. ABBEY, Jan.&nbsp;'18
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Jan.&nbsp;'18
+</td>
+
+<td>
+1918
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+2
+</th>
+
+<td>
+Abbeys and castles of Yorkshire, Waddington (F.) 28. …Oct.&nbsp;'is Abbot (Willis J.)-Aircraft and submarines : the story of the invention, development and present-day uses of war's newest weapons. Illus. 92x61, pp.&nbsp;402, 15s. net PUTNAM, June '18
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Abbeys and castles of Yorkshire, Waddington (F.)
+</td>
+
+<td>
+PUTNAM
+</td>
+
+<td>
+15s.
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Abbeys and castles of Yorkshire, Waddington (F.) 28. …Oct.&nbsp;'is Abbot (Willis J.)-Aircraft and submarines : the story of the invention, development and present-day uses of war's newest weapons. Illus. 92x61, pp.&nbsp;402, 155. net PUTNAM, June '18
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+June '18
+</td>
+
+<td>
+1918
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+3
+</th>
+
+<td>
+Abbott (E. A., Rev.) Righteousness in the Gospels. Roy. 8vo. 91x67, pp 14, swd. is net ….(Brit. Academy) MILFORD, May '18
+</td>
+
+<td>
+Abbott
+</td>
+
+<td>
+E. A., Rev.
+</td>
+
+<td>
+Righteousness in the Gospels
+</td>
+
+<td>
+MILFORD
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abbott (E. A., Rev.) Righteousness in the Gospels. Roy. 8vo. 91x67, pp 14, swd. is net ….(Brit. Academy) MILFORD, May '18
+</td>
+
+<td>
+E. A., Rev.&nbsp;Abbott
+</td>
+
+<td>
+['Abbott (E. A., Rev.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+May '18
+</td>
+
+<td>
+1918
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+4
+</th>
+
+<td>
+Abbott (E. C.)-The Science of health and home- making. Cr. 8vo. pp.&nbsp;302, 3s. 6d. net G. BELL, July '18
+</td>
+
+<td>
+Abbott
+</td>
+
+<td>
+E. C.
+</td>
+
+<td>
+The Science of health and home- making
+</td>
+
+<td>
+G. BELL
+</td>
+
+<td>
+3s. 6d.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abbott (E. C.)-The Science of health and home- making. Cr. 8vo. pp.&nbsp;302, 35. 6d. net G. BELL, July '18
+</td>
+
+<td>
+E. C. Abbott
+</td>
+
+<td>
+['Abbott (E. C.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+July '18
+</td>
+
+<td>
+1918
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+5
+</th>
+
+<td>
+Abbott (P.)-Mathematical tables and formule. Cr. 8vo. 71 x 41, pp.&nbsp;62, 2s. net. (Mod. mathe- matical ser.) ..LONGMANS, Nov.&nbsp;'18
+</td>
+
+<td>
+Abbott
+</td>
+
+<td>
+P.
+</td>
+
+<td>
+Mathematical tables and formule
+</td>
+
+<td>
+LONGMANS
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abbott (P.)-Mathematical tables and formule. Cr. 8vo. 71 x 41, pp.&nbsp;62, 2s. net. (Mod. mathe- matical ser.) ..LONGMANS, Nov.&nbsp;'18
+</td>
+
+<td>
+P. Abbott
+</td>
+
+<td>
+['Abbott (P.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Nov.&nbsp;'18
+</td>
+
+<td>
+1918
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+6
+</th>
+
+<td>
+Abbott(P.)-Elementary numerical trigonome'ry. Cr. 8vo. 7** 4<span class="math inline">\(, pp. 206, swd. 5s. net. (Mod. mathematical ser.). ...LONGMANS, Nov. \'18&lt;/td&gt;\n      &lt;td&gt;NaN&lt;/td&gt;\n      &lt;td&gt;NaN&lt;/td&gt;\n      &lt;td&gt;Abbott(P.)-Elementary numerical trigonome\'ry&lt;/td&gt;\n      &lt;td&gt;LONGMANS&lt;/td&gt;\n      &lt;td&gt;NaN&lt;/td&gt;\n      &lt;td&gt;8vo.&lt;/td&gt;\n      &lt;td&gt;Abbott(P.)-Elementary numerical trigonome\'ry. Cr. 8vo. 7** 4\)</span>, pp.&nbsp;206, swd. 5s. net. (Mod. mathematical ser.). …LONGMANS, Nov.&nbsp;'18
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Nov.&nbsp;'18
+</td>
+
+<td>
+1918
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+7
+</th>
+
+<td>
+Academy. See Royul Academy. Academy Architecture and Architectural Review, 1917–1918. Ed. by Hugh W. Martin-Kaye. Ryl. 8vo. 98 x 71, pp.&nbsp;115, wd 5s. net ACADEMY ARCHITECTURE” OFFICES, Alg. '18
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Academy
+</td>
+
+<td>
+OFFICES
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Academy. See Royul Academy. Academy Architecture and Architectural Review, 1917–1918. Ed. by Hugh W. Martin-Kaye. Ryl. 8vo. 98 x 71, pp.&nbsp;115, wd 55. net ACADEMY ARCHITECTURE” OFFICES, Alg. '18
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Alg. '18
+</td>
+
+<td>
+1918
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+8
+</th>
+
+<td>
+Accounts (Public) atte. —Report, 2d. H.M. STATIONERY OFF., Aug.&nbsp;'18
+</td>
+
+<td>
+Accounts
+</td>
+
+<td>
+Public
+</td>
+
+<td>
+Report
+</td>
+
+<td>
+H.M. STATIONERY OFF.
+</td>
+
+<td>
+2d.
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Accounts (Public) atte. —Report, 2d. H.M. STATIONERY OFF., Aug.&nbsp;'18
+</td>
+
+<td>
+Public Accounts
+</td>
+
+<td>
+['Accounts (Public)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Aug.&nbsp;'18
+</td>
+
+<td>
+1918
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+9
+</th>
+
+<td>
+Achard (L. A. E.)-Belle-Rose. 8vo. pp.&nbsp;564, 01s, 6d. net . NELSON, Jan.&nbsp;'18
+</td>
+
+<td>
+Achard
+</td>
+
+<td>
+L. A. E.
+</td>
+
+<td>
+Belle-Rose
+</td>
+
+<td>
+NELSON
+</td>
+
+<td>
+6d.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Achard (L. A. E.)-Belle-Rose. 8vo. pp.&nbsp;564, IS, 6d. net . NELSON, Jan.&nbsp;'18
+</td>
+
+<td>
+L. A. E. Achard
+</td>
+
+<td>
+['Achard (L. A. E.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Jan.&nbsp;'18
+</td>
+
+<td>
+1918
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+10
+</th>
+
+<td>
+Acland (Mrs.&nbsp;Arthur H. D.)Queer beasts and magics : an experienced grandmother's tale for grandsons. Illus. by M. A. Acland and A. S. A. Cr. 8vo. 71 x 5, pp.&nbsp;156, 3s. 6d net …SiDGWICK &amp; J., Dec.&nbsp;'18
+</td>
+
+<td>
+Acland
+</td>
+
+<td>
+Mrs.&nbsp;Arthur H. D.
+</td>
+
+<td>
+Queer beasts and magics : an experienced grandmother's tale for grandsons
+</td>
+
+<td>
+DGWICK &amp; J.
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Acland (Mrs.&nbsp;Arthur H. D.)Queer beasts and magics : an experienced grandmother's tale for grandsons. Illus. by M. A. Acland and A. S. A. Cr. 8vo. 71 x 5, pp.&nbsp;156, 35. 6d net …SiDGWICK &amp; J., Dec.&nbsp;'18
+</td>
+
+<td>
+Mrs.&nbsp;Arthur H. D. Acland
+</td>
+
+<td>
+['Acland (Mrs.&nbsp;Arthur H. D.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Dec.&nbsp;'18
+</td>
+
+<td>
+1918
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+11
+</th>
+
+<td>
+Active service French book for soldier: and sailors : containing The Soldiers' language manual, by Ajax”; “French for the Front, by E. F. Harris. 64x31, pp.&nbsp;58, gd. net. MARLBOROUGH, Jan.&nbsp;'18
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Active service French book for soldier: and sailors : containing The Soldiers' language manual, by Ajax”; “French for the Front, by E. F. Harris
+</td>
+
+<td>
+MARLBOROUGH
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Active service French book for soldier: and sailors : containing The Soldiers' language manual, by Ajax”; “French for the Front, by E. F. Harris. 64x31, pp.&nbsp;58, gd. net. MARLBOROUGH, Jan.&nbsp;'18
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Jan.&nbsp;'18
+</td>
+
+<td>
+1918
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+12
+</th>
+
+<td>
+Acts—Index to the Public General Acts, 1917–18 ; w. tab. showing effect of year's legislation on Public General Acts ; also titles of 4 .cal and Private Acts arranged consecutively, alpha- betically, and in classes. 60. H.M. STATIONERY CFS., May '18
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Acts—Index to the Public General Acts
+</td>
+
+<td>
+H.M. STATIONERY CFS.
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Acts—Index to the Public General Acts, 1917–18 ; w. tab. showing effect of year's legislation on Public General Acts ; also titles of 4 .cal and Private Acts arranged consecutively, alpha- betically, and in classes. 60. H.M. STATIONERY CFS., May '18
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+May '18
+</td>
+
+<td>
+1918
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+13
+</th>
+
+<td>
+id ; Acts–Public General Acts, 1917-18, w. index, tables, titles of the local and Private Acts, &amp;c.&nbsp;3s. .H.M. STATIONERY OFF., July '18
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Acts–Public General Acts
+</td>
+
+<td>
+H.M. STATIONERY OFF.
+</td>
+
+<td>
+3s.
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+id ; Acts–Public General Acts, 1917-18, w. index, tables, titles of the local and Private Acts, &amp;c.&nbsp;3s. .H.M. STATIONERY OFF., July '18
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+July '18
+</td>
+
+<td>
+1918
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+14
+</th>
+
+<td>
+Acts—Appropriation, 4d.; Chequers E. tate, 2d.; Education (Provi ion of meals) (Ireland), id.; Naval and military war pensions, &amp;c.&nbsp;(Com- mittees), id. ; Air Force (Di cipline and regula- tion), 9d ; Naval Di cipline Act, 1866 (Printed, as amended, in accord. W. Air Force (Constitu- tion) Act, 1917), 6d. Local and private : Barrow-in-Furness Corporation Water, 9d.; Port of London, 3s. 3d. H.M. STATIONERY OFF., Jan.&nbsp;'18
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Acts—Appropriation
+</td>
+
+<td>
+H.M. STATIONERY OFF.
+</td>
+
+<td>
+3s. 3d.
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Acts—Appropriation, 4d.; Chequers E. tate, 2d.; Education (Provi ion of meals) (Ireland), id.; Naval and military war pensions, &amp;c.&nbsp;(Com- mittees), id. ; Air Force (Di cipline and regula- tion), 9d ; Naval Di cipline Act, 1866 (Printed, as amended, in accord. W. Air Force (Constitu- tion) Act, 1917), 6d. Local and private : Barrow-in-Furness Corporation Water, 9d.; Port of London, 3s. 3d. H.M. STATIONERY OFF., Jan.&nbsp;'18
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Jan.&nbsp;'18
+</td>
+
+<td>
+1918
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+</div>
+</div>
+<p><a href="df_1918.csv" download="">Download full CSV</a></p>
+</section></details>
+<details>
+<summary>
+1919
+</summary>
+<p><img src="1919_english_catalogue_cover.jpeg" class="centered-image img-fluid" width="500"></p>
+
+<section id="data-table-6" class="level1">
+<h1>Data Table</h1>
+<div id="7171b3c6" class="cell" data-execution_count="8">
+<div class="cell-output cell-output-display" data-execution_count="8">
+<table class="dataframe my-table table table-sm table-striped small">
+
+<thead>
+
+<tr>
+
+<th>
+</th>
+
+<th>
+entry
+</th>
+
+<th>
+last_name
+</th>
+
+<th>
+first_name
+</th>
+
+<th>
+title
+</th>
+
+<th>
+publisher
+</th>
+
+<th>
+price
+</th>
+
+<th>
+format
+</th>
+
+<th>
+original_entry
+</th>
+
+<th>
+author_name
+</th>
+
+<th>
+creators
+</th>
+
+<th>
+is_editor
+</th>
+
+<th>
+date
+</th>
+
+<th>
+catalogue_year
+</th>
+
+<th>
+is_net
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<th>
+0
+</th>
+
+<td>
+. A B C Motor, marine, and aircraft guide, 1920 OFFICE, Apr.&nbsp;'19
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+A B C Motor, marine, and aircraft guide
+</td>
+
+<td>
+OFFICE
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+. A B C Motor, marine, and aircraft guide, 1920 OFFICE, Apr.&nbsp;'19
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Apr.&nbsp;'19
+</td>
+
+<td>
+1919
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+1
+</th>
+
+<td>
+A B C of common birds (An). 18mo. 4×34, pp.&nbsp;64, swd. 6d. .R.S.P.B., July '19
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+A B C of common birds (An)
+</td>
+
+<td>
+R.S.P.B.
+</td>
+
+<td>
+6d.
+</td>
+
+<td>
+18mo.
+</td>
+
+<td>
+A B C of common birds (An). 18mo. 4×34, pp.&nbsp;64, swd. 6d. .R.S.P.B., July '19
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+July '19
+</td>
+
+<td>
+1919
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+2
+</th>
+
+<td>
+A B C of etiquette (The). Cr. 8vo. 4×31, pp.&nbsp;28, swd. is. net ..HARNDEN, Oct.&nbsp;'19
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+A B C of etiquette (The)
+</td>
+
+<td>
+HARNDEN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+A B C of etiquette (The). Cr. 8vo. 4×31, pp.&nbsp;28, swd. is. net ..HARNDEN, Oct.&nbsp;'19
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Oct.&nbsp;'19
+</td>
+
+<td>
+1919
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+3
+</th>
+
+<td>
+A. L. Nursery rhyme reader (The): a selection of 22 of the most popular nursery rhymes with Illus. for colouring. Cr. 8vo. 7×5, pp.&nbsp;22, swd. 3d. net…(Leeds) E. J. ARNOLD, July '19
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+A. L. Nursery rhyme reader (The): a selection of
+</td>
+
+<td>
+E. J. ARNOLD
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+A. L. Nursery rhyme reader (The): a selection of 22 of the most popular nursery rhymes with Illus. for colouring. Cr. 8vo. 7×5, pp.&nbsp;22, swd. 3d. net…(Leeds) E. J. ARNOLD, July '19
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+July '19
+</td>
+
+<td>
+1919
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+4
+</th>
+
+<td>
+A. L. Print-writing copy books (The), No.&nbsp;3 4to. 8x64, pp.&nbsp;24, swd. 3d. net (Leeds) E. J. ARNOLD, July '19
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+A. L. Print-writing copy books (The)
+</td>
+
+<td>
+E. J. ARNOLD
+</td>
+
+<td>
+3d.
+</td>
+
+<td>
+4to.
+</td>
+
+<td>
+A. L. Print-writing copy books (The), No.&nbsp;3 4to. 8x64, pp.&nbsp;24, swd. 3d. net (Leeds) E. J. ARNOLD, July '19
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+July '19
+</td>
+
+<td>
+1919
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+5
+</th>
+
+<td>
+Abbot (Jane)-Keineth. Illus. by Harriet Roose- velt Richards. 5s. net..LIPPINCOTT, Mar.&nbsp;'19
+</td>
+
+<td>
+Abbot
+</td>
+
+<td>
+Jane
+</td>
+
+<td>
+Keineth
+</td>
+
+<td>
+LIPPINCOTT
+</td>
+
+<td>
+5s.
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Abbot (Jane)-Keineth. Illus. by Harriet Roose- velt Richards. 5s. net..LIPPINCOTT, Mar.&nbsp;'19
+</td>
+
+<td>
+Jane Abbot
+</td>
+
+<td>
+['Abbot (Jane)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Mar.&nbsp;'19
+</td>
+
+<td>
+1919
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+6
+</th>
+
+<td>
+Abbott (Eleanor Hallowell)-Love and Mrs.&nbsp;Kendrur. Cr. 8vo. 7 X4, pp.&nbsp;116, 2s. net HEINEMANN, Oct.&nbsp;'19
+</td>
+
+<td>
+Abbott
+</td>
+
+<td>
+Eleanor Hallowell
+</td>
+
+<td>
+Love and Mrs
+</td>
+
+<td>
+HEINEMANN
+</td>
+
+<td>
+2s.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abbott (Eleanor Hallowell)-Love and Mrs.&nbsp;Kendrur. Cr. 8vo. 7 X4, pp.&nbsp;116, 2s. net HEINEMANN, Oct.&nbsp;'19
+</td>
+
+<td>
+Eleanor Hallowell Abbott
+</td>
+
+<td>
+['Abbott (Eleanor Hallowell)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Oct.&nbsp;'19
+</td>
+
+<td>
+1919
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+7
+</th>
+
+<td>
+Abbott (Eleanor Hallowell)-The Ne'er-do-much. Cr. 8vo. 7×5, pp.&nbsp;156, 5s. net HODDER, July '19
+</td>
+
+<td>
+Abbott
+</td>
+
+<td>
+Eleanor Hallowell
+</td>
+
+<td>
+The Ne'er-do-much
+</td>
+
+<td>
+HODDER
+</td>
+
+<td>
+5s.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abbott (Eleanor Hallowell)-The Ne'er-do-much. Cr. 8vo. 7×5, pp.&nbsp;156, 5s. net HODDER, July '19
+</td>
+
+<td>
+Eleanor Hallowell Abbott
+</td>
+
+<td>
+['Abbott (Eleanor Hallowell)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+July '19
+</td>
+
+<td>
+1919
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+8
+</th>
+
+<td>
+Abbott (Wilbur C.)-Colonel John Scott of Long 1sland. 8vo. 5s. 6d. net (Yale Univ. Pr.) MILFORD, Oct.&nbsp;'19
+</td>
+
+<td>
+Abbott
+</td>
+
+<td>
+Wilbur C.
+</td>
+
+<td>
+Colonel John Scott of Long
+</td>
+
+<td>
+MILFORD
+</td>
+
+<td>
+5s. 6d.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abbott (Wilbur C.)-Colonel John Scott of Long Island. 8vo. 5s. 6d. net (Yale Univ. Pr.) MILFORD, Oct.&nbsp;'19
+</td>
+
+<td>
+Wilbur C. Abbott
+</td>
+
+<td>
+['Abbott (Wilbur C.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Oct.&nbsp;'19
+</td>
+
+<td>
+1919
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+9
+</th>
+
+<td>
+Abbott (Wilbur Cortez)-The Expansion of Europe: a history of the foundations of the modern world. 2 vols. 8vo. 9 × 54, pp.&nbsp;476, 30s. net BELL, Sep.'19
+</td>
+
+<td>
+Abbott
+</td>
+
+<td>
+Wilbur Cortez
+</td>
+
+<td>
+The Expansion of Europe: a history of the foundations of the modern world
+</td>
+
+<td>
+BELL
+</td>
+
+<td>
+30s.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abbott (Wilbur Cortez)-The Expansion of Europe: a history of the foundations of the modern world. 2 vols. 8vo. 9 × 54, pp.&nbsp;476, 30s. net BELL, Sep.'19
+</td>
+
+<td>
+Wilbur Cortez Abbott
+</td>
+
+<td>
+['Abbott (Wilbur Cortez)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Sep.'19
+</td>
+
+<td>
+1919
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+10
+</th>
+
+<td>
+Abdullah (Achmed)-The Honourable Gentlemen and others. Cr. 8vo. 7× 5, pp.&nbsp;262, 6s. net PUTNAM, Dec.&nbsp;'19
+</td>
+
+<td>
+Abdullah
+</td>
+
+<td>
+Achmed
+</td>
+
+<td>
+The Honourable Gentlemen and others
+</td>
+
+<td>
+PUTNAM
+</td>
+
+<td>
+6s.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abdullah (Achmed)-The Honourable Gentlemen and others. Cr. 8vo. 7× 5, pp.&nbsp;262, 6s. net PUTNAM, Dec.&nbsp;'19
+</td>
+
+<td>
+Achmed Abdullah
+</td>
+
+<td>
+['Abdullah (Achmed)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Dec.&nbsp;'19
+</td>
+
+<td>
+1919
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+11
+</th>
+
+<td>
+About (Edmond)—The Twins. Trans. by C. W. Bell. 16mo. 6×4, pp.&nbsp;126, swd. 1s. 6d. net (Harrap's Bilingual ser: French) HARRAP, Dec.&nbsp;'19
+</td>
+
+<td>
+About
+</td>
+
+<td>
+Edmond
+</td>
+
+<td>
+The Twins
+</td>
+
+<td>
+HARRAP
+</td>
+
+<td>
+1s. 6d.
+</td>
+
+<td>
+16mo.
+</td>
+
+<td>
+About (Edmond)—The Twins. Trans. by C. W. Bell. 16mo. 6×4, pp.&nbsp;126, swd. Is. 6d. net (Harrap's Bilingual ser: French) HARRAP, Dec.&nbsp;'19
+</td>
+
+<td>
+Edmond About
+</td>
+
+<td>
+['About (Edmond)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Dec.&nbsp;'19
+</td>
+
+<td>
+1919
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+12
+</th>
+
+<td>
+Abraham (George D.)-On Alpine heights and British crags. Ryl. 8vo. 9×5, pp.317, IOS. 6d. net .METHUEN, Sep.&nbsp;'19
+</td>
+
+<td>
+Abraham
+</td>
+
+<td>
+George D.
+</td>
+
+<td>
+On Alpine heights and British crags
+</td>
+
+<td>
+METHUEN
+</td>
+
+<td>
+6d.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abraham (George D.)-On Alpine heights and British crags. Ryl. 8vo. 9×5, pp.317, IOS. 6d. net .METHUEN, Sep.&nbsp;'19
+</td>
+
+<td>
+George D. Abraham
+</td>
+
+<td>
+['Abraham (George D.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Sep.&nbsp;'19
+</td>
+
+<td>
+1919
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+13
+</th>
+
+<td>
+Abraham (Herbert)-Asphalts and allied sub- stances the occurrence, modes of production, uses in the arts, and methods of testing. Illus. Roy. 8vo. 94×6, pp.&nbsp;631, 25s. net LOCKWOOD, May, '19
+</td>
+
+<td>
+Abraham
+</td>
+
+<td>
+Herbert
+</td>
+
+<td>
+Asphalts and allied sub- stances the occurrence, modes of production, uses in the arts, and methods of testing
+</td>
+
+<td>
+LOCKWOOD
+</td>
+
+<td>
+25s.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abraham (Herbert)-Asphalts and allied sub- stances the occurrence, modes of production, uses in the arts, and methods of testing. Illus. Roy. 8vo. 94×6, pp.&nbsp;631, 25s. net LOCKWOOD, May, '19
+</td>
+
+<td>
+Herbert Abraham
+</td>
+
+<td>
+['Abraham (Herbert)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+May, '19
+</td>
+
+<td>
+1919
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+14
+</th>
+
+<td>
+Abraham Jacob, Joshua: stories that never grow old, for the children. Ryl. 8vo. 91×71, pp.&nbsp;62, 2s. 6d. net…. MORGAN &amp; S., Nov.&nbsp;'19
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Abraham Jacob, Joshua: stories that never grow old, for the children
+</td>
+
+<td>
+MORGAN &amp; S.
+</td>
+
+<td>
+2s. 6d.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abraham Jacob, Joshua: stories that never grow old, for the children. Ryl. 8vo. 91×71, pp.&nbsp;62, 2s. 6d. net…. MORGAN &amp; S., Nov.&nbsp;'19
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Nov.&nbsp;'19
+</td>
+
+<td>
+1919
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+</div>
+</div>
+<p><a href="df_1919.csv" download="">Download full CSV</a></p>
+</section></details>
+<details>
+<summary>
+1920
+</summary>
+<p><img src="1920_english_catalogue_cover.jpeg" class="centered-image img-fluid" width="500"></p>
+
+<section id="data-table-7" class="level1">
+<h1>Data Table</h1>
+<div id="15989316" class="cell" data-execution_count="9">
+<div class="cell-output cell-output-display" data-execution_count="9">
+<table class="dataframe my-table table table-sm table-striped small">
+
+<thead>
+
+<tr>
+
+<th>
+</th>
+
+<th>
+entry
+</th>
+
+<th>
+last_name
+</th>
+
+<th>
+first_name
+</th>
+
+<th>
+title
+</th>
+
+<th>
+publisher
+</th>
+
+<th>
+price
+</th>
+
+<th>
+format
+</th>
+
+<th>
+original_entry
+</th>
+
+<th>
+author_name
+</th>
+
+<th>
+creators
+</th>
+
+<th>
+is_editor
+</th>
+
+<th>
+date
+</th>
+
+<th>
+catalogue_year
+</th>
+
+<th>
+is_net
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<th>
+0
+</th>
+
+<td>
+A was an archer. Illus. by D. Pailthorpe. 4to. swd. 2s. net .HARRAP, Mar.&nbsp;'20
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+A was an archer
+</td>
+
+<td>
+HARRAP
+</td>
+
+<td>
+2s.
+</td>
+
+<td>
+4to.
+</td>
+
+<td>
+A was an archer. Illus. by D. Pailthorpe. 4to. swd. 2s. net .HARRAP, Mar.&nbsp;'20
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Mar.&nbsp;'20
+</td>
+
+<td>
+1920
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+1
+</th>
+
+<td>
+A B C universal commercial telegraphic code. Proprietors, E. M. M. Clauson-Thue and F. C. E. Faulkner. 6th ed.&nbsp;Ed. by William Droege. Ryl. 8vo. 94 x 61, pp.&nbsp;1,542, 40s. net EDEN FISHER, Mar.&nbsp;'20
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+A B C universal commercial telegraphic code
+</td>
+
+<td>
+EDEN FISHER
+</td>
+
+<td>
+40s.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+A B C universal commercial telegraphic code. Proprietors, E. M. M. Clauson-Thue and F. C. E. Faulkner. 6th ed.&nbsp;Ed. by William Droege. Ryl. 8vo. 94 x 61, pp.&nbsp;1,542, 40s. net EDEN FISHER, Mar.&nbsp;'20
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Mar.&nbsp;'20
+</td>
+
+<td>
+1920
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+2
+</th>
+
+<td>
+Aaland 1slands, Question of the : Reference to the League of Nations. 2d. net H.M.S.O., Aug.&nbsp;'20
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Aaland
+</td>
+
+<td>
+H.M.S.O.
+</td>
+
+<td>
+2d.
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Aaland Islands, Question of the : Reference to the League of Nations. 2d. net H.M.S.O., Aug.&nbsp;'20
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Aug.&nbsp;'20
+</td>
+
+<td>
+1920
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+3
+</th>
+
+<td>
+Abbay (R., Rev.&nbsp;Our orchards : letters to the East Anglian Daily Times, 1892-1920. With notes. 8vo. 81 x 54, pp.&nbsp;35, swd. 1s. net HARRISON, June'20
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Abbay (R., Rev
+</td>
+
+<td>
+HARRISON
+</td>
+
+<td>
+1s.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abbay (R., Rev.&nbsp;Our orchards : letters to the East Anglian Daily Times, 1892-1920. With notes. 8vo. 81 x 54, pp.&nbsp;35, swd. Is. net HARRISON, June'20
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+June'20
+</td>
+
+<td>
+1920
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+4
+</th>
+
+<td>
+Abbott (Anstice) A Girl widow's romance : a tale of Indian life. Forew. by Rev.&nbsp;C. Askwith. Cr. 8vo. 71 X 5, pp.&nbsp;125, 2s. 6d. net R.T.S., Oct.&nbsp;'20
+</td>
+
+<td>
+Abbott
+</td>
+
+<td>
+Anstice
+</td>
+
+<td>
+A Girl widow's romance : a tale of Indian life
+</td>
+
+<td>
+R.T.S.
+</td>
+
+<td>
+2s. 6d.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abbott (Anstice) A Girl widow's romance : a tale of Indian life. Forew. by Rev.&nbsp;C. Askwith. Cr. 8vo. 71 X 5, pp.&nbsp;125, 25. 6d. net R.T.S., Oct.&nbsp;'20
+</td>
+
+<td>
+Anstice Abbott
+</td>
+
+<td>
+['Abbott (Anstice)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Oct.&nbsp;'20
+</td>
+
+<td>
+1920
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+5
+</th>
+
+<td>
+Abbott (Claude C.) trans.—Nine songs from the 12th century French. 10 X 6, pp.&nbsp;16, 2s. CHELSEA BOOK CLUB, Aug.'20
+</td>
+
+<td>
+Abbott
+</td>
+
+<td>
+Claude C.
+</td>
+
+<td>
+Nine songs from the
+</td>
+
+<td>
+CHELSEA BOOK CLUB
+</td>
+
+<td>
+2s.
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Abbott (Claude C.) trans.—Nine songs from the 12th century French. 10 X 6, pp.&nbsp;16, 25. CHELSEA BOOK CLUB, Aug.'20
+</td>
+
+<td>
+Claude C. Abbott
+</td>
+
+<td>
+['Abbott (Claude C.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Aug.'20
+</td>
+
+<td>
+1920
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+6
+</th>
+
+<td>
+Abbott (E. C.) English composition : based on observation and general reading. Cr. 8vo. 71 x 44, pp.&nbsp;228, 4s. 6d. net BELL, Aug.&nbsp;'20
+</td>
+
+<td>
+Abbott
+</td>
+
+<td>
+E. C.
+</td>
+
+<td>
+English composition : based on observation and general reading
+</td>
+
+<td>
+BELL
+</td>
+
+<td>
+4s. 6d.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abbott (E. C.) English composition : based on observation and general reading. Cr. 8vo. 71 x 44, pp.&nbsp;228, 4s. 6d. net BELL, Aug.&nbsp;'20
+</td>
+
+<td>
+E. C. Abbott
+</td>
+
+<td>
+['Abbott (E. C.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Aug.&nbsp;'20
+</td>
+
+<td>
+1920
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+7
+</th>
+
+<td>
+Abbot (E. C.)Scientific history of the world. In 3 parts. Part 1, to 148s. Cr. 8vo. 7.X 44, pp.&nbsp;415, 4s. 6d. net ..BELL, June'20
+</td>
+
+<td>
+Abbot
+</td>
+
+<td>
+E. C.
+</td>
+
+<td>
+Scientific history of the world
+</td>
+
+<td>
+BELL
+</td>
+
+<td>
+4s. 6d.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abbot (E. C.)Scientific history of the world. In 3 parts. Part 1, to 1485. Cr. 8vo. 7.X 44, pp.&nbsp;415, 4s. 6d. net ..BELL, June'20
+</td>
+
+<td>
+E. C. Abbot
+</td>
+
+<td>
+['Abbot (E. C.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+June'20
+</td>
+
+<td>
+1920
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+8
+</th>
+
+<td>
+Abbott (Jane D.)-Happy house. Cr. 8vo. 78. net LIPPINCOTT, Sep.&nbsp;20
+</td>
+
+<td>
+Abbott
+</td>
+
+<td>
+Jane D.
+</td>
+
+<td>
+Happy house
+</td>
+
+<td>
+LIPPINCOTT
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abbott (Jane D.)-Happy house. Cr. 8vo. 78. net LIPPINCOTT, Sep.&nbsp;20
+</td>
+
+<td>
+Jane D. Abbott
+</td>
+
+<td>
+['Abbott (Jane D.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Sep.&nbsp;20
+</td>
+
+<td>
+1920
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+9
+</th>
+
+<td>
+Abbott (Jane D.)-Larkspur. Illus. by Harriet R. Richards. Cr. 8vo. 7*5, pp.&nbsp;261, 6s. net LIPPINCOTT, June'20
+</td>
+
+<td>
+Abbott
+</td>
+
+<td>
+Jane D.
+</td>
+
+<td>
+Larkspur
+</td>
+
+<td>
+LIPPINCOTT
+</td>
+
+<td>
+6s.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abbott (Jane D.)-Larkspur. Illus. by Harriet R. Richards. Cr. 8vo. 7*5, pp.&nbsp;261, 6s. net LIPPINCOTT, June'20
+</td>
+
+<td>
+Jane D. Abbott
+</td>
+
+<td>
+['Abbott (Jane D.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+June'20
+</td>
+
+<td>
+1920
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+10
+</th>
+
+<td>
+Abbott (Norman)-Let nothing you dismay, and other verses. 18mo. 2s, 6d. net JARROLDS, Sep.&nbsp;'20
+</td>
+
+<td>
+Abbott
+</td>
+
+<td>
+Norman
+</td>
+
+<td>
+Let nothing you dismay, and other verses
+</td>
+
+<td>
+JARROLDS
+</td>
+
+<td>
+2s. 6d.
+</td>
+
+<td>
+18mo.
+</td>
+
+<td>
+Abbott (Norman)-Let nothing you dismay, and other verses. 18mo. 2s, 6d. net JARROLDS, Sep.&nbsp;'20
+</td>
+
+<td>
+Norman Abbott
+</td>
+
+<td>
+['Abbott (Norman)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Sep.&nbsp;'20
+</td>
+
+<td>
+1920
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+11
+</th>
+
+<td>
+Abdul Majid-Malay self-taught by the Natural method, with phonetic pronunciation. Cr. 8vo. 7 X 4, pp.&nbsp;120, 4s. net, swd. 33. net. (Marl- borough's Self-taught ser.) MARLBOROUGH, July'20
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Abdul Majid-Malay self-taught by the Natural method, with phonetic pronunciation
+</td>
+
+<td>
+MARLBOROUGH
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abdul Majid-Malay self-taught by the Natural method, with phonetic pronunciation. Cr. 8vo. 7 X 4, pp.&nbsp;120, 4s. net, swd. 33. net. (Marl- borough's Self-taught ser.) MARLBOROUGH, July'20
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+July'20
+</td>
+
+<td>
+1920
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+12
+</th>
+
+<td>
+Abott (G. F.)-A Record of Sir John Finch's Embassy, 1674-1681 : under the Turk in Constantinople. With a foreword by Viscount Bryce, O.M. Ryl. 8vo. 97 x6, pp.&nbsp;433, 18s. net ..MACMILLAN, Oct.&nbsp;'20
+</td>
+
+<td>
+Abott
+</td>
+
+<td>
+G. F.
+</td>
+
+<td>
+A Record of Sir John Finch's Embassy
+</td>
+
+<td>
+MACMILLAN
+</td>
+
+<td>
+18s.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abott (G. F.)-A Record of Sir John Finch's Embassy, 1674-1681 : under the Turk in Constantinople. With a foreword by Viscount Bryce, O.M. Ryl. 8vo. 97 x6, pp.&nbsp;433, 18s. net ..MACMILLAN, Oct.&nbsp;'20
+</td>
+
+<td>
+G. F. Abott
+</td>
+
+<td>
+['Abott (G. F.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Oct.&nbsp;'20
+</td>
+
+<td>
+1920
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+13
+</th>
+
+<td>
+Abrahamian (Abel, Rt. Rev.&nbsp;Dr.)-The Church and faith of Armenia. Pref. by The Lord Bishop of Gloucester. Cr. 8vo. 71 x 5 swd., pp.&nbsp;75, 1s. 6d….. ..FAITH PR., June 20
+</td>
+
+<td>
+Abrahamian
+</td>
+
+<td>
+Abel, Rt. Rev.&nbsp;Dr.
+</td>
+
+<td>
+The Church and faith of Armenia
+</td>
+
+<td>
+FAITH PR.
+</td>
+
+<td>
+1s. 6d.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abrahamian (Abel, Rt. Rev.&nbsp;Dr.)-The Church and faith of Armenia. Pref. by The Lord Bishop of Gloucester. Cr. 8vo. 71 x 5 swd., pp.&nbsp;75, Is. 6d….. ..FAITH PR., June 20
+</td>
+
+<td>
+Abel, Rt. Rev.&nbsp;Dr.&nbsp;Abrahamian
+</td>
+
+<td>
+['Abrahamian (Abel, Rt. Rev.&nbsp;Dr.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+June 20
+</td>
+
+<td>
+1920
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+14
+</th>
+
+<td>
+Abrahams (1srael) —Poetry and religion. With foreword by Sir Arthur Quiller-Couch. 18mo. 64 X4, pp.&nbsp;81, 2s, 6d net; swd. is, net ALLEN &amp; U., Oct.&nbsp;'20
+</td>
+
+<td>
+Abrahams
+</td>
+
+<td>
+1srael
+</td>
+
+<td>
+Poetry and religion
+</td>
+
+<td>
+ALLEN &amp; U.
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+18mo.
+</td>
+
+<td>
+Abrahams (Israel) —Poetry and religion. With foreword by Sir Arthur Quiller-Couch. 18mo. 64 X4, pp.&nbsp;81, 2s, 6d net; swd. is, net ALLEN &amp; U., Oct.&nbsp;'20
+</td>
+
+<td>
+1srael Abrahams
+</td>
+
+<td>
+['Abrahams (1srael)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Oct.&nbsp;'20
+</td>
+
+<td>
+1920
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+</div>
+</div>
+<p><a href="df_1920.csv" download="">Download full CSV</a></p>
+</section></details>
+<details>
+<summary>
+1921
+</summary>
+<p><img src="1921_english_catalogue_cover.jpeg" class="centered-image img-fluid" width="500"></p>
+
+<section id="data-table-8" class="level1">
+<h1>Data Table</h1>
+<div id="0cfcee55" class="cell" data-execution_count="10">
+<div class="cell-output cell-output-display" data-execution_count="10">
+<table class="dataframe my-table table table-sm table-striped small">
+
+<thead>
+
+<tr>
+
+<th>
+</th>
+
+<th>
+entry
+</th>
+
+<th>
+last_name
+</th>
+
+<th>
+first_name
+</th>
+
+<th>
+title
+</th>
+
+<th>
+publisher
+</th>
+
+<th>
+price
+</th>
+
+<th>
+format
+</th>
+
+<th>
+original_entry
+</th>
+
+<th>
+author_name
+</th>
+
+<th>
+creators
+</th>
+
+<th>
+is_editor
+</th>
+
+<th>
+date
+</th>
+
+<th>
+catalogue_year
+</th>
+
+<th>
+is_net
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<th>
+0
+</th>
+
+<td>
+A B C auction sales record: with full descriptions and prices for the year 1920 of old English silver. Compiled by Alfred J. Abbey. Cr. 8vo. 7×5, pp.&nbsp;128, 5s. net. .S. PAUL, July '21
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+A B C auction sales record: with full descriptions and prices for the year
+</td>
+
+<td>
+S. PAUL
+</td>
+
+<td>
+5s.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+A B C auction sales record: with full descriptions and prices for the year 1920 of old English silver. Compiled by Alfred J. Abbey. Cr. 8vo. 7×5, pp.&nbsp;128, 5s. net. .S. PAUL, July '21
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+July '21
+</td>
+
+<td>
+1921
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+1
+</th>
+
+<td>
+A B C guide to the practice of the Supreme Court. 1922. By F. R. P. Stringer. 17th ed.&nbsp;Cr. 8vo. pp.&nbsp;219, 8s. 6d. net SWEET &amp; M., Nov.&nbsp;'21
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+A B C guide to the practice of the Supreme Court
+</td>
+
+<td>
+SWEET &amp; M.
+</td>
+
+<td>
+8s. 6d.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+A B C guide to the practice of the Supreme Court. 1922. By F. R. P. Stringer. 17th ed.&nbsp;Cr. 8vo. pp.&nbsp;219, 8s. 6d. net SWEET &amp; M., Nov.&nbsp;'21
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Nov.&nbsp;'21
+</td>
+
+<td>
+1921
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+2
+</th>
+
+<td>
+A.B.C. motor, marine and aircraft guide, 1921 (The): including a topographical transport directory to 4,670 places in the United King- dom. Compiled by W. C. Bersey and A. Dorey. 4to. 8×7, pp.&nbsp;526, 7s. 6d. net TECHNICAL PUBG. CO., Aug.&nbsp;'21
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+A.B.C. motor, marine and aircraft guide
+</td>
+
+<td>
+TECHNICAL PUBG. CO.
+</td>
+
+<td>
+7s. 6d.
+</td>
+
+<td>
+4to.
+</td>
+
+<td>
+A.B.C. motor, marine and aircraft guide, 1921 (The): including a topographical transport directory to 4,670 places in the United King- dom. Compiled by W. C. Bersey and A. Dorey. 4to. 8×7, pp.&nbsp;526, 7s. 6d. net TECHNICAL PUBG. CO., Aug.&nbsp;'21
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Aug.&nbsp;'21
+</td>
+
+<td>
+1921
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+3
+</th>
+
+<td>
+A.L. Challenge test cards (The). Grade 2. Containing: (a) Mechanical sums; (b) Three sets of tests; (c) Syllabus card; (d) Two sets of answers. Cr. 8vo. 6× 5, ppr. packet, 3s.net.. .E. J. ARNOLD, Feb.&nbsp;'21
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+A.L. Challenge test cards (The)
+</td>
+
+<td>
+E. J. ARNOLD
+</td>
+
+<td>
+3s.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+A.L. Challenge test cards (The). Grade 2. Containing: (a) Mechanical sums; (b) Three sets of tests; (c) Syllabus card; (d) Two sets of answers. Cr. 8vo. 6× 5, ppr. packet, 3s.net.. .E. J. ARNOLD, Feb.&nbsp;'21
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Feb.&nbsp;'21
+</td>
+
+<td>
+1921
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+4
+</th>
+
+<td>
+A. L. Challenge test cards (The). Grade 3. Containing: (a) Mechanical sums; (b) Three sets of tests; (c) Syllabus card; (d) Two sets of answers. Cr. 8vo. 6x 5, cards swd. 3s. net E. J. ARNOLD, Mar.&nbsp;'21
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+A. L. Challenge test cards (The)
+</td>
+
+<td>
+E. J. ARNOLD
+</td>
+
+<td>
+3s.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+A. L. Challenge test cards (The). Grade 3. Containing: (a) Mechanical sums; (b) Three sets of tests; (c) Syllabus card; (d) Two sets of answers. Cr. 8vo. 6x 5, cards swd. 3s. net E. J. ARNOLD, Mar.&nbsp;'21
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Mar.&nbsp;'21
+</td>
+
+<td>
+1921
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+5
+</th>
+
+<td>
+A. L. Challenge test cards (The). Grade 5. Cr. 8vo. 61× 5, swd. 3s. net packet E. J. ARNOLD, May '21
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+A. L. Challenge test cards (The)
+</td>
+
+<td>
+E. J. ARNOLD
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+A. L. Challenge test cards (The). Grade 5. Cr. 8vo. 61× 5, swd. 3s. net packet E. J. ARNOLD, May '21
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+May '21
+</td>
+
+<td>
+1921
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+6
+</th>
+
+<td>
+A. L. Challenge test cards (The). Grade 7. Cr. 8vo. 61×4, per swd. packet 3s. net E. J. ARNOLD, Oct.&nbsp;'21
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+A. L. Challenge test cards (The)
+</td>
+
+<td>
+E. J. ARNOLD
+</td>
+
+<td>
+3s.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+A. L. Challenge test cards (The). Grade 7. Cr. 8vo. 61×4, per swd. packet 3s. net E. J. ARNOLD, Oct.&nbsp;'21
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Oct.&nbsp;'21
+</td>
+
+<td>
+1921
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+7
+</th>
+
+<td>
+A.L. County cookery book (The). Compiled by a County Education Secretary and Domestic Subjects Staff. Cr. 8vo. 7×51, pp.&nbsp;111, swd. 1s. 3d. net… . . . . . . . . . ….E. J. ARNOLD, Mar.&nbsp;'21
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+A.L. County cookery book (The)
+</td>
+
+<td>
+E. J. ARNOLD
+</td>
+
+<td>
+1s. 3d.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+A.L. County cookery book (The). Compiled by a County Education Secretary and Domestic Subjects Staff. Cr. 8vo. 7×51, pp.&nbsp;111, swd. Is. 3d. net… . . . . . . . . . ….E. J. ARNOLD, Mar.&nbsp;'21
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Mar.&nbsp;'21
+</td>
+
+<td>
+1921
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+8
+</th>
+
+<td>
+A. L. Geography work-book of the British 1sles. Roy. 8vo. 91×71, pp.&nbsp;24, swd. 1s. net ('A L'Geographical ser.)….E. J. ARNOLD, May 21
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+A. L. Geography work-book of the British
+</td>
+
+<td>
+E. J. ARNOLD
+</td>
+
+<td>
+1s.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+A. L. Geography work-book of the British Isles. Roy. 8vo. 91×71, pp.&nbsp;24, swd. Is. net ('A L'Geographical ser.)….E. J. ARNOLD, May 21
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+May 21
+</td>
+
+<td>
+1921
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+9
+</th>
+
+<td>
+A.L. Nature note book and garden diary (The). 8vo. 8×61, pp.&nbsp;70, swd. 1s. 9d. net E. J. ARNOLD, Feb.&nbsp;'21
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+A.L. Nature note book and garden diary (The)
+</td>
+
+<td>
+E. J. ARNOLD
+</td>
+
+<td>
+1s. 9d.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+A.L. Nature note book and garden diary (The). 8vo. 8×61, pp.&nbsp;70, swd. Is. 9d. net E. J. ARNOLD, Feb.&nbsp;'21
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Feb.&nbsp;'21
+</td>
+
+<td>
+1921
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+10
+</th>
+
+<td>
+A.L.O.E.-The Lost jewel. Illus. by H. E. Butler. Cr. 8vo. 7×41, pp.&nbsp;200, 1s. 6d. net COLLINS, Sep.&nbsp;'21
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+A.L.O.E.-The Lost jewel
+</td>
+
+<td>
+COLLINS
+</td>
+
+<td>
+1s. 6d.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+A.L.O.E.-The Lost jewel. Illus. by H. E. Butler. Cr. 8vo. 7×41, pp.&nbsp;200, Is. 6d. net COLLINS, Sep.&nbsp;'21
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Sep.&nbsp;'21
+</td>
+
+<td>
+1921
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+11
+</th>
+
+<td>
+Aaron (Charles D.)-Diseases of the digestive organs. 3rd ed., rev. Ryl. 8vo. pp.&nbsp;904, 50s. net LEWIS, Nov.&nbsp;'21
+</td>
+
+<td>
+Aaron
+</td>
+
+<td>
+Charles D.
+</td>
+
+<td>
+Diseases of the digestive organs
+</td>
+
+<td>
+LEWIS
+</td>
+
+<td>
+50s.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Aaron (Charles D.)-Diseases of the digestive organs. 3rd ed., rev. Ryl. 8vo. pp.&nbsp;904, 50s. net LEWIS, Nov.&nbsp;'21
+</td>
+
+<td>
+Charles D. Aaron
+</td>
+
+<td>
+['Aaron (Charles D.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Nov.&nbsp;'21
+</td>
+
+<td>
+1921
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+12
+</th>
+
+<td>
+Abbott (Claude Colleer)-Poems. Cr. 8vo. 7 × 58. pp.&nbsp;69, 5s. net…….. .BLACKWELL, Sep.&nbsp;'21
+</td>
+
+<td>
+Abbott
+</td>
+
+<td>
+Claude Colleer
+</td>
+
+<td>
+Poems
+</td>
+
+<td>
+BLACKWELL
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abbott (Claude Colleer)-Poems. Cr. 8vo. 7 × 58. pp.&nbsp;69, 5s. net…….. .BLACKWELL, Sep.&nbsp;'21
+</td>
+
+<td>
+Claude Colleer Abbott
+</td>
+
+<td>
+['Abbott (Claude Colleer)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Sep.&nbsp;'21
+</td>
+
+<td>
+1921
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+13
+</th>
+
+<td>
+Abbott (Jane)-Aprilly. Cr. 8vo. pp.&nbsp;287, 7s. 6d. net LIPPINCOTT, Dec.&nbsp;'21
+</td>
+
+<td>
+Abbott
+</td>
+
+<td>
+Jane
+</td>
+
+<td>
+Aprilly
+</td>
+
+<td>
+LIPPINCOTT
+</td>
+
+<td>
+7s. 6d.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abbott (Jane)-Aprilly. Cr. 8vo. pp.&nbsp;287, 7s. 6d. net LIPPINCOTT, Dec.&nbsp;'21
+</td>
+
+<td>
+Jane Abbott
+</td>
+
+<td>
+['Abbott (Jane)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Dec.&nbsp;'21
+</td>
+
+<td>
+1921
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+14
+</th>
+
+<td>
+Abbott (Lyman)-What Christianity means to me. Cr. 8vo. pp.&nbsp;194, 9s. net MACMILLAN, July '21
+</td>
+
+<td>
+Abbott
+</td>
+
+<td>
+Lyman
+</td>
+
+<td>
+What Christianity means to me
+</td>
+
+<td>
+MACMILLAN
+</td>
+
+<td>
+9s.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abbott (Lyman)-What Christianity means to me. Cr. 8vo. pp.&nbsp;194, 9s. net MACMILLAN, July '21
+</td>
+
+<td>
+Lyman Abbott
+</td>
+
+<td>
+['Abbott (Lyman)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+July '21
+</td>
+
+<td>
+1921
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+</div>
+</div>
+<p><a href="df_1921.csv" download="">Download full CSV</a></p>
+</section></details>
+<details>
+<summary>
+1922
+</summary>
+<p><img src="1922_english_catalogue_cover.jpeg" class="centered-image img-fluid" width="500"></p>
+
+<section id="data-table-9" class="level1">
+<h1>Data Table</h1>
+<div id="aff44b62" class="cell" data-execution_count="11">
+<div class="cell-output cell-output-display" data-execution_count="11">
+<table class="dataframe my-table table table-sm table-striped small">
+
+<thead>
+
+<tr>
+
+<th>
+</th>
+
+<th>
+entry
+</th>
+
+<th>
+last_name
+</th>
+
+<th>
+first_name
+</th>
+
+<th>
+title
+</th>
+
+<th>
+publisher
+</th>
+
+<th>
+price
+</th>
+
+<th>
+format
+</th>
+
+<th>
+original_entry
+</th>
+
+<th>
+author_name
+</th>
+
+<th>
+creators
+</th>
+
+<th>
+is_editor
+</th>
+
+<th>
+date
+</th>
+
+<th>
+catalogue_year
+</th>
+
+<th>
+is_net
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<th>
+0
+</th>
+
+<td>
+A B C guide to the practice of the Supreme Court, 1923. By F. R. S. Stringer. 18th ed.&nbsp;71 x 5, pp.&nbsp;239, 8s. 6d. net. SWEET &amp; M., Oct.&nbsp;'22
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+A B C guide to the practice of the Supreme Court
+</td>
+
+<td>
+SWEET &amp; M.
+</td>
+
+<td>
+8s. 6d.
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+A B C guide to the practice of the Supreme Court, 1923. By F. R. S. Stringer. 18th ed.&nbsp;71 x 5, pp.&nbsp;239, 8s. 6d. net. SWEET &amp; M., Oct.&nbsp;'22
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Oct.&nbsp;'22
+</td>
+
+<td>
+1922
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+1
+</th>
+
+<td>
+A B C or alphabetical railway guide. (Monthly.) ea. swd. 28. net. (15, Fetter Lane, E.C.) OFFICE, Jan., etc., '22
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+A B C or alphabetical railway guide
+</td>
+
+<td>
+OFFICE
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+A B C or alphabetical railway guide. (Monthly.) ea. swd. 28. net. (15, Fetter Lane, E.C.) OFFICE, Jan., etc., '22
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Jan., etc., '22
+</td>
+
+<td>
+1922
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+2
+</th>
+
+<td>
+A. E. See E. (A.) Aaland 1slands : Convention respecting non- fortification and neutralisation, Geneva, Oct., 1921. 6d. net…….. …H.M.S.O., June '22
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+A. E. See E. (A.) Aaland
+</td>
+
+<td>
+H.M.S.O.
+</td>
+
+<td>
+6d.
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+A. E. See E. (A.) Aaland Islands : Convention respecting non- fortification and neutralisation, Geneva, Oct., 1921. 6d. net…….. …H.M.S.O., June '22
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+June '22
+</td>
+
+<td>
+1922
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+3
+</th>
+
+<td>
+Abbott (G. F.)—Greece and the Allies, 1914–1922. Cr. 8vo, 74 x 5, pp.&nbsp;253, 78. 6d. net. METHUEN, Dec.&nbsp;'22
+</td>
+
+<td>
+Abbott
+</td>
+
+<td>
+G. F.
+</td>
+
+<td>
+Greece and the Allies
+</td>
+
+<td>
+METHUEN
+</td>
+
+<td>
+6d.
+</td>
+
+<td>
+8vo,
+</td>
+
+<td>
+Abbott (G. F.)—Greece and the Allies, 1914–1922. Cr. 8vo, 74 x 5, pp.&nbsp;253, 78. 6d. net. METHUEN, Dec.&nbsp;'22
+</td>
+
+<td>
+G. F. Abbott
+</td>
+
+<td>
+['Abbott (G. F.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Dec.&nbsp;'22
+</td>
+
+<td>
+1922
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+4
+</th>
+
+<td>
+Abbott_(Jane)-Red-Robin. Illus. by Harriet R. Richards. 2nd imp. Cr. 8vo, 78 x 5, pp.&nbsp;327, 7s. 6d. net……LIPPINCOTT, Dec.&nbsp;'22
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Abbott_(Jane)-Red-Robin
+</td>
+
+<td>
+LIPPINCOTT
+</td>
+
+<td>
+7s. 6d.
+</td>
+
+<td>
+8vo,
+</td>
+
+<td>
+Abbott_(Jane)-Red-Robin. Illus. by Harriet R. Richards. 2nd imp. Cr. 8vo, 78 x 5, pp.&nbsp;327, 75. 6d. net……LIPPINCOTT, Dec.&nbsp;'22
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Dec.&nbsp;'22
+</td>
+
+<td>
+1922
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+5
+</th>
+
+<td>
+Abbott (Lyman)-Silhouettes of my contempor- aries. 8vo. 81 x 51, pp.&nbsp;361, 12s. 6d. net ALLEN &amp; U., May '22
+</td>
+
+<td>
+Abbott
+</td>
+
+<td>
+Lyman
+</td>
+
+<td>
+Silhouettes of my contempor- aries
+</td>
+
+<td>
+ALLEN &amp; U.
+</td>
+
+<td>
+12s. 6d.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abbott (Lyman)-Silhouettes of my contempor- aries. 8vo. 81 x 51, pp.&nbsp;361, I2s. 6d. net ALLEN &amp; U., May '22
+</td>
+
+<td>
+Lyman Abbott
+</td>
+
+<td>
+['Abbott (Lyman)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+May '22
+</td>
+
+<td>
+1922
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+6
+</th>
+
+<td>
+Abbott (T. K.) and Gwynn (E. W.)–Catalogue of the Irish manuscripts in the library of Trinity College, Dublin. 81x6, pp.&nbsp;465, 21s. net (Hodges, Figgis) LONGMANS, Apr.&nbsp;'22
+</td>
+
+<td>
+Abbott
+</td>
+
+<td>
+T. K.
+</td>
+
+<td>
+Catalogue of the Irish manuscripts in the library of Trinity College, Dublin
+</td>
+
+<td>
+LONGMANS
+</td>
+
+<td>
+21s.
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Abbott (T. K.) and Gwynn (E. W.)–Catalogue of the Irish manuscripts in the library of Trinity College, Dublin. 81x6, pp.&nbsp;465, 215. net (Hodges, Figgis) LONGMANS, Apr.&nbsp;'22
+</td>
+
+<td>
+T. K. Abbott
+</td>
+
+<td>
+['Abbott (T. K.)', 'Gwynn (E. W.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Apr.&nbsp;'22
+</td>
+
+<td>
+1922
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+7
+</th>
+
+<td>
+Abbott-Smith (G.) A Manual Greek lexicon of the New Testament. 9 X 6, pp.&nbsp;528. 218. net T. &amp; T. CLARK, Mar.'22
+</td>
+
+<td>
+Abbott-Smith
+</td>
+
+<td>
+G.
+</td>
+
+<td>
+A Manual Greek lexicon of the New Testament
+</td>
+
+<td>
+T. &amp; T. CLARK
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Abbott-Smith (G.) A Manual Greek lexicon of the New Testament. 9 X 6, pp.&nbsp;528. 218. net T. &amp; T. CLARK, Mar.'22
+</td>
+
+<td>
+G. Abbott-Smith
+</td>
+
+<td>
+['Abbott-Smith (G.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Mar.'22
+</td>
+
+<td>
+1922
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+8
+</th>
+
+<td>
+Abdullah (Achmed)—Night drums. Cr. 8vo. 74 x 5, pp.&nbsp;287, 78. 6d net .. HUTCHINSON, May'22
+</td>
+
+<td>
+Abdullah
+</td>
+
+<td>
+Achmed
+</td>
+
+<td>
+Night drums
+</td>
+
+<td>
+HUTCHINSON
+</td>
+
+<td>
+6d
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abdullah (Achmed)—Night drums. Cr. 8vo. 74 x 5, pp.&nbsp;287, 78. 6d net .. HUTCHINSON, May'22
+</td>
+
+<td>
+Achmed Abdullah
+</td>
+
+<td>
+['Abdullah (Achmed)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+May'22
+</td>
+
+<td>
+1922
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+9
+</th>
+
+<td>
+Abercrombie (Lascelles)-An Essay towards a theory of art. Cr. 8vo. 7 x 5, pp.&nbsp;115, 58. net M. SECKER, June '22
+</td>
+
+<td>
+Abercrombie
+</td>
+
+<td>
+Lascelles
+</td>
+
+<td>
+An Essay towards a theory of art
+</td>
+
+<td>
+M. SECKER
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abercrombie (Lascelles)-An Essay towards a theory of art. Cr. 8vo. 7 x 5, pp.&nbsp;115, 58. net M. SECKER, June '22
+</td>
+
+<td>
+Lascelles Abercrombie
+</td>
+
+<td>
+['Abercrombie (Lascelles)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+June '22
+</td>
+
+<td>
+1922
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+10
+</th>
+
+<td>
+Abercrombie (Lascelles)—Four short plays. Cr. 8vo. 7* X 51, PP, 176. 6s. net. M. SECKER, July '22
+</td>
+
+<td>
+Abercrombie
+</td>
+
+<td>
+Lascelles
+</td>
+
+<td>
+Four short plays
+</td>
+
+<td>
+M. SECKER
+</td>
+
+<td>
+6s.
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abercrombie (Lascelles)—Four short plays. Cr. 8vo. 7* X 51, PP, 176. 6s. net. M. SECKER, July '22
+</td>
+
+<td>
+Lascelles Abercrombie
+</td>
+
+<td>
+['Abercrombie (Lascelles)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+July '22
+</td>
+
+<td>
+1922
+</td>
+
+<td>
+net
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+11
+</th>
+
+<td>
+Abercrombie (Patrick) and Johnson (T. H.)—The Doncaster regional planning scheme : the report prepared for the Joint Committee. 4to, pp.&nbsp;93, swd. ros, net…. HODDER &amp; S., Dec.&nbsp;'22
+</td>
+
+<td>
+Abercrombie
+</td>
+
+<td>
+Patrick
+</td>
+
+<td>
+The Doncaster regional planning scheme : the report prepared for the Joint Committee
+</td>
+
+<td>
+HODDER &amp; S.
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+4to,
+</td>
+
+<td>
+Abercrombie (Patrick) and Johnson (T. H.)—The Doncaster regional planning scheme : the report prepared for the Joint Committee. 4to, pp.&nbsp;93, swd. ros, net…. HODDER &amp; S., Dec.&nbsp;'22
+</td>
+
+<td>
+Patrick Abercrombie
+</td>
+
+<td>
+['Abercrombie (Patrick)', 'Johnson (T. H.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Dec.&nbsp;'22
+</td>
+
+<td>
+1922
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+12
+</th>
+
+<td>
+Abhinava Gupta-Malinivijaya Varttikam. Ed. in Sanskrit with notes by Madhusudan Kaul. 8vo., pp.&nbsp;138, 6s. 6d., 78. 6d. (Kashmir ser. of texts and studies) LUZAC; PROBSTHAIN, Mar.&nbsp;'22
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Abhinava Gupta-Malinivijaya Varttikam
+</td>
+
+<td>
+PROBSTHAIN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abhinava Gupta-Malinivijaya Varttikam. Ed. in Sanskrit with notes by Madhusudan Kaul. 8vo., pp.&nbsp;138, 6s. 6d., 78. 6d. (Kashmir ser. of texts and studies) LUZAC; PROBSTHAIN, Mar.&nbsp;'22
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Mar.&nbsp;'22
+</td>
+
+<td>
+1922
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+13
+</th>
+
+<td>
+Abhinava Gupta-The Tantraloka. With com- mentary by Rajanaka Jayaratha. Ed. in Sanskrit with notes by Madhusudan Kaul. Vols. 2-3. 8vo. Vol. 2, 6s. 6d., 78. 6d. ; Vol. 3, ros. 6d., 12s. (Kashmir ser. of texts and studies) LUZAC; PROBSTHAIN, Mar.'22
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Abhinava Gupta-The Tantraloka
+</td>
+
+<td>
+PROBSTHAIN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abhinava Gupta-The Tantraloka. With com- mentary by Rajanaka Jayaratha. Ed. in Sanskrit with notes by Madhusudan Kaul. Vols. 2-3. 8vo. Vol. 2, 6s. 6d., 78. 6d. ; Vol. 3, ros. 6d., 125. (Kashmir ser. of texts and studies) LUZAC; PROBSTHAIN, Mar.'22
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+Mar.'22
+</td>
+
+<td>
+1922
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+<tr>
+
+<th>
+14
+</th>
+
+<td>
+Abraham (George D.)–Swiss mountain climbs. Cheaper ed.&nbsp;Cr. 8vo. 7X 44, pp.&nbsp;447, 7s. 6d. net. Mills &amp; B., July '22
+</td>
+
+<td>
+Abraham
+</td>
+
+<td>
+George D.
+</td>
+
+<td>
+Swiss mountain climbs
+</td>
+
+<td>
+B.
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+8vo.
+</td>
+
+<td>
+Abraham (George D.)–Swiss mountain climbs. Cheaper ed.&nbsp;Cr. 8vo. 7X 44, pp.&nbsp;447, 75. 6d. net. Mills &amp; B., July '22
+</td>
+
+<td>
+George D. Abraham
+</td>
+
+<td>
+['Abraham (George D.)']
+</td>
+
+<td>
+NaN
+</td>
+
+<td>
+July '22
+</td>
+
+<td>
+1922
+</td>
+
+<td>
+NaN
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+</div>
+</div>
+<p><a href="df_1922.csv" download="">Download full CSV</a></p>
+</section></details>
+
+
+
+</main></div>
+
+
+
+ <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+ <!-- /content -->
+
+
+
+
+</body></html>

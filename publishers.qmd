@@ -3,40 +3,309 @@ title: "Top Publishers by Year"
 format: html
 ---
 
+<details>
+<summary><strong>1912</strong></summary>
+
 ```{python}
 
 #| echo: false
 import pandas as pd
 import matplotlib.pyplot as plt
-from IPython.display import display, Markdown
 
-years = [1912, 1913, 1914, 1915]
+df = pd.read_csv("df_1912.csv")
+df['publisher'] = df['publisher'].astype(str).str.strip()
+df['publisher'] = df['publisher'].replace(['', 'nan', 'NA', '<NA>'], pd.NA)
+df_clean = df.dropna(subset=['publisher'])
 
-for year in years:
-    try:
-        # Construct file name and load data
-        file_path = f"df_{year}.csv"
-        df = pd.read_csv(file_path)
+top_publishers = df_clean['publisher'].value_counts().head(15)
 
-        # Clean data
-        df['publisher'] = df['publisher'].astype(str).str.strip()
-
-        # Get top 15 publishers
-        top_publishers = df['publisher'].value_counts().head(15)
-
-        # Add heading
-        display(Markdown(f"## {year}"))
-
-        # Plot
-        plt.figure(figsize=(10, 6))
-        top_publishers.plot(kind='bar')
-        plt.title(f"Top 15 Publishers in {year}")
-        plt.xlabel("Publisher")
-        plt.ylabel("Number of Publications")
-        plt.xticks(rotation=45, ha='right')
-        plt.tight_layout()
-        plt.show()
-
-    except FileNotFoundError:
-        print(f"File for {year} not found. Skipping.")
+plt.figure(figsize=(8, 6))
+top_publishers.plot(kind='bar')
+plt.title("Top 15 Publishers in 1912")
+plt.xlabel("Publisher")
+plt.ylabel("Number of Publications")
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
+plt.show()
 ```
+</details> 
+
+
+<details>
+<summary><strong>1913</strong></summary>
+
+```{python}
+
+#| echo: false
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_csv("df_1913.csv")
+df['publisher'] = df['publisher'].astype(str).str.strip()
+df['publisher'] = df['publisher'].replace(['', 'nan', 'NA', '<NA>'], pd.NA)
+df_clean = df.dropna(subset=['publisher'])
+
+top_publishers = df_clean['publisher'].value_counts().head(15)
+
+plt.figure(figsize=(8, 6))
+top_publishers.plot(kind='bar')
+plt.title("Top 15 Publishers in 1913")
+plt.xlabel("Publisher")
+plt.ylabel("Number of Publications")
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
+plt.show()
+```
+</details> 
+
+
+<details>
+<summary><strong>1914</strong></summary>
+
+```{python}
+
+#| echo: false
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_csv("df_1914.csv")
+df['publisher'] = df['publisher'].astype(str).str.strip()
+df['publisher'] = df['publisher'].replace(['', 'nan', 'NA', '<NA>'], pd.NA)
+df_clean = df.dropna(subset=['publisher'])
+
+top_publishers = df_clean['publisher'].value_counts().head(15)
+
+plt.figure(figsize=(8, 6))
+top_publishers.plot(kind='bar')
+plt.title("Top 15 Publishers in 1914")
+plt.xlabel("Publisher")
+plt.ylabel("Number of Publications")
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
+plt.show()
+```
+</details> 
+
+
+<details>
+<summary><strong>1915</strong></summary>
+
+```{python}
+
+#| echo: false
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_csv("df_1915.csv")
+df['publisher'] = df['publisher'].astype(str).str.strip()
+df['publisher'] = df['publisher'].replace(['', 'nan', 'NA', '<NA>'], pd.NA)
+df_clean = df.dropna(subset=['publisher'])
+
+top_publishers = df_clean['publisher'].value_counts().head(15)
+
+plt.figure(figsize=(8, 6))
+top_publishers.plot(kind='bar')
+plt.title("Top 15 Publishers in 1915")
+plt.xlabel("Publisher")
+plt.ylabel("Number of Publications")
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
+plt.show()
+```
+</details> 
+
+
+<details>
+<summary><strong>1916</strong></summary>
+
+```{python}
+
+#| echo: false
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_csv("df_1916.csv")
+df['publisher'] = df['publisher'].astype(str).str.strip()
+df['publisher'] = df['publisher'].replace(['', 'nan', 'NA', '<NA>'], pd.NA)
+df_clean = df.dropna(subset=['publisher'])
+
+top_publishers = df_clean['publisher'].value_counts().head(15)
+
+plt.figure(figsize=(8, 6))
+top_publishers.plot(kind='bar')
+plt.title("Top 15 Publishers in 1916")
+plt.xlabel("Publisher")
+plt.ylabel("Number of Publications")
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
+plt.show()
+```
+</details> 
+
+
+<details>
+<summary><strong>1917</strong></summary>
+
+```{python}
+
+#| echo: false
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_csv("df_1917.csv")
+df['publisher'] = df['publisher'].astype(str).str.strip()
+df['publisher'] = df['publisher'].replace(['', 'nan', 'NA', '<NA>'], pd.NA)
+df_clean = df.dropna(subset=['publisher'])
+
+top_publishers = df_clean['publisher'].value_counts().head(15)
+
+plt.figure(figsize=(8, 6))
+top_publishers.plot(kind='bar')
+plt.title("Top 15 Publishers in 1917")
+plt.xlabel("Publisher")
+plt.ylabel("Number of Publications")
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
+plt.show()
+```
+</details> 
+
+
+<details>
+<summary><strong>1918</strong></summary>
+
+```{python}
+
+#| echo: false
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_csv("df_1918.csv")
+df['publisher'] = df['publisher'].astype(str).str.strip()
+df['publisher'] = df['publisher'].replace(['', 'nan', 'NA', '<NA>'], pd.NA)
+df_clean = df.dropna(subset=['publisher'])
+
+top_publishers = df_clean['publisher'].value_counts().head(15)
+
+plt.figure(figsize=(8, 6))
+top_publishers.plot(kind='bar')
+plt.title("Top 15 Publishers in 1918")
+plt.xlabel("Publisher")
+plt.ylabel("Number of Publications")
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
+plt.show()
+```
+</details> 
+
+
+<details>
+<summary><strong>1919</strong></summary>
+
+```{python}
+
+#| echo: false
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_csv("df_1919.csv")
+df['publisher'] = df['publisher'].astype(str).str.strip()
+df['publisher'] = df['publisher'].replace(['', 'nan', 'NA', '<NA>'], pd.NA)
+df_clean = df.dropna(subset=['publisher'])
+
+top_publishers = df_clean['publisher'].value_counts().head(15)
+
+plt.figure(figsize=(8, 6))
+top_publishers.plot(kind='bar')
+plt.title("Top 15 Publishers in 1919")
+plt.xlabel("Publisher")
+plt.ylabel("Number of Publications")
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
+plt.show()
+```
+</details> 
+
+
+<details>
+<summary><strong>1920</strong></summary>
+
+```{python}
+
+#| echo: false
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_csv("df_1920.csv")
+df['publisher'] = df['publisher'].astype(str).str.strip()
+df['publisher'] = df['publisher'].replace(['', 'nan', 'NA', '<NA>'], pd.NA)
+df_clean = df.dropna(subset=['publisher'])
+
+top_publishers = df_clean['publisher'].value_counts().head(15)
+
+plt.figure(figsize=(8, 6))
+top_publishers.plot(kind='bar')
+plt.title("Top 15 Publishers in 1920")
+plt.xlabel("Publisher")
+plt.ylabel("Number of Publications")
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
+plt.show()
+```
+</details> 
+
+
+<details>
+<summary><strong>1921</strong></summary>
+
+```{python}
+
+#| echo: false
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_csv("df_1921.csv")
+df['publisher'] = df['publisher'].astype(str).str.strip()
+df['publisher'] = df['publisher'].replace(['', 'nan', 'NA', '<NA>'], pd.NA)
+df_clean = df.dropna(subset=['publisher'])
+
+top_publishers = df_clean['publisher'].value_counts().head(15)
+
+plt.figure(figsize=(8, 6))
+top_publishers.plot(kind='bar')
+plt.title("Top 15 Publishers in 1921")
+plt.xlabel("Publisher")
+plt.ylabel("Number of Publications")
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
+plt.show()
+```
+</details> 
+
+
+<details>
+<summary><strong>1922</strong></summary>
+
+```{python}
+
+#| echo: false
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_csv("df_1922.csv")
+df['publisher'] = df['publisher'].astype(str).str.strip()
+df['publisher'] = df['publisher'].replace(['', 'nan', 'NA', '<NA>'], pd.NA)
+df_clean = df.dropna(subset=['publisher'])
+
+top_publishers = df_clean['publisher'].value_counts().head(15)
+
+plt.figure(figsize=(8, 6))
+top_publishers.plot(kind='bar')
+plt.title("Top 15 Publishers in 1922")
+plt.xlabel("Publisher")
+plt.ylabel("Number of Publications")
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
+plt.show()
+```
+</details> 
