@@ -2,13 +2,76 @@
 format: html
 ---
 
-# Welcome to the English Catalogue of Books
+<div class="center-text">
+## Welcome to the English Catalogue of Books
 
-Explore visualizations, data tables, and analysis of books published in Britain from 1912–1922.
+The English Catalogue of books is a record of books published in England each year. Our dataset consists of catalogue entries from 1912-1922.
 
-## Navigate
+</div>
 
-- [Top Publishers](publishers.qmd)
-- [Top Authors](authors.qmd)
-- [Our Data](our_data.qmd)
-- [Captured Entries](entrycapture.qmd)
+## Search books published in England from 1912-1922!
+
+
+
+<input type="text" id="searchInput" placeholder="Search books, authors, publishers..." style="width: 500px; height: 40px; font-size: 16px; padding: 8px;">
+
+<div id="searchResults"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+<script>
+  // Load the combined JSON once
+  fetch("data/all_years.json")
+    .then(response => response.json())
+    .then(data => {
+      // Setup Fuse
+      const options = {
+        keys: ["title", "author_name", "publisher"],
+        threshold: 0.4,  // Adjust for fuzziness
+      };
+      const fuse = new Fuse(data, options);
+
+      const input = document.getElementById("searchInput");
+      const resultsDiv = document.getElementById("searchResults");
+
+      input.addEventListener("keydown", function(event) {
+        if (event.key === "Enter") {
+          const query = input.value.trim();
+          if (!query) {
+            resultsDiv.innerHTML = "";
+            return;
+          }
+          const results = fuse.search(query);
+
+          if (results.length === 0) {
+            resultsDiv.innerHTML = "<p>No results found.</p>";
+            return;
+          }
+
+          // Filter duplicates based on title + author_name
+          const seen = new Set();
+          const uniqueResults = [];
+
+          for (const r of results) {
+            const item = r.item;
+            const key = (item.title || "").toLowerCase() + "||" + (item.author_name || "").toLowerCase();
+            if (!seen.has(key)) {
+              seen.add(key);
+              uniqueResults.push(r);
+            }
+          }
+
+          // Build HTML for results count and results
+          const resultCount = `<p><strong>${uniqueResults.length} result${uniqueResults.length !== 1 ? "s" : ""} found:</strong></p>`;
+
+          const html = uniqueResults.slice(0, 20).map(r => {
+            const item = r.item;
+            return `<div>
+              <strong>${item.title}</strong> by ${item.author_name} (${item.publisher})
+            </div>`;
+          }).join("");
+
+          resultsDiv.innerHTML = resultCount + html;
+        }
+      });
+    });
+</script>

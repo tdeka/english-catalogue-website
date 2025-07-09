@@ -1,25 +1,36 @@
 project:
   type: website
+  resources:
+    - data/*.json
+    - data/all_titles_by_year.csv
 
 website:
   title: "English Catalogue of Books"
   navbar:
     left:
-      - href: publishers.qmd
-        text: Top Publishers 
-      - href: authors.qmd
-        text: Top Authors
+      - text: About
+        menu:
+          - text: Our Project
+            href: about_project.qmd
+          - text: Team
+            href: about_team.qmd
       - href: our_data.qmd
-        text: Our Data
-      - href: entrycapture.qmd
-        text: Captured Entries
+        text: Data
+      - text: Visualizations
+        menu:
+          - text: Top Publishers by Year
+            href: publishers.qmd
+          - text: Top Authors by Year
+            href: authors.qmd
+      - href: map.qmd
+        text: Interactive Map
 
 format:
   html:
     theme: flatly
     css: styles.css
     toc: true
-
+  
 metadata-files:
   - _params.yml
 

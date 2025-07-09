@@ -10,10 +10,16 @@
         "\n",
         "---\n",
         "\n",
+        "<div style=\"margin-top: 40px;\"></div>\n",
+        "\n",
+        "Select a year to see the top 15 authors for that year!\n",
+        "\n",
+        "<div style=\"margin-top: 40px;\"></div>\n",
+        "\n",
         "<details>\n",
         "<summary><strong>1912</strong></summary>"
       ],
-      "id": "0b214d28"
+      "id": "1b967aa6"
     },
     {
       "cell_type": "code",
@@ -39,7 +45,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "406cfb10",
+      "id": "9dca326b",
       "execution_count": null,
       "outputs": []
     },
@@ -53,7 +59,7 @@
         "<details>\n",
         "<summary><strong>1913</strong></summary>"
       ],
-      "id": "2bb7c0a1"
+      "id": "8346717c"
     },
     {
       "cell_type": "code",
@@ -79,7 +85,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "21cd47a3",
+      "id": "4c30879f",
       "execution_count": null,
       "outputs": []
     },
@@ -93,7 +99,7 @@
         "<details>\n",
         "<summary><strong>1914</strong></summary>"
       ],
-      "id": "8cbe2bdf"
+      "id": "b572a1e6"
     },
     {
       "cell_type": "code",
@@ -119,7 +125,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "a16b0df3",
+      "id": "de3eec34",
       "execution_count": null,
       "outputs": []
     },
@@ -133,7 +139,7 @@
         "<details>\n",
         "<summary><strong>1915</strong></summary>"
       ],
-      "id": "8c772eb9"
+      "id": "907e2903"
     },
     {
       "cell_type": "code",
@@ -159,7 +165,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "ab41241c",
+      "id": "4d4598ef",
       "execution_count": null,
       "outputs": []
     },
@@ -173,7 +179,7 @@
         "<details>\n",
         "<summary><strong>1916</strong></summary>"
       ],
-      "id": "44b467aa"
+      "id": "27555e1b"
     },
     {
       "cell_type": "code",
@@ -199,7 +205,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "1e20055f",
+      "id": "e958f0d1",
       "execution_count": null,
       "outputs": []
     },
@@ -213,7 +219,7 @@
         "<details>\n",
         "<summary><strong>1917</strong></summary>"
       ],
-      "id": "6c77b3f8"
+      "id": "8f8f5a3e"
     },
     {
       "cell_type": "code",
@@ -239,7 +245,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "0019f186",
+      "id": "626e972b",
       "execution_count": null,
       "outputs": []
     },
@@ -253,7 +259,7 @@
         "<details>\n",
         "<summary><strong>1918</strong></summary>"
       ],
-      "id": "e79ce539"
+      "id": "72f888b3"
     },
     {
       "cell_type": "code",
@@ -279,7 +285,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "09f06c25",
+      "id": "1ada9e40",
       "execution_count": null,
       "outputs": []
     },
@@ -293,7 +299,7 @@
         "<details>\n",
         "<summary><strong>1919</strong></summary>"
       ],
-      "id": "2df94efd"
+      "id": "d3272149"
     },
     {
       "cell_type": "code",
@@ -319,7 +325,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "252d66f9",
+      "id": "4fced366",
       "execution_count": null,
       "outputs": []
     },
@@ -333,7 +339,7 @@
         "<details>\n",
         "<summary><strong>1920</strong></summary>"
       ],
-      "id": "855d6825"
+      "id": "30e77daa"
     },
     {
       "cell_type": "code",
@@ -359,7 +365,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "74bb2bde",
+      "id": "1e62942e",
       "execution_count": null,
       "outputs": []
     },
@@ -373,7 +379,7 @@
         "<details>\n",
         "<summary><strong>1921</strong></summary>"
       ],
-      "id": "0634dd1b"
+      "id": "dbe9477a"
     },
     {
       "cell_type": "code",
@@ -399,7 +405,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "4e095d24",
+      "id": "db998f28",
       "execution_count": null,
       "outputs": []
     },
@@ -413,7 +419,7 @@
         "<details>\n",
         "<summary><strong>1922</strong></summary>"
       ],
-      "id": "2c4b83d4"
+      "id": "fe4d7c23"
     },
     {
       "cell_type": "code",
@@ -439,7 +445,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "1983392b",
+      "id": "5ea03050",
       "execution_count": null,
       "outputs": []
     },
@@ -449,7 +455,7 @@
       "source": [
         "</details> "
       ],
-      "id": "c1f4a763"
+      "id": "c4cfd6d3"
     }
   ],
   "metadata": {

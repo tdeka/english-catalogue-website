@@ -118,21 +118,43 @@ window.Quarto = {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./publishers.html"> 
-<span class="menu-text">Top Publishers</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">About</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-about">    
+        <li>
+    <a class="dropdown-item" href="./about_project.html">
+ <span class="dropdown-text">Our Project</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./authors.html"> 
-<span class="menu-text">Top Authors</span></a>
+        <li>
+    <a class="dropdown-item" href="./about_team.html">
+ <span class="dropdown-text">Team</span></a>
   </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link active" href="./our_data.html" aria-current="page"> 
-<span class="menu-text">Our Data</span></a>
+<span class="menu-text">Data</span></a>
   </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-visualizations" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Visualizations</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-visualizations">    
+        <li>
+    <a class="dropdown-item" href="./publishers.html">
+ <span class="dropdown-text">Top Publishers by Year</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./authors.html">
+ <span class="dropdown-text">Top Authors by Year</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
-    <a class="nav-link" href="./entrycapture.html"> 
-<span class="menu-text">Captured Entries</span></a>
+    <a class="nav-link" href="./map.html"> 
+<span class="menu-text">Interactive Map</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -168,14 +190,27 @@ window.Quarto = {
 </header>
 
 
+<div style="margin-top: 40px;">
+
+</div>
+<p>Learn more about the data we used for this project!</p>
+<div style="margin-top: 40px;">
+
+</div>
+<section id="raw-data" class="level2">
+<h2 class="anchored" data-anchor-id="raw-data">Raw Data</h2>
+<p>Click on the different years to see a preview and download link for the CSV of the raw data.</p>
 <details>
 <summary>
 1912
 </summary>
-<p><img src="1912_english_catalogue_cover.jpeg" class="centered-image img-fluid" width="500"></p>
-<section id="data-table" class="level1">
-<h1>Data Table</h1>
-<div id="365f89de" class="cell" data-execution_count="1">
+<p style="text-align: center;">
+<img src="1912_english_catalogue_cover.jpeg" width="500px">
+</p>
+<h3 class="anchored">
+Data Table
+</h3>
+<div id="c44f529e" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display" data-execution_count="1">
 <table class="dataframe my-table table table-sm table-striped small">
 
@@ -1214,16 +1249,18 @@ net
 </div>
 </div>
 <p><a href="df_1912.csv" download="">Download full CSV</a></p>
-</section></details>
+</details>
 <details>
 <summary>
 1913
 </summary>
-<p><img src="1913_english_catalogue_cover.jpeg" class="centered-image img-fluid" width="500"></p>
-
-<section id="data-table-1" class="level1">
-<h1>Data Table</h1>
-<div id="70953569" class="cell" data-execution_count="2">
+<p style="text-align: center;">
+<img src="1913_english_catalogue_cover.jpeg" width="500px">
+</p>
+<h3 class="anchored">
+Data Table
+</h3>
+<div id="eb670e92" class="cell" data-execution_count="2">
 <div class="cell-output cell-output-display" data-execution_count="2">
 <table class="dataframe my-table table table-sm table-striped small">
 
@@ -2262,16 +2299,18 @@ net
 </div>
 </div>
 <p><a href="df_1913.csv" download="">Download full CSV</a></p>
-</section></details>
+</details>
 <details>
 <summary>
 1914
 </summary>
-<p><img src="1914_english_catalogue_cover.jpeg" class="centered-image img-fluid" width="500"></p>
-
-<section id="data-table-2" class="level1">
-<h1>Data Table</h1>
-<div id="fe3edfee" class="cell" data-execution_count="3">
+<p style="text-align: center;">
+<img src="1914_english_catalogue_cover.jpeg" width="500px">
+</p>
+<h3 class="anchored">
+Data Table
+</h3>
+<div id="d7cfcf45" class="cell" data-execution_count="3">
 <div class="cell-output cell-output-display" data-execution_count="3">
 <table class="dataframe my-table table table-sm table-striped small">
 
@@ -3310,13 +3349,18 @@ NaN
 </div>
 </div>
 <p><a href="df_1914.csv" download="">Download full CSV</a></p>
-</section></details>
+</details>
 <details>
 <summary>
 1915
 </summary>
-<p><img src="1915_english_catalogue_cover.jpeg" class="centered-image img-fluid" width="500"> # Data Table</p>
-<div id="54a61f9e" class="cell" data-execution_count="4">
+<p style="text-align: center;">
+<img src="1915_english_catalogue_cover.jpeg" width="500px">
+</p>
+<h3 class="anchored">
+Data Table
+</h3>
+<div id="e6b82bad" class="cell" data-execution_count="4">
 <div class="cell-output cell-output-display" data-execution_count="4">
 <table class="dataframe my-table table table-sm table-striped small">
 
@@ -4362,14 +4406,13 @@ NaN
 <summary>
 1916
 </summary>
-<div>
-<figure class="figure">
-<p><img src="1916_english_catalogue_cover.jpeg" class="centered-image img-fluid figure-img" width="500"></p>
-</figure>
-</div>
-<section id="data-table-3" class="level1">
-<h1>Data Table</h1>
-<div id="e567e73e" class="cell" data-execution_count="5">
+<p style="text-align: center;">
+<img src="1916_english_catalogue_cover.jpeg" width="500px">
+</p>
+<h3 class="anchored">
+Data Table
+</h3>
+<div id="2fbcc322" class="cell" data-execution_count="5">
 <div class="cell-output cell-output-display" data-execution_count="5">
 <table class="dataframe my-table table table-sm table-striped small">
 
@@ -5408,16 +5451,18 @@ net
 </div>
 </div>
 <p><a href="df_1916.csv" download="">Download full CSV</a></p>
-</section></details>
+</details>
 <details>
 <summary>
 1917
 </summary>
-<p><img src="1917_english_catalogue_cover.jpeg" class="centered-image img-fluid" width="500"></p>
-
-<section id="data-table-4" class="level1">
-<h1>Data Table</h1>
-<div id="a2186301" class="cell" data-execution_count="6">
+<p style="text-align: center;">
+<img src="1917_english_catalogue_cover.jpeg" width="500px">
+</p>
+<h3 class="anchored">
+Data Table
+</h3>
+<div id="2c8c66a4" class="cell" data-execution_count="6">
 <div class="cell-output cell-output-display" data-execution_count="6">
 <table class="dataframe my-table table table-sm table-striped small">
 
@@ -6456,16 +6501,18 @@ net
 </div>
 </div>
 <p><a href="df_1917.csv" download="">Download full CSV</a></p>
-</section></details>
+</details>
 <details>
 <summary>
 1918
 </summary>
-<p><img src="1918_english_catalogue_cover.jpeg" class="centered-image img-fluid" width="500"></p>
-
-<section id="data-table-5" class="level1">
-<h1>Data Table</h1>
-<div id="1f8761d6" class="cell" data-execution_count="7">
+<p style="text-align: center;">
+<img src="1918_english_catalogue_cover.jpeg" width="500px">
+</p>
+<h3 class="anchored">
+Data Table
+</h3>
+<div id="8969d4f2" class="cell" data-execution_count="7">
 <div class="cell-output cell-output-display" data-execution_count="7">
 <table class="dataframe my-table table table-sm table-striped small">
 
@@ -7476,16 +7523,18 @@ NaN
 </div>
 </div>
 <p><a href="df_1918.csv" download="">Download full CSV</a></p>
-</section></details>
+</details>
 <details>
 <summary>
 1919
 </summary>
-<p><img src="1919_english_catalogue_cover.jpeg" class="centered-image img-fluid" width="500"></p>
-
-<section id="data-table-6" class="level1">
-<h1>Data Table</h1>
-<div id="7171b3c6" class="cell" data-execution_count="8">
+<p style="text-align: center;">
+<img src="1919_english_catalogue_cover.jpeg" width="500px">
+</p>
+<h3 class="anchored">
+Data Table
+</h3>
+<div id="61607698" class="cell" data-execution_count="8">
 <div class="cell-output cell-output-display" data-execution_count="8">
 <table class="dataframe my-table table table-sm table-striped small">
 
@@ -8524,16 +8573,18 @@ net
 </div>
 </div>
 <p><a href="df_1919.csv" download="">Download full CSV</a></p>
-</section></details>
+</details>
 <details>
 <summary>
 1920
 </summary>
-<p><img src="1920_english_catalogue_cover.jpeg" class="centered-image img-fluid" width="500"></p>
-
-<section id="data-table-7" class="level1">
-<h1>Data Table</h1>
-<div id="15989316" class="cell" data-execution_count="9">
+<p style="text-align: center;">
+<img src="1920_english_catalogue_cover.jpeg" width="500px">
+</p>
+<h3 class="anchored">
+Data Table
+</h3>
+<div id="265b1d04" class="cell" data-execution_count="9">
 <div class="cell-output cell-output-display" data-execution_count="9">
 <table class="dataframe my-table table table-sm table-striped small">
 
@@ -9572,16 +9623,18 @@ NaN
 </div>
 </div>
 <p><a href="df_1920.csv" download="">Download full CSV</a></p>
-</section></details>
+</details>
 <details>
 <summary>
 1921
 </summary>
-<p><img src="1921_english_catalogue_cover.jpeg" class="centered-image img-fluid" width="500"></p>
-
-<section id="data-table-8" class="level1">
-<h1>Data Table</h1>
-<div id="0cfcee55" class="cell" data-execution_count="10">
+<p style="text-align: center;">
+<img src="1921_english_catalogue_cover.jpeg" width="500px">
+</p>
+<h3 class="anchored">
+Data Table
+</h3>
+<div id="9fc170a4" class="cell" data-execution_count="10">
 <div class="cell-output cell-output-display" data-execution_count="10">
 <table class="dataframe my-table table table-sm table-striped small">
 
@@ -10620,16 +10673,18 @@ net
 </div>
 </div>
 <p><a href="df_1921.csv" download="">Download full CSV</a></p>
-</section></details>
+</details>
 <details>
 <summary>
 1922
 </summary>
-<p><img src="1922_english_catalogue_cover.jpeg" class="centered-image img-fluid" width="500"></p>
-
-<section id="data-table-9" class="level1">
-<h1>Data Table</h1>
-<div id="aff44b62" class="cell" data-execution_count="11">
+<p style="text-align: center;">
+<img src="1922_english_catalogue_cover.jpeg" width="500px">
+</p>
+<h3 class="anchored">
+Data Table
+</h3>
+<div id="40ba55bd" class="cell" data-execution_count="11">
 <div class="cell-output cell-output-display" data-execution_count="11">
 <table class="dataframe my-table table table-sm table-striped small">
 
@@ -11668,11 +11723,29 @@ NaN
 </div>
 </div>
 <p><a href="df_1922.csv" download="">Download full CSV</a></p>
-</section></details>
+</details>
+<div style="margin-top: 100px;">
+
+</div>
+<section id="entries-captured-by-our-dataframes" class="level2">
+<h2 class="anchored" data-anchor-id="entries-captured-by-our-dataframes">Entries Captured by Our Dataframes</h2>
+<p>This visualization shows how many catalogue entries we captured in our data relative to how many total entries were listed in each issue.</p>
+<div style="margin-top: 60px;">
+
+</div>
+<div id="0e72e9d3" class="cell" data-execution_count="12">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="our_data_files/figure-html/cell-13-output-1.png" width="758" height="566" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 
 
-
-</main></div>
+</section>
+</section></main></div>
 
 
 

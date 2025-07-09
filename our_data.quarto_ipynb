@@ -11,14 +11,26 @@
         "toc: false\n",
         "---\n",
         "\n",
+        "<div style=\"margin-top: 40px;\"></div>\n",
+        "\n",
+        "Learn more about the data we used for this project!\n",
+        "\n",
+        "<div style=\"margin-top: 40px;\"></div>\n",
+        "\n",
+        "## Raw Data\n",
+        "\n",
+        "Click on the different years to see a preview and download link for the CSV of the raw data.\n",
+        "\n",
         "<details>\n",
         "<summary>1912</summary>\n",
         "\n",
-        "![](1912_english_catalogue_cover.jpeg){.centered-image width=500px}\n",
+        "<p style=\"text-align: center;\">\n",
+        "  <img src=\"1912_english_catalogue_cover.jpeg\" width=\"500px\">\n",
+        "</p>\n",
         "\n",
-        "# Data Table "
+        "<h3>Data Table</h3>"
       ],
-      "id": "1609dfe4"
+      "id": "8a3d92c2"
     },
     {
       "cell_type": "code",
@@ -26,13 +38,10 @@
       "source": [
         "#| echo: false\n",
         "import pandas as pd\n",
-        "\n",
-        "# Load CSV\n",
         "df = pd.read_csv(\"df_1912.csv\")\n",
-        "\n",
         "df.head(15).to_html(classes=\"my-table\")"
       ],
-      "id": "67b86b51",
+      "id": "983b6bbc",
       "execution_count": null,
       "outputs": []
     },
@@ -42,17 +51,19 @@
       "source": [
         "<a href=\"df_1912.csv\" download>Download full CSV</a>\n",
         "\n",
-        "</details>\n",
+        "</details> \n",
+        "\n",
         "\n",
         "<details>\n",
         "<summary>1913</summary>\n",
         "\n",
-        "![](1913_english_catalogue_cover.jpeg){.centered-image width=500px}\n",
+        "<p style=\"text-align: center;\">\n",
+        "  <img src=\"1913_english_catalogue_cover.jpeg\" width=\"500px\">\n",
+        "</p>\n",
         "\n",
-        "\n",
-        "# Data Table "
+        "<h3>Data Table</h3>"
       ],
-      "id": "6b20e627"
+      "id": "76f43ff3"
     },
     {
       "cell_type": "code",
@@ -60,13 +71,10 @@
       "source": [
         "#| echo: false\n",
         "import pandas as pd\n",
-        "\n",
-        "# Load CSV\n",
         "df = pd.read_csv(\"df_1913.csv\")\n",
-        "\n",
         "df.head(15).to_html(classes=\"my-table\")"
       ],
-      "id": "d2cc76ae",
+      "id": "ecee93b0",
       "execution_count": null,
       "outputs": []
     },
@@ -76,16 +84,19 @@
       "source": [
         "<a href=\"df_1913.csv\" download>Download full CSV</a>\n",
         "\n",
-        "</details>\n",
+        "</details> \n",
+        "\n",
         "\n",
         "<details>\n",
         "<summary>1914</summary>\n",
         "\n",
-        "![](1914_english_catalogue_cover.jpeg){.centered-image width=500px}\n",
+        "<p style=\"text-align: center;\">\n",
+        "  <img src=\"1914_english_catalogue_cover.jpeg\" width=\"500px\">\n",
+        "</p>\n",
         "\n",
-        "# Data Table "
+        "<h3>Data Table</h3>"
       ],
-      "id": "4019bbaa"
+      "id": "20955141"
     },
     {
       "cell_type": "code",
@@ -93,13 +104,10 @@
       "source": [
         "#| echo: false\n",
         "import pandas as pd\n",
-        "\n",
-        "# Load CSV\n",
         "df = pd.read_csv(\"df_1914.csv\")\n",
-        "\n",
         "df.head(15).to_html(classes=\"my-table\")"
       ],
-      "id": "7819b175",
+      "id": "1c370a33",
       "execution_count": null,
       "outputs": []
     },
@@ -109,15 +117,19 @@
       "source": [
         "<a href=\"df_1914.csv\" download>Download full CSV</a>\n",
         "\n",
-        "</details>\n",
+        "</details> \n",
+        "\n",
         "\n",
         "<details>\n",
         "<summary>1915</summary>\n",
         "\n",
-        "![](1915_english_catalogue_cover.jpeg){.centered-image width=500px}\n",
-        "# Data Table "
+        "<p style=\"text-align: center;\">\n",
+        "  <img src=\"1915_english_catalogue_cover.jpeg\" width=\"500px\">\n",
+        "</p>\n",
+        "\n",
+        "<h3>Data Table</h3>"
       ],
-      "id": "29d88efb"
+      "id": "3e37e97f"
     },
     {
       "cell_type": "code",
@@ -125,13 +137,10 @@
       "source": [
         "#| echo: false\n",
         "import pandas as pd\n",
-        "\n",
-        "# Load CSV\n",
         "df = pd.read_csv(\"df_1915.csv\")\n",
-        "\n",
         "df.head(15).to_html(classes=\"my-table\")"
       ],
-      "id": "8a984696",
+      "id": "5a5831ec",
       "execution_count": null,
       "outputs": []
     },
@@ -141,16 +150,18 @@
       "source": [
         "<a href=\"df_1915.csv\" download>Download full CSV</a>\n",
         "\n",
-        "</details>\n",
+        "</details> \n",
         "\n",
         "<details>\n",
         "<summary>1916</summary>\n",
         "\n",
-        "![](1916_english_catalogue_cover.jpeg){.centered-image width=500px}\n",
+        "<p style=\"text-align: center;\">\n",
+        "  <img src=\"1916_english_catalogue_cover.jpeg\" width=\"500px\">\n",
+        "</p>\n",
         "\n",
-        "# Data Table "
+        "<h3>Data Table</h3>"
       ],
-      "id": "5eee307b"
+      "id": "6622b232"
     },
     {
       "cell_type": "code",
@@ -158,13 +169,10 @@
       "source": [
         "#| echo: false\n",
         "import pandas as pd\n",
-        "\n",
-        "# Load CSV\n",
         "df = pd.read_csv(\"df_1916.csv\")\n",
-        "\n",
         "df.head(15).to_html(classes=\"my-table\")"
       ],
-      "id": "9df4c7d2",
+      "id": "1af3eb93",
       "execution_count": null,
       "outputs": []
     },
@@ -174,16 +182,19 @@
       "source": [
         "<a href=\"df_1916.csv\" download>Download full CSV</a>\n",
         "\n",
-        "</details>\n",
+        "</details> \n",
+        "\n",
         "\n",
         "<details>\n",
         "<summary>1917</summary>\n",
         "\n",
-        "![](1917_english_catalogue_cover.jpeg){.centered-image width=500px}\n",
+        "<p style=\"text-align: center;\">\n",
+        "  <img src=\"1917_english_catalogue_cover.jpeg\" width=\"500px\">\n",
+        "</p>\n",
         "\n",
-        "# Data Table "
+        "<h3>Data Table</h3>"
       ],
-      "id": "1c5b9ddd"
+      "id": "b5885ced"
     },
     {
       "cell_type": "code",
@@ -191,13 +202,10 @@
       "source": [
         "#| echo: false\n",
         "import pandas as pd\n",
-        "\n",
-        "# Load CSV\n",
         "df = pd.read_csv(\"df_1917.csv\")\n",
-        "\n",
         "df.head(15).to_html(classes=\"my-table\")"
       ],
-      "id": "777c0dfc",
+      "id": "2a2ae27c",
       "execution_count": null,
       "outputs": []
     },
@@ -207,16 +215,19 @@
       "source": [
         "<a href=\"df_1917.csv\" download>Download full CSV</a>\n",
         "\n",
-        "</details>\n",
+        "</details> \n",
+        "\n",
         "\n",
         "<details>\n",
         "<summary>1918</summary>\n",
         "\n",
-        "![](1918_english_catalogue_cover.jpeg){.centered-image width=500px}\n",
+        "<p style=\"text-align: center;\">\n",
+        "  <img src=\"1918_english_catalogue_cover.jpeg\" width=\"500px\">\n",
+        "</p>\n",
         "\n",
-        "# Data Table "
+        "<h3>Data Table</h3>"
       ],
-      "id": "41fdaa7c"
+      "id": "b1641df3"
     },
     {
       "cell_type": "code",
@@ -224,13 +235,10 @@
       "source": [
         "#| echo: false\n",
         "import pandas as pd\n",
-        "\n",
-        "# Load CSV\n",
         "df = pd.read_csv(\"df_1918.csv\")\n",
-        "\n",
         "df.head(15).to_html(classes=\"my-table\")"
       ],
-      "id": "9ac964e2",
+      "id": "f4f12175",
       "execution_count": null,
       "outputs": []
     },
@@ -240,16 +248,19 @@
       "source": [
         "<a href=\"df_1918.csv\" download>Download full CSV</a>\n",
         "\n",
-        "</details>\n",
+        "</details> \n",
+        "\n",
         "\n",
         "<details>\n",
         "<summary>1919</summary>\n",
         "\n",
-        "![](1919_english_catalogue_cover.jpeg){.centered-image width=500px}\n",
+        "<p style=\"text-align: center;\">\n",
+        "  <img src=\"1919_english_catalogue_cover.jpeg\" width=\"500px\">\n",
+        "</p>\n",
         "\n",
-        "# Data Table "
+        "<h3>Data Table</h3>"
       ],
-      "id": "96e10100"
+      "id": "e292cbb2"
     },
     {
       "cell_type": "code",
@@ -257,13 +268,10 @@
       "source": [
         "#| echo: false\n",
         "import pandas as pd\n",
-        "\n",
-        "# Load CSV\n",
         "df = pd.read_csv(\"df_1919.csv\")\n",
-        "\n",
         "df.head(15).to_html(classes=\"my-table\")"
       ],
-      "id": "22fdcae0",
+      "id": "75e80ed3",
       "execution_count": null,
       "outputs": []
     },
@@ -273,16 +281,19 @@
       "source": [
         "<a href=\"df_1919.csv\" download>Download full CSV</a>\n",
         "\n",
-        "</details>\n",
+        "</details> \n",
+        "\n",
         "\n",
         "<details>\n",
         "<summary>1920</summary>\n",
         "\n",
-        "![](1920_english_catalogue_cover.jpeg){.centered-image width=500px}\n",
+        "<p style=\"text-align: center;\">\n",
+        "  <img src=\"1920_english_catalogue_cover.jpeg\" width=\"500px\">\n",
+        "</p>\n",
         "\n",
-        "# Data Table "
+        "<h3>Data Table</h3>"
       ],
-      "id": "363598e0"
+      "id": "72dc6abe"
     },
     {
       "cell_type": "code",
@@ -290,13 +301,10 @@
       "source": [
         "#| echo: false\n",
         "import pandas as pd\n",
-        "\n",
-        "# Load CSV\n",
         "df = pd.read_csv(\"df_1920.csv\")\n",
-        "\n",
         "df.head(15).to_html(classes=\"my-table\")"
       ],
-      "id": "d9df97de",
+      "id": "dec41866",
       "execution_count": null,
       "outputs": []
     },
@@ -306,16 +314,19 @@
       "source": [
         "<a href=\"df_1920.csv\" download>Download full CSV</a>\n",
         "\n",
-        "</details>\n",
+        "</details> \n",
+        "\n",
         "\n",
         "<details>\n",
         "<summary>1921</summary>\n",
         "\n",
-        "![](1921_english_catalogue_cover.jpeg){.centered-image width=500px}\n",
+        "<p style=\"text-align: center;\">\n",
+        "  <img src=\"1921_english_catalogue_cover.jpeg\" width=\"500px\">\n",
+        "</p>\n",
         "\n",
-        "# Data Table "
+        "<h3>Data Table</h3>"
       ],
-      "id": "2a673de9"
+      "id": "2ef3f7cc"
     },
     {
       "cell_type": "code",
@@ -323,13 +334,10 @@
       "source": [
         "#| echo: false\n",
         "import pandas as pd\n",
-        "\n",
-        "# Load CSV\n",
         "df = pd.read_csv(\"df_1921.csv\")\n",
-        "\n",
         "df.head(15).to_html(classes=\"my-table\")"
       ],
-      "id": "85f326dc",
+      "id": "7c008472",
       "execution_count": null,
       "outputs": []
     },
@@ -339,16 +347,19 @@
       "source": [
         "<a href=\"df_1921.csv\" download>Download full CSV</a>\n",
         "\n",
-        "</details>\n",
+        "</details> \n",
+        "\n",
         "\n",
         "<details>\n",
         "<summary>1922</summary>\n",
         "\n",
-        "![](1922_english_catalogue_cover.jpeg){.centered-image width=500px}\n",
+        "<p style=\"text-align: center;\">\n",
+        "  <img src=\"1922_english_catalogue_cover.jpeg\" width=\"500px\">\n",
+        "</p>\n",
         "\n",
-        "# Data Table "
+        "<h3>Data Table</h3>"
       ],
-      "id": "51d910dd"
+      "id": "f890f061"
     },
     {
       "cell_type": "code",
@@ -356,13 +367,10 @@
       "source": [
         "#| echo: false\n",
         "import pandas as pd\n",
-        "\n",
-        "# Load CSV\n",
         "df = pd.read_csv(\"df_1922.csv\")\n",
-        "\n",
         "df.head(15).to_html(classes=\"my-table\")"
       ],
-      "id": "693f87be",
+      "id": "f2dfa6de",
       "execution_count": null,
       "outputs": []
     },
@@ -372,9 +380,66 @@
       "source": [
         "<a href=\"df_1922.csv\" download>Download full CSV</a>\n",
         "\n",
-        "</details>"
+        "</details> \n",
+        "\n",
+        "\n",
+        "<div style=\"margin-top: 100px;\"></div>\n",
+        "\n",
+        "## Entries Captured by Our Dataframes\n",
+        "\n",
+        "This visualization shows how many catalogue entries we captured in our data relative to how many total entries were listed in each issue.\n",
+        "\n",
+        "<div style=\"margin-top: 60px;\"></div>"
       ],
-      "id": "b88fd959"
+      "id": "5821635a"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "import matplotlib.pyplot as plt\n",
+        "import numpy as np\n",
+        "\n",
+        "# Load the data\n",
+        "df = pd.read_csv(\"entriescaptured.csv\")\n",
+        "\n",
+        "# Extract values\n",
+        "years = df['Year'].astype(str)  # make sure years are strings for x-axis\n",
+        "total = df['Catalogue Table']\n",
+        "captured = df['Dataframe']\n",
+        "percentages = df['Percentage Captured']\n",
+        "\n",
+        "# Setup positions\n",
+        "x = np.arange(len(years))  # the label locations\n",
+        "width = 0.35  # width of the bars\n",
+        "\n",
+        "# Create the plot\n",
+        "fig, ax = plt.subplots(figsize=(8, 6))\n",
+        "\n",
+        "# Bars\n",
+        "bars1 = ax.bar(x - width/2, total, width, label='Total Entries')\n",
+        "bars2 = ax.bar(x + width/2, captured, width, label='Captured Entries')\n",
+        "\n",
+        "# Annotate with percentage above the group\n",
+        "for i, pct in enumerate(percentages):\n",
+        "    ax.text(x[i], max(total[i], captured[i]) + 20, f\"{pct:.1f}%\", ha='center', va='bottom', fontsize=10, fontweight='bold')\n",
+        "\n",
+        "# Labels and title\n",
+        "ax.set_xlabel('Year')\n",
+        "ax.set_ylabel('Number of Entries')\n",
+        "ax.set_title('Our Coverage of English Catalogue of Books by Year')\n",
+        "ax.set_xticks(x)\n",
+        "ax.set_xticklabels(years)\n",
+        "ax.legend()\n",
+        "\n",
+        "plt.tight_layout()\n",
+        "plt.show()"
+      ],
+      "id": "53e7095a",
+      "execution_count": null,
+      "outputs": []
     }
   ],
   "metadata": {

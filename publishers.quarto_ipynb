@@ -1,18 +1,31 @@
 {
   "cells": [
     {
-      "cell_type": "markdown",
+      "cell_type": "raw",
       "metadata": {},
       "source": [
         "---\n",
         "title: \"Top Publishers by Year\"\n",
         "format: html\n",
-        "---\n",
+        "---"
+      ],
+      "id": "aa770bf2"
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "<div style=\"margin-top: 40px;\"></div>\n",
+        "\n",
+        "Select a year to see the top 15 publishers for that year!\n",
+        "\n",
+        "<div style=\"margin-top: 40px;\"></div>\n",
+        "\n",
         "\n",
         "<details>\n",
         "<summary><strong>1912</strong></summary>"
       ],
-      "id": "bdd4ae44"
+      "id": "4db54dfb"
     },
     {
       "cell_type": "code",
@@ -38,7 +51,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "3ef00d1f",
+      "id": "30df23a2",
       "execution_count": null,
       "outputs": []
     },
@@ -52,7 +65,7 @@
         "<details>\n",
         "<summary><strong>1913</strong></summary>"
       ],
-      "id": "0e3ffa9b"
+      "id": "1cc875cd"
     },
     {
       "cell_type": "code",
@@ -78,7 +91,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "ad34691a",
+      "id": "42e07289",
       "execution_count": null,
       "outputs": []
     },
@@ -92,7 +105,7 @@
         "<details>\n",
         "<summary><strong>1914</strong></summary>"
       ],
-      "id": "c6f7d5ec"
+      "id": "a4ddacb8"
     },
     {
       "cell_type": "code",
@@ -118,7 +131,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "9f9c1a3f",
+      "id": "29ca563e",
       "execution_count": null,
       "outputs": []
     },
@@ -132,7 +145,7 @@
         "<details>\n",
         "<summary><strong>1915</strong></summary>"
       ],
-      "id": "f2f26dcc"
+      "id": "b767c3bb"
     },
     {
       "cell_type": "code",
@@ -158,7 +171,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "46a2521f",
+      "id": "7132c54d",
       "execution_count": null,
       "outputs": []
     },
@@ -172,7 +185,7 @@
         "<details>\n",
         "<summary><strong>1916</strong></summary>"
       ],
-      "id": "10301deb"
+      "id": "80cbbd37"
     },
     {
       "cell_type": "code",
@@ -198,7 +211,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "686cee36",
+      "id": "76c3bf94",
       "execution_count": null,
       "outputs": []
     },
@@ -212,7 +225,7 @@
         "<details>\n",
         "<summary><strong>1917</strong></summary>"
       ],
-      "id": "2f1642f3"
+      "id": "3cef332c"
     },
     {
       "cell_type": "code",
@@ -238,7 +251,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "3e3c2157",
+      "id": "edf39cfa",
       "execution_count": null,
       "outputs": []
     },
@@ -252,7 +265,7 @@
         "<details>\n",
         "<summary><strong>1918</strong></summary>"
       ],
-      "id": "e2865d44"
+      "id": "bd090fae"
     },
     {
       "cell_type": "code",
@@ -278,7 +291,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "1f6bb585",
+      "id": "8378bfc8",
       "execution_count": null,
       "outputs": []
     },
@@ -292,7 +305,7 @@
         "<details>\n",
         "<summary><strong>1919</strong></summary>"
       ],
-      "id": "ede24382"
+      "id": "2b806c0f"
     },
     {
       "cell_type": "code",
@@ -318,7 +331,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "eb7b1424",
+      "id": "459ad585",
       "execution_count": null,
       "outputs": []
     },
@@ -332,7 +345,7 @@
         "<details>\n",
         "<summary><strong>1920</strong></summary>"
       ],
-      "id": "683071eb"
+      "id": "213683e1"
     },
     {
       "cell_type": "code",
@@ -358,7 +371,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "4daa8616",
+      "id": "0bc20745",
       "execution_count": null,
       "outputs": []
     },
@@ -372,7 +385,7 @@
         "<details>\n",
         "<summary><strong>1921</strong></summary>"
       ],
-      "id": "117c833c"
+      "id": "ad679c18"
     },
     {
       "cell_type": "code",
@@ -398,7 +411,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "2a6616eb",
+      "id": "069ab1b4",
       "execution_count": null,
       "outputs": []
     },
@@ -412,7 +425,7 @@
         "<details>\n",
         "<summary><strong>1922</strong></summary>"
       ],
-      "id": "139c1434"
+      "id": "167156af"
     },
     {
       "cell_type": "code",
@@ -438,7 +451,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "8a37ba8c",
+      "id": "eadb6ccb",
       "execution_count": null,
       "outputs": []
     },
@@ -448,7 +461,7 @@
       "source": [
         "</details> "
       ],
-      "id": "29867040"
+      "id": "cdcf7843"
     }
   ],
   "metadata": {

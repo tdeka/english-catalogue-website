@@ -89,18 +89,40 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./publishers.html"> 
-<span class="menu-text">Top Publishers</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">About</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-about">    
+        <li>
+    <a class="dropdown-item" href="./about_project.qmd">
+ <span class="dropdown-text">Our Project</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./authors.html"> 
-<span class="menu-text">Top Authors</span></a>
+        <li>
+    <a class="dropdown-item" href="./about_team.qmd">
+ <span class="dropdown-text">Team</span></a>
   </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="./our_data.html"> 
-<span class="menu-text">Our Data</span></a>
+<span class="menu-text">Data</span></a>
   </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-visualizations" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Visualizations</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-visualizations">    
+        <li>
+    <a class="dropdown-item" href="./publishers.html">
+ <span class="dropdown-text">Top Publishers by Year</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./authors.html">
+ <span class="dropdown-text">Top Authors by Year</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link active" href="./entrycapture.html" aria-current="page"> 
 <span class="menu-text">Captured Entries</span></a>

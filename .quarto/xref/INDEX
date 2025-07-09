@@ -25,5 +25,20 @@
   },
   "home.qmd": {
     "home.html": "e21f783e"
+  },
+  "search.qmd": {
+    "search.html": "99de0b0a"
+  },
+  "map.qmd": {
+    "map.html": "b46d9281"
+  },
+  "about_project.qmd": {
+    "about_project.html": "5052a311"
+  },
+  "about_team.qmd": {
+    "about_team.html": "028bf59d"
+  },
+  "ngram.qmd": {
+    "ngram.html": "a3d0debd"
   }
 }

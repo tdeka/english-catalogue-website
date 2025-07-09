@@ -9,7 +9,7 @@
         "format: html\n",
         "---\n"
       ],
-      "id": "64335f8c"
+      "id": "7cb9c354"
     },
     {
       "cell_type": "code",
@@ -55,7 +55,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "be174f07",
+      "id": "cc70dee8",
       "execution_count": null,
       "outputs": []
     }

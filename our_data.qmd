@@ -5,244 +5,294 @@ page-layout: full
 toc: false
 ---
 
+<div style="margin-top: 40px;"></div>
+
+Learn more about the data we used for this project!
+
+<div style="margin-top: 40px;"></div>
+
+## Raw Data
+
+Click on the different years to see a preview and download link for the CSV of the raw data.
+
 <details>
 <summary>1912</summary>
 
-![](1912_english_catalogue_cover.jpeg){.centered-image width=500px}
+<p style="text-align: center;">
+  <img src="1912_english_catalogue_cover.jpeg" width="500px">
+</p>
 
-# Data Table 
+<h3>Data Table</h3>
 
 ```{python}
-
 #| echo: false
 import pandas as pd
-
-# Load CSV
 df = pd.read_csv("df_1912.csv")
-
 df.head(15).to_html(classes="my-table")
-```
 
+```
 <a href="df_1912.csv" download>Download full CSV</a>
 
-</details>
+</details> 
+
 
 <details>
 <summary>1913</summary>
 
-![](1913_english_catalogue_cover.jpeg){.centered-image width=500px}
+<p style="text-align: center;">
+  <img src="1913_english_catalogue_cover.jpeg" width="500px">
+</p>
 
-
-# Data Table 
+<h3>Data Table</h3>
 
 ```{python}
-
 #| echo: false
 import pandas as pd
-
-# Load CSV
 df = pd.read_csv("df_1913.csv")
-
 df.head(15).to_html(classes="my-table")
-```
 
+```
 <a href="df_1913.csv" download>Download full CSV</a>
 
-</details>
+</details> 
+
 
 <details>
 <summary>1914</summary>
 
-![](1914_english_catalogue_cover.jpeg){.centered-image width=500px}
+<p style="text-align: center;">
+  <img src="1914_english_catalogue_cover.jpeg" width="500px">
+</p>
 
-# Data Table 
+<h3>Data Table</h3>
 
 ```{python}
-
 #| echo: false
 import pandas as pd
-
-# Load CSV
 df = pd.read_csv("df_1914.csv")
-
 df.head(15).to_html(classes="my-table")
-```
 
+```
 <a href="df_1914.csv" download>Download full CSV</a>
 
-</details>
+</details> 
+
 
 <details>
 <summary>1915</summary>
 
-![](1915_english_catalogue_cover.jpeg){.centered-image width=500px}
-# Data Table 
+<p style="text-align: center;">
+  <img src="1915_english_catalogue_cover.jpeg" width="500px">
+</p>
+
+<h3>Data Table</h3>
 
 ```{python}
-
 #| echo: false
 import pandas as pd
-
-# Load CSV
 df = pd.read_csv("df_1915.csv")
-
 df.head(15).to_html(classes="my-table")
-```
 
+```
 <a href="df_1915.csv" download>Download full CSV</a>
 
-</details>
+</details> 
 
 <details>
 <summary>1916</summary>
 
-![](1916_english_catalogue_cover.jpeg){.centered-image width=500px}
+<p style="text-align: center;">
+  <img src="1916_english_catalogue_cover.jpeg" width="500px">
+</p>
 
-# Data Table 
+<h3>Data Table</h3>
 
 ```{python}
-
 #| echo: false
 import pandas as pd
-
-# Load CSV
 df = pd.read_csv("df_1916.csv")
-
 df.head(15).to_html(classes="my-table")
-```
 
+```
 <a href="df_1916.csv" download>Download full CSV</a>
 
-</details>
+</details> 
+
 
 <details>
 <summary>1917</summary>
 
-![](1917_english_catalogue_cover.jpeg){.centered-image width=500px}
+<p style="text-align: center;">
+  <img src="1917_english_catalogue_cover.jpeg" width="500px">
+</p>
 
-# Data Table 
+<h3>Data Table</h3>
 
 ```{python}
-
 #| echo: false
 import pandas as pd
-
-# Load CSV
 df = pd.read_csv("df_1917.csv")
-
 df.head(15).to_html(classes="my-table")
-```
 
+```
 <a href="df_1917.csv" download>Download full CSV</a>
 
-</details>
+</details> 
+
 
 <details>
 <summary>1918</summary>
 
-![](1918_english_catalogue_cover.jpeg){.centered-image width=500px}
+<p style="text-align: center;">
+  <img src="1918_english_catalogue_cover.jpeg" width="500px">
+</p>
 
-# Data Table 
+<h3>Data Table</h3>
 
 ```{python}
-
 #| echo: false
 import pandas as pd
-
-# Load CSV
 df = pd.read_csv("df_1918.csv")
-
 df.head(15).to_html(classes="my-table")
-```
 
+```
 <a href="df_1918.csv" download>Download full CSV</a>
 
-</details>
+</details> 
+
 
 <details>
 <summary>1919</summary>
 
-![](1919_english_catalogue_cover.jpeg){.centered-image width=500px}
+<p style="text-align: center;">
+  <img src="1919_english_catalogue_cover.jpeg" width="500px">
+</p>
 
-# Data Table 
+<h3>Data Table</h3>
 
 ```{python}
-
 #| echo: false
 import pandas as pd
-
-# Load CSV
 df = pd.read_csv("df_1919.csv")
-
 df.head(15).to_html(classes="my-table")
-```
 
+```
 <a href="df_1919.csv" download>Download full CSV</a>
 
-</details>
+</details> 
+
 
 <details>
 <summary>1920</summary>
 
-![](1920_english_catalogue_cover.jpeg){.centered-image width=500px}
+<p style="text-align: center;">
+  <img src="1920_english_catalogue_cover.jpeg" width="500px">
+</p>
 
-# Data Table 
+<h3>Data Table</h3>
 
 ```{python}
-
 #| echo: false
 import pandas as pd
-
-# Load CSV
 df = pd.read_csv("df_1920.csv")
-
 df.head(15).to_html(classes="my-table")
-```
 
+```
 <a href="df_1920.csv" download>Download full CSV</a>
 
-</details>
+</details> 
+
 
 <details>
 <summary>1921</summary>
 
-![](1921_english_catalogue_cover.jpeg){.centered-image width=500px}
+<p style="text-align: center;">
+  <img src="1921_english_catalogue_cover.jpeg" width="500px">
+</p>
 
-# Data Table 
+<h3>Data Table</h3>
 
 ```{python}
-
 #| echo: false
 import pandas as pd
-
-# Load CSV
 df = pd.read_csv("df_1921.csv")
-
 df.head(15).to_html(classes="my-table")
-```
 
+```
 <a href="df_1921.csv" download>Download full CSV</a>
 
-</details>
+</details> 
+
 
 <details>
 <summary>1922</summary>
 
-![](1922_english_catalogue_cover.jpeg){.centered-image width=500px}
+<p style="text-align: center;">
+  <img src="1922_english_catalogue_cover.jpeg" width="500px">
+</p>
 
-# Data Table 
+<h3>Data Table</h3>
+
+```{python}
+#| echo: false
+import pandas as pd
+df = pd.read_csv("df_1922.csv")
+df.head(15).to_html(classes="my-table")
+
+```
+<a href="df_1922.csv" download>Download full CSV</a>
+
+</details> 
+
+
+<div style="margin-top: 100px;"></div>
+
+## Entries Captured by Our Dataframes
+
+This visualization shows how many catalogue entries we captured in our data relative to how many total entries were listed in each issue.
+
+<div style="margin-top: 60px;"></div>
 
 ```{python}
 
 #| echo: false
 import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
 
-# Load CSV
-df = pd.read_csv("df_1922.csv")
+# Load the data
+df = pd.read_csv("entriescaptured.csv")
 
-df.head(15).to_html(classes="my-table")
+# Extract values
+years = df['Year'].astype(str)  # make sure years are strings for x-axis
+total = df['Catalogue Table']
+captured = df['Dataframe']
+percentages = df['Percentage Captured']
+
+# Setup positions
+x = np.arange(len(years))  # the label locations
+width = 0.35  # width of the bars
+
+# Create the plot
+fig, ax = plt.subplots(figsize=(8, 6))
+
+# Bars
+bars1 = ax.bar(x - width/2, total, width, label='Total Entries')
+bars2 = ax.bar(x + width/2, captured, width, label='Captured Entries')
+
+# Annotate with percentage above the group
+for i, pct in enumerate(percentages):
+    ax.text(x[i], max(total[i], captured[i]) + 20, f"{pct:.1f}%", ha='center', va='bottom', fontsize=10, fontweight='bold')
+
+# Labels and title
+ax.set_xlabel('Year')
+ax.set_ylabel('Number of Entries')
+ax.set_title('Our Coverage of English Catalogue of Books by Year')
+ax.set_xticks(x)
+ax.set_xticklabels(years)
+ax.legend()
+
+plt.tight_layout()
+plt.show()
+
 ```
-
-<a href="df_1922.csv" download>Download full CSV</a>
-
-</details>

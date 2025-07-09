@@ -24,8 +24,13 @@
   }
 
 
-  .centered-image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.centered-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.center-text {
+  text-align: center;
+}
