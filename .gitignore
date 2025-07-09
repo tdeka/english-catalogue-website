@@ -210,5 +210,4 @@ __marimo__/
 _site/
 *.json 
 
-echo "_site/data/all_years.json" >> .gitignore
-echo "_site/" >> .gitignore
+data/all_years.json
