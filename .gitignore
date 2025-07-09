@@ -207,3 +207,8 @@ marimo/_lsp/
 __marimo__/
 
 /.quarto/
+_site/
+*.json 
+
+echo "_site/data/all_years.json" >> .gitignore
+echo "_site/" >> .gitignore
