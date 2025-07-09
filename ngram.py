@@ -52,4 +52,4 @@ if query:
     
     st.plotly_chart(fig, use_container_width=True)
 else:
-    st.write("Type one or more words above and press enter to see the n-gram visualization.")
+    st.write("Type one or more words above and press enter to see the n-gram visualization.") 
