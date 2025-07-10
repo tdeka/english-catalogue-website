@@ -1,0 +1,6 @@
+--- 
+title: Independent Visualizations
+format: html
+---
+
+Visualizations coming soon 

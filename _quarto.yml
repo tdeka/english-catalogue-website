@@ -10,23 +10,30 @@ website:
     left:
       - text: About
         menu:
-          - text: Our Project
+          - text: About Our Project
             href: about_project.qmd
-          - text: Team
+          - text: About Our Sources
+            href: sources.qmd
+          - text: Collaborators
             href: about_team.qmd
       - href: our_data.qmd
-        text: Raw Data
-      - text: Data Explorer 
+        text: Our Data
+      - text: Visualizations
         menu:
           - text: Top Publishers by Year
             href: publishers.qmd
           - text: Top Authors by Year
             href: authors.qmd
+          - text: Independent Visualizations
+            href: independent_viz.qmd
+      - text: Data Explorer 
+        menu:
           - text: N-Gram Viewer
             href: https://english-catalogue-ngram.streamlit.app/
             target: _blank
-      - href: map.qmd
-        text: Interactive Map
+          - text: Interactive Map
+            href: map.qmd
+
 
 format:
   html:

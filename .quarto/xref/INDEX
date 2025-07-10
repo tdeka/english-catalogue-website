@@ -40,5 +40,11 @@
   },
   "ngram.qmd": {
     "ngram.html": "a3d0debd"
+  },
+  "sources.qmd": {
+    "sources.html": "f934c029"
+  },
+  "independent_viz.qmd": {
+    "independent_viz.html": "822987ec"
   }
 }
