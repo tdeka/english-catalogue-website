@@ -6,6 +6,8 @@ format: html
 
 ## About Our Project
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+1922 is often considered the "Annus Mirabilis" or "Miracle Year" of Anglophone Literary Modernism, witnessing the publication of T.S. Eliot's *The Waste Land*, Virginia Woolf's *Jacob's Room*, and James Joyce's *Ulysses*. These now-canonical works were surrounded by a much broader field of print and a wide range of literary texts that were often more popular and more acclaimed than the books we study today. What was being published in the years leading up to 1922? 
+
+*The English Catalogue of Books* provides a yearly record of books published in England according to *Publishers' Circular*, a trade publication of the British Publishers' Guild. This website provides a searchable database of records drawn for digitized issues of the catalogue published between 1912 and 1922.
 
 </div>

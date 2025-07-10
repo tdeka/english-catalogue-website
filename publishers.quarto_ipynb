@@ -9,7 +9,7 @@
         "format: html\n",
         "---"
       ],
-      "id": "84523c83"
+      "id": "2c801fbd"
     },
     {
       "cell_type": "markdown",
@@ -25,7 +25,7 @@
         "<details>\n",
         "<summary><strong>1912</strong></summary>"
       ],
-      "id": "829fcf64"
+      "id": "9eac3bfc"
     },
     {
       "cell_type": "code",
@@ -51,7 +51,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "434f41bb",
+      "id": "ad57ce0b",
       "execution_count": null,
       "outputs": []
     },
@@ -65,7 +65,7 @@
         "<details>\n",
         "<summary><strong>1913</strong></summary>"
       ],
-      "id": "7a7cbd8c"
+      "id": "fcc14c73"
     },
     {
       "cell_type": "code",
@@ -91,7 +91,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "2d88a626",
+      "id": "8992f740",
       "execution_count": null,
       "outputs": []
     },
@@ -105,7 +105,7 @@
         "<details>\n",
         "<summary><strong>1914</strong></summary>"
       ],
-      "id": "99f057a0"
+      "id": "9829d5b8"
     },
     {
       "cell_type": "code",
@@ -131,7 +131,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "195e2903",
+      "id": "0099e8b1",
       "execution_count": null,
       "outputs": []
     },
@@ -145,7 +145,7 @@
         "<details>\n",
         "<summary><strong>1915</strong></summary>"
       ],
-      "id": "01c1b343"
+      "id": "e04119d4"
     },
     {
       "cell_type": "code",
@@ -171,7 +171,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "7fdc2de2",
+      "id": "d388a9d8",
       "execution_count": null,
       "outputs": []
     },
@@ -185,7 +185,7 @@
         "<details>\n",
         "<summary><strong>1916</strong></summary>"
       ],
-      "id": "a5765e3d"
+      "id": "b237ae43"
     },
     {
       "cell_type": "code",
@@ -211,7 +211,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "f4f99173",
+      "id": "9c1b05ac",
       "execution_count": null,
       "outputs": []
     },
@@ -225,7 +225,7 @@
         "<details>\n",
         "<summary><strong>1917</strong></summary>"
       ],
-      "id": "6282532a"
+      "id": "22b35633"
     },
     {
       "cell_type": "code",
@@ -251,7 +251,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "0f516cd7",
+      "id": "838e44c9",
       "execution_count": null,
       "outputs": []
     },
@@ -265,7 +265,7 @@
         "<details>\n",
         "<summary><strong>1918</strong></summary>"
       ],
-      "id": "d33f1c4f"
+      "id": "fc780934"
     },
     {
       "cell_type": "code",
@@ -291,7 +291,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "1174d0b9",
+      "id": "95d8b7cf",
       "execution_count": null,
       "outputs": []
     },
@@ -305,7 +305,7 @@
         "<details>\n",
         "<summary><strong>1919</strong></summary>"
       ],
-      "id": "8a40f1ea"
+      "id": "c43affe8"
     },
     {
       "cell_type": "code",
@@ -331,7 +331,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "886af2f1",
+      "id": "f9d2ad01",
       "execution_count": null,
       "outputs": []
     },
@@ -345,7 +345,7 @@
         "<details>\n",
         "<summary><strong>1920</strong></summary>"
       ],
-      "id": "00cfc41f"
+      "id": "2d0488cd"
     },
     {
       "cell_type": "code",
@@ -371,7 +371,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "882c60ea",
+      "id": "3c0e5d44",
       "execution_count": null,
       "outputs": []
     },
@@ -385,7 +385,7 @@
         "<details>\n",
         "<summary><strong>1921</strong></summary>"
       ],
-      "id": "3a996b90"
+      "id": "db4e15a5"
     },
     {
       "cell_type": "code",
@@ -411,7 +411,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "6319c93f",
+      "id": "90c11817",
       "execution_count": null,
       "outputs": []
     },
@@ -425,7 +425,7 @@
         "<details>\n",
         "<summary><strong>1922</strong></summary>"
       ],
-      "id": "486dfc73"
+      "id": "b541a7cf"
     },
     {
       "cell_type": "code",
@@ -451,7 +451,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "950902f2",
+      "id": "c5a8490d",
       "execution_count": null,
       "outputs": []
     },
@@ -461,7 +461,7 @@
       "source": [
         "</details> "
       ],
-      "id": "4ff6e6b0"
+      "id": "513e87a8"
     }
   ],
   "metadata": {
@@ -469,7 +469,7 @@
       "name": "python3",
       "language": "python",
       "display_name": "Python 3 (ipykernel)",
-      "path": "/Users/tanishadeka/Downloads/quarto_website_test/.venv/share/jupyter/kernels/python3"
+      "path": "/Users/annapreus/english-catalogue-website/.venv/share/jupyter/kernels/python3"
     }
   },
   "nbformat": 4,
