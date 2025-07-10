@@ -1,24 +1,35 @@
 ---
-format: html
+format:
+  html:
+    css: styles.css
+    toc: false
+    sidebar: false
+
 ---
 
-<div class="center-text">
+<div class="full-width-title">
+
+  
 ## Welcome to the English Catalogue of Books
 
-The English Catalogue of books is a record of books published in England each year. Our dataset consists of catalogue entries from 1912-1922.
+The English Catalogue of books is a record of books published in England each year. Our dataset consists of catalogue entries from 1912–1922.
+
 
 </div>
 
 <div style="margin-top: 100px;"></div>
 
+<div class="center-text">
+🔎 Search books published in England from 1912–1922
+</div>
 
+<div style="margin-top: 20px;"></div>
 
-## Search books published in England from 1912-1922!
-
+<div style="display: flex; flex-direction: column; align-items: center;">
 
 <input type="text" id="searchInput" placeholder="Search books, authors, publishers..." style="width: 500px; height: 40px; font-size: 16px; padding: 8px;">
 
-<div id="searchResults"></div>
+ <div id="searchResults" style="margin-top: 1rem; width: 500px; text-align: center;"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
 <script>
@@ -79,3 +90,4 @@ The English Catalogue of books is a record of books published in England each ye
     });
 </script>
 
+</div>

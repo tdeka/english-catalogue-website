@@ -5,7 +5,7 @@ project:
     - data/all_titles_by_year.csv
 
 website:
-  title: "English Catalogue of Books"
+  title: "English Catalogue of Books Database"
   navbar:
     left:
       - text: About
@@ -39,7 +39,8 @@ format:
   html:
     theme: flatly
     css: styles.css
-    toc: true
+    googlefonts: 
+      - Literata
   
 metadata-files:
   - _params.yml

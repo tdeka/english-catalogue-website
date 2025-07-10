@@ -1,7 +1,40 @@
 /* css styles */
+@import url('https://fonts.googleapis.com/css2?family=Literata&display=swap');
+
+/* Apply the font site-wide */
+body {
+  font-family: 'Literata', serif;
+}
+
+/* Optional: match headers too */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Literata', serif;
+}
+
+
+.full-width-title {
+  width: 100vw; /* full width of the viewport */
+  margin-left: calc(-50vw + 50%); /* center it relative to page content */
+  background-image: url("black_background.jpg"); /* adjust path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 8rem 2rem;
+  color: white;
+  text-align: center;
+}
+
+/* Optional: better contrast for title text */
+.full-width-title h1,
+.full-width-title h2,
+.full-width-title p {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+
 .my-table {
     width: 50%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Literata", serif;
     font-size: 12px;
     border-collapse: collapse;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
