@@ -15,13 +15,16 @@ website:
           - text: Team
             href: about_team.qmd
       - href: our_data.qmd
-        text: Data
-      - text: Visualizations
+        text: Raw Data
+      - text: Data Explorer 
         menu:
           - text: Top Publishers by Year
             href: publishers.qmd
           - text: Top Authors by Year
             href: authors.qmd
+          - text: N-Gram Viewer
+            href: https://english-catalogue-ngram.streamlit.app/
+            target: _blank
       - href: map.qmd
         text: Interactive Map
 

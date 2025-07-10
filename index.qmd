@@ -9,8 +9,11 @@ The English Catalogue of books is a record of books published in England each ye
 
 </div>
 
-## Search books published in England from 1912-1922!
+<div style="margin-top: 100px;"></div>
 
+
+
+## Search books published in England from 1912-1922!
 
 
 <input type="text" id="searchInput" placeholder="Search books, authors, publishers..." style="width: 500px; height: 40px; font-size: 16px; padding: 8px;">
@@ -75,3 +78,4 @@ The English Catalogue of books is a record of books published in England each ye
       });
     });
 </script>
+
