@@ -1,0 +1,471 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "format: html\n",
+        "---\n",
+        "\n",
+        "<h1 class=\"page-top\">Top Authors by Year</h1>\n",
+        "\n",
+        "<div style=\"margin-top: 40px;\"></div>\n",
+        "\n",
+        "Select a year to see the top 15 authors for that year!\n",
+        "\n",
+        "<div style=\"margin-top: 40px;\"></div>\n",
+        "\n",
+        "<details>\n",
+        "<summary><strong>1912</strong></summary>"
+      ],
+      "id": "dc242865"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "import matplotlib.pyplot as plt\n",
+        "\n",
+        "df = pd.read_csv(\"df_1912.csv\")\n",
+        "df['author_name'] = df['author_name'].astype(str).str.strip()\n",
+        "df['author_name'] = df['author_name'].replace(['', 'nan', 'NA', '<NA>'], pd.NA)\n",
+        "df_clean = df.dropna(subset=['author_name'])\n",
+        "\n",
+        "top_authors = df_clean['author_name'].value_counts().head(15)\n",
+        "\n",
+        "plt.figure(figsize=(8, 6))\n",
+        "top_authors.plot(kind='bar')\n",
+        "plt.title(\"Top 15 Authors in 1912\")\n",
+        "plt.xlabel(\"Author\")\n",
+        "plt.ylabel(\"Number of Publications\")\n",
+        "plt.xticks(rotation=45, ha='right')\n",
+        "plt.tight_layout()\n",
+        "plt.show()"
+      ],
+      "id": "e4cd8da3",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "</details> \n",
+        "\n",
+        "\n",
+        "<details>\n",
+        "<summary><strong>1913</strong></summary>"
+      ],
+      "id": "e8d2dbdf"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "import matplotlib.pyplot as plt\n",
+        "\n",
+        "df = pd.read_csv(\"df_1913.csv\")\n",
+        "df['author_name'] = df['author_name'].astype(str).str.strip()\n",
+        "df['author_name'] = df['author_name'].replace(['', 'nan', 'NA', '<NA>'], pd.NA)\n",
+        "df_clean = df.dropna(subset=['author_name'])\n",
+        "\n",
+        "top_authors = df_clean['author_name'].value_counts().head(15)\n",
+        "\n",
+        "plt.figure(figsize=(8, 6))\n",
+        "top_authors.plot(kind='bar')\n",
+        "plt.title(\"Top 15 Authors in 1913\")\n",
+        "plt.xlabel(\"Author\")\n",
+        "plt.ylabel(\"Number of Publications\")\n",
+        "plt.xticks(rotation=45, ha='right')\n",
+        "plt.tight_layout()\n",
+        "plt.show()"
+      ],
+      "id": "26052d75",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "</details> \n",
+        "\n",
+        "\n",
+        "<details>\n",
+        "<summary><strong>1914</strong></summary>"
+      ],
+      "id": "c68b344a"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "import matplotlib.pyplot as plt\n",
+        "\n",
+        "df = pd.read_csv(\"df_1914.csv\")\n",
+        "df['author_name'] = df['author_name'].astype(str).str.strip()\n",
+        "df['author_name'] = df['author_name'].replace(['', 'nan', 'NA', '<NA>'], pd.NA)\n",
+        "df_clean = df.dropna(subset=['author_name'])\n",
+        "\n",
+        "top_authors = df_clean['author_name'].value_counts().head(15)\n",
+        "\n",
+        "plt.figure(figsize=(8, 6))\n",
+        "top_authors.plot(kind='bar')\n",
+        "plt.title(\"Top 15 Authors in 1914\")\n",
+        "plt.xlabel(\"Author\")\n",
+        "plt.ylabel(\"Number of Publications\")\n",
+        "plt.xticks(rotation=45, ha='right')\n",
+        "plt.tight_layout()\n",
+        "plt.show()"
+      ],
+      "id": "84cee6d6",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "</details> \n",
+        "\n",
+        "\n",
+        "<details>\n",
+        "<summary><strong>1915</strong></summary>"
+      ],
+      "id": "bd3eb1b9"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "import matplotlib.pyplot as plt\n",
+        "\n",
+        "df = pd.read_csv(\"df_1915.csv\")\n",
+        "df['author_name'] = df['author_name'].astype(str).str.strip()\n",
+        "df['author_name'] = df['author_name'].replace(['', 'nan', 'NA', '<NA>'], pd.NA)\n",
+        "df_clean = df.dropna(subset=['author_name'])\n",
+        "\n",
+        "top_authors = df_clean['author_name'].value_counts().head(15)\n",
+        "\n",
+        "plt.figure(figsize=(8, 6))\n",
+        "top_authors.plot(kind='bar')\n",
+        "plt.title(\"Top 15 Authors in 1915\")\n",
+        "plt.xlabel(\"Author\")\n",
+        "plt.ylabel(\"Number of Publications\")\n",
+        "plt.xticks(rotation=45, ha='right')\n",
+        "plt.tight_layout()\n",
+        "plt.show()"
+      ],
+      "id": "d30cc0a3",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "</details> \n",
+        "\n",
+        "\n",
+        "<details>\n",
+        "<summary><strong>1916</strong></summary>"
+      ],
+      "id": "9e6a09a9"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "import matplotlib.pyplot as plt\n",
+        "\n",
+        "df = pd.read_csv(\"df_1916.csv\")\n",
+        "df['author_name'] = df['author_name'].astype(str).str.strip()\n",
+        "df['author_name'] = df['author_name'].replace(['', 'nan', 'NA', '<NA>'], pd.NA)\n",
+        "df_clean = df.dropna(subset=['author_name'])\n",
+        "\n",
+        "top_authors = df_clean['author_name'].value_counts().head(15)\n",
+        "\n",
+        "plt.figure(figsize=(8, 6))\n",
+        "top_authors.plot(kind='bar')\n",
+        "plt.title(\"Top 15 Authors in 1916\")\n",
+        "plt.xlabel(\"Author\")\n",
+        "plt.ylabel(\"Number of Publications\")\n",
+        "plt.xticks(rotation=45, ha='right')\n",
+        "plt.tight_layout()\n",
+        "plt.show()"
+      ],
+      "id": "87427c1b",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "</details> \n",
+        "\n",
+        "\n",
+        "<details>\n",
+        "<summary><strong>1917</strong></summary>"
+      ],
+      "id": "8146f02e"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "import matplotlib.pyplot as plt\n",
+        "\n",
+        "df = pd.read_csv(\"df_1917.csv\")\n",
+        "df['author_name'] = df['author_name'].astype(str).str.strip()\n",
+        "df['author_name'] = df['author_name'].replace(['', 'nan', 'NA', '<NA>'], pd.NA)\n",
+        "df_clean = df.dropna(subset=['author_name'])\n",
+        "\n",
+        "top_authors = df_clean['author_name'].value_counts().head(15)\n",
+        "\n",
+        "plt.figure(figsize=(8, 6))\n",
+        "top_authors.plot(kind='bar')\n",
+        "plt.title(\"Top 15 Authors in 1917\")\n",
+        "plt.xlabel(\"Author\")\n",
+        "plt.ylabel(\"Number of Publications\")\n",
+        "plt.xticks(rotation=45, ha='right')\n",
+        "plt.tight_layout()\n",
+        "plt.show()"
+      ],
+      "id": "42960d70",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "</details> \n",
+        "\n",
+        "\n",
+        "<details>\n",
+        "<summary><strong>1918</strong></summary>"
+      ],
+      "id": "575493dc"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "import matplotlib.pyplot as plt\n",
+        "\n",
+        "df = pd.read_csv(\"df_1918.csv\")\n",
+        "df['author_name'] = df['author_name'].astype(str).str.strip()\n",
+        "df['author_name'] = df['author_name'].replace(['', 'nan', 'NA', '<NA>'], pd.NA)\n",
+        "df_clean = df.dropna(subset=['author_name'])\n",
+        "\n",
+        "top_authors = df_clean['author_name'].value_counts().head(15)\n",
+        "\n",
+        "plt.figure(figsize=(8, 6))\n",
+        "top_authors.plot(kind='bar')\n",
+        "plt.title(\"Top 15 Authors in 1918\")\n",
+        "plt.xlabel(\"Author\")\n",
+        "plt.ylabel(\"Number of Publications\")\n",
+        "plt.xticks(rotation=45, ha='right')\n",
+        "plt.tight_layout()\n",
+        "plt.show()"
+      ],
+      "id": "0b3edf2c",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "</details> \n",
+        "\n",
+        "\n",
+        "<details>\n",
+        "<summary><strong>1919</strong></summary>"
+      ],
+      "id": "d0c88bba"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "import matplotlib.pyplot as plt\n",
+        "\n",
+        "df = pd.read_csv(\"df_1919.csv\")\n",
+        "df['author_name'] = df['author_name'].astype(str).str.strip()\n",
+        "df['author_name'] = df['author_name'].replace(['', 'nan', 'NA', '<NA>'], pd.NA)\n",
+        "df_clean = df.dropna(subset=['author_name'])\n",
+        "\n",
+        "top_authors = df_clean['author_name'].value_counts().head(15)\n",
+        "\n",
+        "plt.figure(figsize=(8, 6))\n",
+        "top_authors.plot(kind='bar')\n",
+        "plt.title(\"Top 15 Authors in 1919\")\n",
+        "plt.xlabel(\"Author\")\n",
+        "plt.ylabel(\"Number of Publications\")\n",
+        "plt.xticks(rotation=45, ha='right')\n",
+        "plt.tight_layout()\n",
+        "plt.show()"
+      ],
+      "id": "32e5d316",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "</details> \n",
+        "\n",
+        "\n",
+        "<details>\n",
+        "<summary><strong>1920</strong></summary>"
+      ],
+      "id": "b7a307ce"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "import matplotlib.pyplot as plt\n",
+        "\n",
+        "df = pd.read_csv(\"df_1920.csv\")\n",
+        "df['author_name'] = df['author_name'].astype(str).str.strip()\n",
+        "df['author_name'] = df['author_name'].replace(['', 'nan', 'NA', '<NA>'], pd.NA)\n",
+        "df_clean = df.dropna(subset=['author_name'])\n",
+        "\n",
+        "top_authors = df_clean['author_name'].value_counts().head(15)\n",
+        "\n",
+        "plt.figure(figsize=(8, 6))\n",
+        "top_authors.plot(kind='bar')\n",
+        "plt.title(\"Top 15 Authors in 1920\")\n",
+        "plt.xlabel(\"Author\")\n",
+        "plt.ylabel(\"Number of Publications\")\n",
+        "plt.xticks(rotation=45, ha='right')\n",
+        "plt.tight_layout()\n",
+        "plt.show()"
+      ],
+      "id": "439d66c7",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "</details> \n",
+        "\n",
+        "\n",
+        "<details>\n",
+        "<summary><strong>1921</strong></summary>"
+      ],
+      "id": "1fdc70ec"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "import matplotlib.pyplot as plt\n",
+        "\n",
+        "df = pd.read_csv(\"df_1921.csv\")\n",
+        "df['author_name'] = df['author_name'].astype(str).str.strip()\n",
+        "df['author_name'] = df['author_name'].replace(['', 'nan', 'NA', '<NA>'], pd.NA)\n",
+        "df_clean = df.dropna(subset=['author_name'])\n",
+        "\n",
+        "top_authors = df_clean['author_name'].value_counts().head(15)\n",
+        "\n",
+        "plt.figure(figsize=(8, 6))\n",
+        "top_authors.plot(kind='bar')\n",
+        "plt.title(\"Top 15 Authors in 1921\")\n",
+        "plt.xlabel(\"Author\")\n",
+        "plt.ylabel(\"Number of Publications\")\n",
+        "plt.xticks(rotation=45, ha='right')\n",
+        "plt.tight_layout()\n",
+        "plt.show()"
+      ],
+      "id": "376cc63b",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "</details> \n",
+        "\n",
+        "\n",
+        "<details>\n",
+        "<summary><strong>1922</strong></summary>"
+      ],
+      "id": "fa1f1b95"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "import matplotlib.pyplot as plt\n",
+        "\n",
+        "df = pd.read_csv(\"df_1922.csv\")\n",
+        "df['author_name'] = df['author_name'].astype(str).str.strip()\n",
+        "df['author_name'] = df['author_name'].replace(['', 'nan', 'NA', '<NA>'], pd.NA)\n",
+        "df_clean = df.dropna(subset=['author_name'])\n",
+        "\n",
+        "top_authors = df_clean['author_name'].value_counts().head(15)\n",
+        "\n",
+        "plt.figure(figsize=(8, 6))\n",
+        "top_authors.plot(kind='bar')\n",
+        "plt.title(\"Top 15 Authors in 1922\")\n",
+        "plt.xlabel(\"Author\")\n",
+        "plt.ylabel(\"Number of Publications\")\n",
+        "plt.xticks(rotation=45, ha='right')\n",
+        "plt.tight_layout()\n",
+        "plt.show()"
+      ],
+      "id": "9a7b3847",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "</details> "
+      ],
+      "id": "b991c183"
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "python3",
+      "language": "python",
+      "display_name": "Python 3 (ipykernel)",
+      "path": "/Users/tanishadeka/Downloads/quarto_website_test/.venv/share/jupyter/kernels/python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}

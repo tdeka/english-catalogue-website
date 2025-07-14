@@ -1,0 +1,466 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "format: html\n",
+        "page-layout: full\n",
+        "toc: false\n",
+        "---\n",
+        "\n",
+        "<h1 class=\"page-top\">Our Data</h1>\n",
+        "\n",
+        "<div style=\"margin-top: 40px;\"></div>\n",
+        "\n",
+        "Learn more about the data we used for this project!\n",
+        "\n",
+        "<div style=\"margin-top: 40px;\"></div>\n",
+        "\n",
+        "## Our Data\n",
+        "\n",
+        "Click on the different years to see a preview and download link for the CSV of our data.\n",
+        "\n",
+        "<details>\n",
+        "<summary>1912</summary>\n",
+        "\n",
+        "<p style=\"text-align: center;\">\n",
+        "  <img src=\"1912_english_catalogue_cover.jpeg\" width=\"500px\">\n",
+        "</p>\n",
+        "\n",
+        "<h3>Data Table</h3>"
+      ],
+      "id": "fd7dd935"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "df = pd.read_csv(\"df_1912.csv\")\n",
+        "df.head(15).to_html(classes=\"my-table\")"
+      ],
+      "id": "9be932db",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "<a href=\"df_1912.csv\" download>Download full CSV</a>\n",
+        "\n",
+        "</details> \n",
+        "\n",
+        "\n",
+        "<details>\n",
+        "<summary>1913</summary>\n",
+        "\n",
+        "<p style=\"text-align: center;\">\n",
+        "  <img src=\"1913_english_catalogue_cover.jpeg\" width=\"500px\">\n",
+        "</p>\n",
+        "\n",
+        "<h3>Data Table</h3>"
+      ],
+      "id": "1d727b6a"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "df = pd.read_csv(\"df_1913.csv\")\n",
+        "df.head(15).to_html(classes=\"my-table\")"
+      ],
+      "id": "5e1ef2d2",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "<a href=\"df_1913.csv\" download>Download full CSV</a>\n",
+        "\n",
+        "</details> \n",
+        "\n",
+        "\n",
+        "<details>\n",
+        "<summary>1914</summary>\n",
+        "\n",
+        "<p style=\"text-align: center;\">\n",
+        "  <img src=\"1914_english_catalogue_cover.jpeg\" width=\"500px\">\n",
+        "</p>\n",
+        "\n",
+        "<h3>Data Table</h3>"
+      ],
+      "id": "f3ae22da"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "df = pd.read_csv(\"df_1914.csv\")\n",
+        "df.head(15).to_html(classes=\"my-table\")"
+      ],
+      "id": "3c889f1c",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "<a href=\"df_1914.csv\" download>Download full CSV</a>\n",
+        "\n",
+        "</details> \n",
+        "\n",
+        "\n",
+        "<details>\n",
+        "<summary>1915</summary>\n",
+        "\n",
+        "<p style=\"text-align: center;\">\n",
+        "  <img src=\"1915_english_catalogue_cover.jpeg\" width=\"500px\">\n",
+        "</p>\n",
+        "\n",
+        "<h3>Data Table</h3>"
+      ],
+      "id": "7b52ac29"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "df = pd.read_csv(\"df_1915.csv\")\n",
+        "df.head(15).to_html(classes=\"my-table\")"
+      ],
+      "id": "3c02af47",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "<a href=\"df_1915.csv\" download>Download full CSV</a>\n",
+        "\n",
+        "</details> \n",
+        "\n",
+        "<details>\n",
+        "<summary>1916</summary>\n",
+        "\n",
+        "<p style=\"text-align: center;\">\n",
+        "  <img src=\"1916_english_catalogue_cover.jpeg\" width=\"500px\">\n",
+        "</p>\n",
+        "\n",
+        "<h3>Data Table</h3>"
+      ],
+      "id": "ed93c266"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "df = pd.read_csv(\"df_1916.csv\")\n",
+        "df.head(15).to_html(classes=\"my-table\")"
+      ],
+      "id": "e7aa22aa",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "<a href=\"df_1916.csv\" download>Download full CSV</a>\n",
+        "\n",
+        "</details> \n",
+        "\n",
+        "\n",
+        "<details>\n",
+        "<summary>1917</summary>\n",
+        "\n",
+        "<p style=\"text-align: center;\">\n",
+        "  <img src=\"1917_english_catalogue_cover.jpeg\" width=\"500px\">\n",
+        "</p>\n",
+        "\n",
+        "<h3>Data Table</h3>"
+      ],
+      "id": "586db70d"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "df = pd.read_csv(\"df_1917.csv\")\n",
+        "df.head(15).to_html(classes=\"my-table\")"
+      ],
+      "id": "22f7e28d",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "<a href=\"df_1917.csv\" download>Download full CSV</a>\n",
+        "\n",
+        "</details> \n",
+        "\n",
+        "\n",
+        "<details>\n",
+        "<summary>1918</summary>\n",
+        "\n",
+        "<p style=\"text-align: center;\">\n",
+        "  <img src=\"1918_english_catalogue_cover.jpeg\" width=\"500px\">\n",
+        "</p>\n",
+        "\n",
+        "<h3>Data Table</h3>"
+      ],
+      "id": "2e126618"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "df = pd.read_csv(\"df_1918.csv\")\n",
+        "df.head(15).to_html(classes=\"my-table\")"
+      ],
+      "id": "3ce997d3",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "<a href=\"df_1918.csv\" download>Download full CSV</a>\n",
+        "\n",
+        "</details> \n",
+        "\n",
+        "\n",
+        "<details>\n",
+        "<summary>1919</summary>\n",
+        "\n",
+        "<p style=\"text-align: center;\">\n",
+        "  <img src=\"1919_english_catalogue_cover.jpeg\" width=\"500px\">\n",
+        "</p>\n",
+        "\n",
+        "<h3>Data Table</h3>"
+      ],
+      "id": "20120bbb"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "df = pd.read_csv(\"df_1919.csv\")\n",
+        "df.head(15).to_html(classes=\"my-table\")"
+      ],
+      "id": "70360599",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "<a href=\"df_1919.csv\" download>Download full CSV</a>\n",
+        "\n",
+        "</details> \n",
+        "\n",
+        "\n",
+        "<details>\n",
+        "<summary>1920</summary>\n",
+        "\n",
+        "<p style=\"text-align: center;\">\n",
+        "  <img src=\"1920_english_catalogue_cover.jpeg\" width=\"500px\">\n",
+        "</p>\n",
+        "\n",
+        "<h3>Data Table</h3>"
+      ],
+      "id": "7f463045"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "df = pd.read_csv(\"df_1920.csv\")\n",
+        "df.head(15).to_html(classes=\"my-table\")"
+      ],
+      "id": "caecfdc3",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "<a href=\"df_1920.csv\" download>Download full CSV</a>\n",
+        "\n",
+        "</details> \n",
+        "\n",
+        "\n",
+        "<details>\n",
+        "<summary>1921</summary>\n",
+        "\n",
+        "<p style=\"text-align: center;\">\n",
+        "  <img src=\"1921_english_catalogue_cover.jpeg\" width=\"500px\">\n",
+        "</p>\n",
+        "\n",
+        "<h3>Data Table</h3>"
+      ],
+      "id": "26c7c999"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "df = pd.read_csv(\"df_1921.csv\")\n",
+        "df.head(15).to_html(classes=\"my-table\")"
+      ],
+      "id": "90ce9b98",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "<a href=\"df_1921.csv\" download>Download full CSV</a>\n",
+        "\n",
+        "</details> \n",
+        "\n",
+        "\n",
+        "<details>\n",
+        "<summary>1922</summary>\n",
+        "\n",
+        "<p style=\"text-align: center;\">\n",
+        "  <img src=\"1922_english_catalogue_cover.jpeg\" width=\"500px\">\n",
+        "</p>\n",
+        "\n",
+        "<h3>Data Table</h3>"
+      ],
+      "id": "008754fe"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "df = pd.read_csv(\"df_1922.csv\")\n",
+        "df.head(15).to_html(classes=\"my-table\")"
+      ],
+      "id": "9d6f3ed4",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "<a href=\"df_1922.csv\" download>Download full CSV</a>\n",
+        "\n",
+        "</details> \n",
+        "\n",
+        "\n",
+        "<div style=\"margin-top: 100px;\"></div>\n",
+        "\n",
+        "## Entries Captured by Our Dataframes\n",
+        "\n",
+        "This visualization shows how many catalogue entries we captured in our data relative to how many total entries were listed in each issue.\n",
+        "\n",
+        "<div style=\"margin-top: 60px;\"></div>\n",
+        "\n",
+        "<div style=\"text-align: center;\">"
+      ],
+      "id": "ebada743"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "import matplotlib.pyplot as plt\n",
+        "import numpy as np\n",
+        "\n",
+        "# Load the data\n",
+        "df = pd.read_csv(\"entriescaptured.csv\")\n",
+        "\n",
+        "# Extract values\n",
+        "years = df['Year'].astype(str)  # make sure years are strings for x-axis\n",
+        "total = df['Catalogue Table']\n",
+        "captured = df['Dataframe']\n",
+        "percentages = df['Percentage Captured']\n",
+        "\n",
+        "# Setup positions\n",
+        "x = np.arange(len(years))  # the label locations\n",
+        "width = 0.35  # width of the bars\n",
+        "\n",
+        "# Create the plot\n",
+        "fig, ax = plt.subplots(figsize=(8, 6))\n",
+        "\n",
+        "# Bars\n",
+        "bars1 = ax.bar(x - width/2, total, width, label='Total Entries')\n",
+        "bars2 = ax.bar(x + width/2, captured, width, label='Captured Entries')\n",
+        "\n",
+        "# Annotate with percentage above the group\n",
+        "for i, pct in enumerate(percentages):\n",
+        "    ax.text(x[i], max(total[i], captured[i]) + 20, f\"{pct:.1f}%\", ha='center', va='bottom', fontsize=10, fontweight='bold')\n",
+        "\n",
+        "# Labels and title\n",
+        "ax.set_xlabel('Year')\n",
+        "ax.set_ylabel('Number of Entries')\n",
+        "ax.set_title('Our Coverage of English Catalogue of Books by Year')\n",
+        "ax.set_xticks(x)\n",
+        "ax.set_xticklabels(years)\n",
+        "ax.legend()\n",
+        "\n",
+        "plt.tight_layout()\n",
+        "plt.show()"
+      ],
+      "id": "fcad5006",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "</div>"
+      ],
+      "id": "c73f5f2f"
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "python3",
+      "language": "python",
+      "display_name": "Python 3 (ipykernel)",
+      "path": "/Users/tanishadeka/Downloads/quarto_website_test/.venv/share/jupyter/kernels/python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}
