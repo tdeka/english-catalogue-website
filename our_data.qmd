@@ -1,9 +1,10 @@
 ---
-title: "Our Data"
 format: html
 page-layout: full
 toc: false
 ---
+
+<h1 class="page-top">Our Data</h1>
 
 <div style="margin-top: 40px;"></div>
 
@@ -11,9 +12,9 @@ Learn more about the data we used for this project!
 
 <div style="margin-top: 40px;"></div>
 
-## Raw Data
+## Our Data
 
-Click on the different years to see a preview and download link for the CSV of the raw data.
+Click on the different years to see a preview and download link for the CSV of our data.
 
 <details>
 <summary>1912</summary>
@@ -253,6 +254,8 @@ This visualization shows how many catalogue entries we captured in our data rela
 
 <div style="margin-top: 60px;"></div>
 
+<div style="text-align: center;">
+
 ```{python}
 
 #| echo: false
@@ -296,3 +299,5 @@ plt.tight_layout()
 plt.show()
 
 ```
+
+</div>

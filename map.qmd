@@ -1,6 +1,8 @@
 --- 
-title: Interactive Map
 format: html
 ---
+
+
+<h1 class="page-top">Interactive Map</h1>
 
 Map coming soon 

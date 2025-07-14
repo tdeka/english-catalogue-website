@@ -1,6 +1,5 @@
 --- 
-title: Independent Visualizations
 format: html
 ---
-
+<h1 class="page-top">Independent Visualizations</h1>
 Visualizations coming soon 

@@ -3,7 +3,7 @@ format: html
 ---
 
 
-## About Our Project
+<h1 class="page-top">About Our Project</h1>
 
 1922 is often considered the "Annus Mirabilis" or "Miracle Year" of Anglophone Literary Modernism, witnessing the publication of T.S. Eliot's *The Waste Land*, Virginia Woolf's *Jacob's Room*, and James Joyce's *Ulysses*. These now-canonical works were surrounded by a much broader field of print and a wide range of literary texts that were often more popular and more acclaimed than the books we study today. What was being published in the years leading up to 1922? 
 

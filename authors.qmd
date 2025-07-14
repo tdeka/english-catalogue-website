@@ -1,8 +1,8 @@
 ---
-title: "Top Authors by Year"
 format: html
-
 ---
+
+<h1 class="page-top">Top Authors by Year</h1>
 
 <div style="margin-top: 40px;"></div>
 
