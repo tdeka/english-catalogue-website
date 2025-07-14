@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: docs
   resources:
     - data/*.json
     - data/all_titles_by_year.csv
