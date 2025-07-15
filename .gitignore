@@ -209,5 +209,3 @@ __marimo__/
 /.quarto/
 _site/
 *.json 
-
-data/all_years.json
