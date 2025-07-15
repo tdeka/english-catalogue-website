@@ -39,7 +39,7 @@ The English Catalogue of books is a record of books published in England each ye
     .then(data => {
       // Setup Fuse
       const options = {
-        keys: ["title", "author_name", "publisher"],
+        keys: ["title", "author_name", "publisher", "catalogue_year"],
         threshold: 0.4,  // Adjust for fuzziness
       };
       const fuse = new Fuse(data, options);
@@ -80,7 +80,7 @@ The English Catalogue of books is a record of books published in England each ye
           const html = uniqueResults.slice(0, 20).map(r => {
             const item = r.item;
             return `<div>
-              <strong>${item.title}</strong> by ${item.author_name} (${item.publisher})
+              <strong>${item.title}</strong> by ${item.author_name} (${item.publisher}) (${item.catalogue_year})
             </div>`;
           }).join("");
 
