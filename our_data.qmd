@@ -299,5 +299,19 @@ plt.tight_layout()
 plt.show()
 
 ```
+# EMBEDDED OBSERVABLE TABLE
+''' {ojs}
+data = FileAttachment("ALL DATA.csv").csv
+
+
+'''
+
+
+
+
+
+
+
+
 
 </div>
