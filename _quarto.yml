@@ -26,7 +26,7 @@ website:
           - text: Top Authors by Year
             href: authors.qmd
           - text: Independent Visualizations
-            href: independent.qmd
+            href: independent_viz.qmd
       - text: Data Explorer 
         menu:
           - text: N-Gram Viewer
