@@ -38,6 +38,8 @@ website:
         menu:
           - text: Page 1
             href: page1.qmd
+          - text: Page 2
+            href: page2.qmd
 
 
 format:

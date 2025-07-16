@@ -1,0 +1,46 @@
+---
+title: "Publications by Author & Year"
+format: html
+---
+
+<h1 class="page-top">Top Author</h1>
+
+## Publications by Author
+
+```{python}
+#| echo: false
+import pandas as pd
+import matplotlib.pyplot as plt
+from ipywidgets import interact
+
+# Load and prepare data
+df = pd.read_csv("top_author_year.csv")
+
+# Pivot for line chart
+pivot_df = (
+    df.pivot_table(
+        index="year",
+        columns="author_name",
+        values="num_entry",
+        aggfunc="sum",
+        fill_value=0,
+    )
+    .sort_index()
+)
+
+author_options = sorted(pivot_df.columns.tolist())
+
+def plot_author(selected_author):
+    fig, ax = plt.subplots(figsize=(10, 5))
+
+    pivot_df[selected_author].plot(kind="line", ax=ax, color="skyblue", marker='o')
+    ax.set_title(f"Publications for Author: {selected_author} (1912–1922)")
+    ax.legend([selected_author])
+    ax.set_xlabel("Year")
+    ax.set_ylabel("Number of Publications")
+    ax.grid(True)
+    plt.tight_layout()
+    plt.show()
+
+interact(plot_author, selected_author=author_options)
+```

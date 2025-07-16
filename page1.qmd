@@ -47,3 +47,4 @@ def plot_chart(selected_format):
     plt.show()
 
 interact(plot_chart, selected_format=format_options)
+```
