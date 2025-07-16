@@ -90,7 +90,7 @@ The English Catalogue of books is a record of books published each year in Engla
             `;
           }).join("");
 
-          const resultCount = `<p><strong>${uniqueResults.length} result${uniqueResults.length !== 1 ? "s" : ""} found:</strong></p>`;
+          const resultCount = `<p><strong>${uniqueResults.length} result${uniqueResults.length !== 1 ? "s" : ""} found (showing 10):</strong></p>`;
           resultsDiv.innerHTML = resultCount + html;
         }
       });
