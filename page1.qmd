@@ -9,15 +9,13 @@ execute:
 ---
 
 ```{python}
+# Import packages
 import pandas as pd
 import matplotlib.pyplot as plt
-import panel as pn
-pn.extension()
+from ipywidgets import interact
 
-# Load data
+# Load and prepare data
 df = pd.read_csv("top_format.csv")
-
-# Pivot the data
 pivot_df = (
     df.pivot_table(
         index="year",
@@ -29,5 +27,26 @@ pivot_df = (
     .sort_index()
 )
 
+# Format options for the dropdown
 format_options = ["All formats"] + sorted(pivot_df.columns.tolist())
-selected_format = pn.widgets.Select(name="Choose a format", options=format_options, value="All formats")
+
+# Define plotting function
+def plot_chart(selected_format):
+    fig, ax = plt.subplots(figsize=(10, 5))
+
+    if selected_format == "All formats":
+        pivot_df.plot(kind="bar", stacked=True, ax=ax)
+        ax.set_title("Top Formats by Number of Publications (1912–1922)")
+        ax.legend(title="Format", bbox_to_anchor=(1.05, 1), loc="upper left")
+    else:
+        pivot_df[selected_format].plot(kind="bar", ax=ax, color="skyblue")
+        ax.set_title(f"Publications for Format: {selected_format} (1912–1922)")
+        ax.legend([selected_format])
+
+    ax.set_xlabel("Year")
+    ax.set_ylabel("Number of Publications")
+    plt.tight_layout()
+    plt.show()
+
+# Display dropdown and chart
+interact(plot_chart, selected_format=format_options)
