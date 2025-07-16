@@ -1,0 +1,84 @@
+{
+  "cells": [
+    {
+      "cell_type": "raw",
+      "metadata": {},
+      "source": [
+        "--- \n",
+        "format: html\n",
+        "---"
+      ],
+      "id": "0d6d4a56"
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "<h1 class=\"page-top\">Independent Visualizations</h1>\n",
+        "\n",
+        "<div style=\"margin-top: 60px;\"></div>\n",
+        "\n",
+        "## Psychology and WWI"
+      ],
+      "id": "a75ed8e0"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "import matplotlib.pyplot as plt\n",
+        "\n",
+        "df = pd.read_csv(\"all_titles_by_year.csv\")\n",
+        "df['year'] = df['year'].astype(int)\n",
+        "df['title'] = df['title'].astype(str).str.lower()\n",
+        "\n",
+        "# Filter rows that contain \"psychology\" in the title\n",
+        "df_psych = df[df['title'].str.contains('psychology')]\n",
+        "\n",
+        "# Count how many times it appears each year\n",
+        "counts_by_year = df_psych['year'].value_counts().sort_index()\n",
+        "\n",
+        "all_years = df['year'].sort_values().unique()\n",
+        "counts_series = pd.Series(0, index=all_years)\n",
+        "counts_series.update(counts_by_year)\n",
+        "\n",
+        "plt.figure(figsize=(8, 6))\n",
+        "plt.plot(counts_series.index, counts_series.values, marker='o', color='brown')\n",
+        "plt.title('Occurrences of \"Psychology\" in Titles Around WWI')\n",
+        "plt.xlabel('Year')\n",
+        "plt.ylabel('Count of Titles with \"Psychology\"')\n",
+        "plt.grid(True)\n",
+        "plt.tight_layout()\n",
+        "plt.show()"
+      ],
+      "id": "790c7af3",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "The field of psychology expanded significantly as a result of WWI. Psychological testing was widely implemented to assess soldiers' intelligence and personality traits; the most commonly used of these was Army Alpha, an intelligence screen that measured several aspects of intelligence, including verbal reasoning and practical judgment. Such tests were used to assign recruits to different roles and to screen out those with very low intelligence or significant mental illness. Additionally, WWI had noteworthy psychological effects on soldiers. One particular term that came to be commonly used was \"shell shock,\" used to describe the mental and emotional issues that soldiers faced due to the trauma of fighting in the war. These psychological effects led to an increase in psychological research and discussion of the field post-WWI, as demonstrated by the steep increase in the occurrence of \"psychology\" in English Catalogue titles after the end of WWI in 1918.\n",
+        "\n",
+        "<div style=\"margin-top: 60px;\"></div>\n",
+        "\n",
+        "\n",
+        "## Next Visualization"
+      ],
+      "id": "dd84f1be"
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "english-catalogue-env",
+      "language": "python",
+      "display_name": "english-catalogue-env",
+      "path": "/Users/tanishadeka/Library/Jupyter/kernels/english-catalogue-env"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}

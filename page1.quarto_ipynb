@@ -1,0 +1,84 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "916130b1",
+   "metadata": {},
+   "source": [
+    "---\n",
+    "title: \"Publications by Format & Year\"\n",
+    "format: html\n",
+    "jupyter: python3\n",
+    "execute:\n",
+    "  echo: false\n",
+    "  warning: false\n",
+    "  message: false\n",
+    "---\n",
+    "\n",
+    "# Import packages\n",
+    "import pandas as pd\n",
+    "import matplotlib.pyplot as plt\n",
+    "from ipywidgets import interact\n",
+    "\n",
+    "# Load and prepare data\n",
+    "df = pd.read_csv(\"top_format.csv\")\n",
+    "pivot_df = (\n",
+    "    df.pivot_table(\n",
+    "        index=\"year\",\n",
+    "        columns=\"format\",\n",
+    "        values=\"num_entry\",\n",
+    "        aggfunc=\"sum\",\n",
+    "        fill_value=0,\n",
+    "    )\n",
+    "    .sort_index()\n",
+    ")\n",
+    "\n",
+    "# Format options for the dropdown\n",
+    "format_options = [\"All formats\"] + sorted(pivot_df.columns.tolist())\n",
+    "\n",
+    "# Define plotting function\n",
+    "def plot_chart(selected_format):\n",
+    "    fig, ax = plt.subplots(figsize=(10, 5))\n",
+    "\n",
+    "    if selected_format == \"All formats\":\n",
+    "        pivot_df.plot(kind=\"bar\", stacked=True, ax=ax)\n",
+    "        ax.set_title(\"Top Formats by Number of Publications (1912–1922)\")\n",
+    "        ax.legend(title=\"Format\", bbox_to_anchor=(1.05, 1), loc=\"upper left\")\n",
+    "    else:\n",
+    "        pivot_df[selected_format].plot(kind=\"bar\", ax=ax, color=\"skyblue\")\n",
+    "        ax.set_title(f\"Publications for Format: {selected_format} (1912–1922)\")\n",
+    "        ax.legend([selected_format])\n",
+    "\n",
+    "    ax.set_xlabel(\"Year\")\n",
+    "    ax.set_ylabel(\"Number of Publications\")\n",
+    "    plt.tight_layout()\n",
+    "    plt.show()\n",
+    "\n",
+    "# Display dropdown and chart\n",
+    "interact(plot_chart, selected_format=format_options)"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3",
+   "path": "/Users/tanishadeka/Library/Python/3.12/share/jupyter/kernels/python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.3"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
