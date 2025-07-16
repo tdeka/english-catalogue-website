@@ -40,6 +40,8 @@ website:
             href: page1.qmd
           - text: Page 2
             href: page2.qmd
+          - text: Page 3
+            href: page3.qmd
 
 
 format:
