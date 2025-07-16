@@ -1,9 +1,8 @@
 ---
-title: "Publications by Author & Year"
 format: html
 ---
 
-<h1 class="page-top">Top Author</h1>
+<h1 class="page-top">Publications by Author & Year</h1>
 
 ## Publications by Author
 
@@ -31,7 +30,7 @@ pivot_df = (
 author_options = sorted(pivot_df.columns.tolist())
 
 def plot_author(selected_author):
-    fig, ax = plt.subplots(figsize=(10, 5))
+    fig, ax = plt.subplots(figsize=(8, 6))
 
     pivot_df[selected_author].plot(kind="line", ax=ax, color="skyblue", marker='o')
     ax.set_title(f"Publications for Author: {selected_author} (1912–1922)")
@@ -42,5 +41,5 @@ def plot_author(selected_author):
     plt.tight_layout()
     plt.show()
 
-interact(plot_author, selected_author=author_options)
+interact(plot_author, selected_author=author_options);
 ```

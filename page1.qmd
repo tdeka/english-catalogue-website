@@ -1,9 +1,8 @@
 ---
-title: "Publications by Format & Year"
 format: html
 ---
 
-<h1 class="page-top">Top Format</h1>
+<h1 class="page-top">Publications by Format & Year</h1>
 
 
 ## Publications by Format
@@ -30,7 +29,7 @@ pivot_df = (
 format_options = ["All formats"] + sorted(pivot_df.columns.tolist())
 
 def plot_chart(selected_format):
-    fig, ax = plt.subplots(figsize=(10, 5))
+    fig, ax = plt.subplots(figsize=(8, 6))
 
     if selected_format == "All formats":
         pivot_df.plot(kind="bar", stacked=True, ax=ax)
@@ -46,5 +45,6 @@ def plot_chart(selected_format):
     plt.tight_layout()
     plt.show()
 
-interact(plot_chart, selected_format=format_options)
+interact(plot_chart, selected_format=format_options);
+
 ```

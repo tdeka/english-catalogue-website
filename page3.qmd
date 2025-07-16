@@ -1,9 +1,8 @@
 ---
-title: "Publications by Publisher & Year"
 format: html
 ---
 
-<h1 class="page-top">Top Publisher</h1>
+<h1 class="page-top">Publications by Publisher & Year</h1>
 
 ## Publications by Publisher
 
@@ -31,7 +30,7 @@ pivot_df = (
 publisher_options = sorted(pivot_df.columns.tolist())
 
 def plot_publisher(selected_publisher):
-    fig, ax = plt.subplots(figsize=(10, 5))
+    fig, ax = plt.subplots(figsize=(8, 6))
     pivot_df[selected_publisher].plot(kind="line", ax=ax, color="skyblue", marker="o")
     ax.set_title(f"Publications for Publisher: {selected_publisher} (1912 – 1922)")
     ax.set_xlabel("Year")
@@ -40,6 +39,6 @@ def plot_publisher(selected_publisher):
     plt.show()
 
 # Dropdown + chart
-interact(plot_publisher, selected_publisher=publisher_options)
+interact(plot_publisher, selected_publisher=publisher_options);
 
 ```
