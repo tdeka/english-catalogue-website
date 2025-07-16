@@ -34,6 +34,10 @@ website:
             target: _blank
           - text: Interactive Map
             href: map.qmd
+      - text: General Visualizations
+        menu:
+          - text: Page 1
+            href: page1.qmd
 
 
 format:

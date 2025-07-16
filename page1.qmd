@@ -1,0 +1,33 @@
+---
+title: "Publications by Format & Year"
+format: html
+jupyter: python3
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{python}
+import pandas as pd
+import matplotlib.pyplot as plt
+import panel as pn
+pn.extension()
+
+# Load data
+df = pd.read_csv("top_format.csv")
+
+# Pivot the data
+pivot_df = (
+    df.pivot_table(
+        index="year",
+        columns="format",
+        values="num_entry",
+        aggfunc="sum",
+        fill_value=0,
+    )
+    .sort_index()
+)
+
+format_options = ["All formats"] + sorted(pivot_df.columns.tolist())
+selected_format = pn.widgets.Select(name="Choose a format", options=format_options, value="All formats")
