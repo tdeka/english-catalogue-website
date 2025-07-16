@@ -19,7 +19,7 @@
         "<details>\n",
         "<summary><strong>1912</strong></summary>"
       ],
-      "id": "4d1066d0"
+      "id": "09da3120"
     },
     {
       "cell_type": "code",
@@ -45,7 +45,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "1b86b7f5",
+      "id": "da4f9adf",
       "execution_count": null,
       "outputs": []
     },
@@ -59,7 +59,7 @@
         "<details>\n",
         "<summary><strong>1913</strong></summary>"
       ],
-      "id": "eeac5fc7"
+      "id": "03b500ef"
     },
     {
       "cell_type": "code",
@@ -85,7 +85,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "5854df8f",
+      "id": "d8157e1f",
       "execution_count": null,
       "outputs": []
     },
@@ -99,7 +99,7 @@
         "<details>\n",
         "<summary><strong>1914</strong></summary>"
       ],
-      "id": "4dc303ab"
+      "id": "ad4290d6"
     },
     {
       "cell_type": "code",
@@ -125,7 +125,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "a259d99f",
+      "id": "2eb31682",
       "execution_count": null,
       "outputs": []
     },
@@ -139,7 +139,7 @@
         "<details>\n",
         "<summary><strong>1915</strong></summary>"
       ],
-      "id": "9a288522"
+      "id": "9cb1c943"
     },
     {
       "cell_type": "code",
@@ -165,7 +165,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "99163f30",
+      "id": "9d9bfd33",
       "execution_count": null,
       "outputs": []
     },
@@ -179,7 +179,7 @@
         "<details>\n",
         "<summary><strong>1916</strong></summary>"
       ],
-      "id": "a23f9cf7"
+      "id": "deab404f"
     },
     {
       "cell_type": "code",
@@ -205,7 +205,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "512a7f18",
+      "id": "96c70a3e",
       "execution_count": null,
       "outputs": []
     },
@@ -219,7 +219,7 @@
         "<details>\n",
         "<summary><strong>1917</strong></summary>"
       ],
-      "id": "5473d922"
+      "id": "ed95549c"
     },
     {
       "cell_type": "code",
@@ -245,7 +245,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "d2926e19",
+      "id": "09fc8f18",
       "execution_count": null,
       "outputs": []
     },
@@ -259,7 +259,7 @@
         "<details>\n",
         "<summary><strong>1918</strong></summary>"
       ],
-      "id": "89210bb7"
+      "id": "92dfbcbc"
     },
     {
       "cell_type": "code",
@@ -285,7 +285,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "3985752d",
+      "id": "f06e2c8e",
       "execution_count": null,
       "outputs": []
     },
@@ -299,7 +299,7 @@
         "<details>\n",
         "<summary><strong>1919</strong></summary>"
       ],
-      "id": "bb0886f0"
+      "id": "b1bafb47"
     },
     {
       "cell_type": "code",
@@ -325,7 +325,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "0aea4747",
+      "id": "fe35c6a1",
       "execution_count": null,
       "outputs": []
     },
@@ -339,7 +339,7 @@
         "<details>\n",
         "<summary><strong>1920</strong></summary>"
       ],
-      "id": "0955261d"
+      "id": "cf231fcd"
     },
     {
       "cell_type": "code",
@@ -365,7 +365,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "e1c36484",
+      "id": "7ffda27c",
       "execution_count": null,
       "outputs": []
     },
@@ -379,7 +379,7 @@
         "<details>\n",
         "<summary><strong>1921</strong></summary>"
       ],
-      "id": "d96bf67f"
+      "id": "2c06fe9f"
     },
     {
       "cell_type": "code",
@@ -405,7 +405,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "996a5dab",
+      "id": "493aa14e",
       "execution_count": null,
       "outputs": []
     },
@@ -419,7 +419,7 @@
         "<details>\n",
         "<summary><strong>1922</strong></summary>"
       ],
-      "id": "911d6149"
+      "id": "14781c09"
     },
     {
       "cell_type": "code",
@@ -445,7 +445,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "f955c150",
+      "id": "af7cc991",
       "execution_count": null,
       "outputs": []
     },
@@ -455,7 +455,7 @@
       "source": [
         "</details> "
       ],
-      "id": "5e5ab513"
+      "id": "6fac0df9"
     }
   ],
   "metadata": {
