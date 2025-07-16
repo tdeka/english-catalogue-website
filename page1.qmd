@@ -1,15 +1,15 @@
 ---
 title: "Publications by Format & Year"
 format: html
-jupyter: python3
-execute:
-  echo: false
-  warning: false
-  message: false
 ---
 
+<h1 class="page-top">Top Format</h1>
+
+
+## Publications by Format
+
 ```{python}
-# Import packages
+#| echo: false
 import pandas as pd
 import matplotlib.pyplot as plt
 from ipywidgets import interact
@@ -27,10 +27,8 @@ pivot_df = (
     .sort_index()
 )
 
-# Format options for the dropdown
 format_options = ["All formats"] + sorted(pivot_df.columns.tolist())
 
-# Define plotting function
 def plot_chart(selected_format):
     fig, ax = plt.subplots(figsize=(10, 5))
 
@@ -48,5 +46,4 @@ def plot_chart(selected_format):
     plt.tight_layout()
     plt.show()
 
-# Display dropdown and chart
 interact(plot_chart, selected_format=format_options)
