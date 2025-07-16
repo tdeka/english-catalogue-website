@@ -10,9 +10,9 @@ format:
 <div class="full-width-title">
 
   
-## Welcome to the English Catalogue of Books
+## Welcome to the <em>English Catalogue of Books</em> Database
 
-The English Catalogue of books is a record of books published in England each year. Our dataset consists of catalogue entries from 1912–1922.
+The English Catalogue of books is a record of books published each year in England and Ireland, issued by Publishers’ Circular from the mid-19th through the mid-20th centuries. Our dataset currently consists of catalogue entries from 1912–1922.
 
 
 </div>
@@ -40,7 +40,7 @@ The English Catalogue of books is a record of books published in England each ye
       // Setup Fuse
       const options = {
         keys: ["title", "author_name", "publisher", "catalogue_year"],
-        threshold: 0.4,  // Adjust for fuzziness
+        threshold: 0.4,
       };
       const fuse = new Fuse(data, options);
 
@@ -74,20 +74,28 @@ The English Catalogue of books is a record of books published in England each ye
             }
           }
 
-          // Build HTML for results count and results
-          const resultCount = `<p><strong>${uniqueResults.length} result${uniqueResults.length !== 1 ? "s" : ""} found:</strong></p>`;
+          const safePrint = (value) => {
+            return (value === null || value === undefined || value === "") ? "null" : value;
+          };
 
-          const html = uniqueResults.slice(0, 20).map(r => {
+          const html = uniqueResults.slice(0, 10).map(r => {
             const item = r.item;
-            return `<div>
-              <strong>${item.title}</strong> by ${item.author_name} (${item.publisher}) (${item.catalogue_year})
-            </div>`;
+            return `
+              <div style="margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid #ccc; text-align: left;">
+                <div><span style="font-weight: bold;">Title:</span> ${safePrint(item.title)}</div>
+                <div><span style="font-weight: bold;">Author:</span> ${safePrint(item.author_name)}</div>
+                <div><span style="font-weight: bold;">Publisher:</span> ${safePrint(item.publisher)}</div>
+                <div><span style="font-weight: bold;">Year:</span> ${safePrint(item.catalogue_year)}</div>
+              </div>
+            `;
           }).join("");
 
+          const resultCount = `<p><strong>${uniqueResults.length} result${uniqueResults.length !== 1 ? "s" : ""} found:</strong></p>`;
           resultsDiv.innerHTML = resultCount + html;
         }
       });
     });
 </script>
+
 
 </div>

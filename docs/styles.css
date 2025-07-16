@@ -5,6 +5,10 @@
   padding-top: 3rem; /* Adjust to match the height of your navbar */
 }
 
+.result-label {
+  font-weight: bold !important;
+}
+
 .navbar {
   background-color: #4a1d08 !important; /* dark brown */
   color: #fff;

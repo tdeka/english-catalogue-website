@@ -16,7 +16,7 @@ Learn more about the data we used for this project!
 
 Click on the different years to see a preview and download link for the CSV of our data.
 
-<details>
+<details open>
 <summary>1912</summary>
 
 <p style="text-align: center;">
