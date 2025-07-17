@@ -1,0 +1,76 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "format: html\n",
+        "---\n",
+        "\n",
+        "<h1 class=\"page-top\">Publications by Format & Year</h1>\n",
+        "\n",
+        "\n",
+        "## Publications by Format"
+      ],
+      "id": "dfcacd79"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "import matplotlib.pyplot as plt\n",
+        "from ipywidgets import interact\n",
+        "\n",
+        "# Load and prepare data\n",
+        "df = pd.read_csv(\"top_format.csv\")\n",
+        "pivot_df = (\n",
+        "    df.pivot_table(\n",
+        "        index=\"year\",\n",
+        "        columns=\"format\",\n",
+        "        values=\"num_entry\",\n",
+        "        aggfunc=\"sum\",\n",
+        "        fill_value=0,\n",
+        "    )\n",
+        "    .sort_index()\n",
+        ")\n",
+        "\n",
+        "format_options = [\"All formats\"] + sorted(pivot_df.columns.tolist())\n",
+        "\n",
+        "def plot_chart(selected_format):\n",
+        "    fig, ax = plt.subplots(figsize=(8, 6))\n",
+        "\n",
+        "    if selected_format == \"All formats\":\n",
+        "        pivot_df.plot(kind=\"bar\", stacked=True, ax=ax)\n",
+        "        ax.set_title(\"Top Formats by Number of Publications (1912–1922)\")\n",
+        "        ax.legend(title=\"Format\", bbox_to_anchor=(1.05, 1), loc=\"upper left\")\n",
+        "    else:\n",
+        "        pivot_df[selected_format].plot(kind=\"bar\", ax=ax, color=\"skyblue\")\n",
+        "        ax.set_title(f\"Publications for Format: {selected_format} (1912–1922)\")\n",
+        "        ax.legend([selected_format])\n",
+        "\n",
+        "    ax.set_xlabel(\"Year\")\n",
+        "    ax.set_ylabel(\"Number of Publications\")\n",
+        "    plt.tight_layout()\n",
+        "    plt.show()\n",
+        "\n",
+        "interact(plot_chart, selected_format=format_options);"
+      ],
+      "id": "5a60a255",
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "python3",
+      "language": "python",
+      "display_name": "Python 3 (ipykernel)",
+      "path": "/Users/tanishadeka/Desktop/english-catalogue-website/.venv/share/jupyter/kernels/python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}

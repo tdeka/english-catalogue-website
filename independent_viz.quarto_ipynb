@@ -8,7 +8,7 @@
         "format: html\n",
         "---"
       ],
-      "id": "43729314"
+      "id": "01cae354"
     },
     {
       "cell_type": "markdown",
@@ -20,7 +20,7 @@
         "\n",
         "## Psychology and WWI"
       ],
-      "id": "f6d36779"
+      "id": "f52f2dda"
     },
     {
       "cell_type": "code",
@@ -53,7 +53,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "33dd398e",
+      "id": "5f93af0b",
       "execution_count": null,
       "outputs": []
     },
@@ -68,15 +68,15 @@
         "\n",
         "## Next Visualization"
       ],
-      "id": "4f521b4e"
+      "id": "0ae0939b"
     }
   ],
   "metadata": {
     "kernelspec": {
-      "name": "english-catalogue-env",
+      "name": "python3",
       "language": "python",
-      "display_name": "english-catalogue-env",
-      "path": "/Users/tanishadeka/Library/Jupyter/kernels/english-catalogue-env"
+      "display_name": "Python 3 (ipykernel)",
+      "path": "/Users/tanishadeka/Desktop/english-catalogue-website/.venv/share/jupyter/kernels/python3"
     }
   },
   "nbformat": 4,

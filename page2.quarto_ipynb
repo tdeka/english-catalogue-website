@@ -1,0 +1,72 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "format: html\n",
+        "---\n",
+        "\n",
+        "<h1 class=\"page-top\">Publications by Author & Year</h1>\n",
+        "\n",
+        "## Publications by Author"
+      ],
+      "id": "b45cc87a"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "import matplotlib.pyplot as plt\n",
+        "from ipywidgets import interact\n",
+        "\n",
+        "# Load and prepare data\n",
+        "df = pd.read_csv(\"top_author_year.csv\")\n",
+        "\n",
+        "# Pivot for line chart\n",
+        "pivot_df = (\n",
+        "    df.pivot_table(\n",
+        "        index=\"year\",\n",
+        "        columns=\"author_name\",\n",
+        "        values=\"num_entry\",\n",
+        "        aggfunc=\"sum\",\n",
+        "        fill_value=0,\n",
+        "    )\n",
+        "    .sort_index()\n",
+        ")\n",
+        "\n",
+        "author_options = sorted(pivot_df.columns.tolist())\n",
+        "\n",
+        "def plot_author(selected_author):\n",
+        "    fig, ax = plt.subplots(figsize=(8, 6))\n",
+        "\n",
+        "    pivot_df[selected_author].plot(kind=\"line\", ax=ax, color=\"skyblue\", marker='o')\n",
+        "    ax.set_title(f\"Publications for Author: {selected_author} (1912–1922)\")\n",
+        "    ax.legend([selected_author])\n",
+        "    ax.set_xlabel(\"Year\")\n",
+        "    ax.set_ylabel(\"Number of Publications\")\n",
+        "    ax.grid(True)\n",
+        "    plt.tight_layout()\n",
+        "    plt.show()\n",
+        "\n",
+        "interact(plot_author, selected_author=author_options);"
+      ],
+      "id": "67196e00",
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "python3",
+      "language": "python",
+      "display_name": "Python 3 (ipykernel)",
+      "path": "/Users/tanishadeka/Desktop/english-catalogue-website/.venv/share/jupyter/kernels/python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}
