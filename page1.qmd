@@ -53,7 +53,6 @@ for col in pivot_df.columns:
 
 # Update layout to move dropdown to the LEFT
 fig.update_layout(
-    title="Top Formats by Number of Publications (1912–1922)",
     xaxis_title="Year",
     yaxis_title="Number of Publications",
     barmode="stack",
