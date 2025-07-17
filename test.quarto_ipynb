@@ -1,0 +1,26 @@
+{
+  "cells": [
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: true\n",
+        "import sys\n",
+        "print(sys.executable)"
+      ],
+      "id": "0c5e900b",
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "english-catalogue-env",
+      "language": "python",
+      "display_name": "english-catalogue-env",
+      "path": "/Users/tanishadeka/Library/Jupyter/kernels/english-catalogue-env"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}

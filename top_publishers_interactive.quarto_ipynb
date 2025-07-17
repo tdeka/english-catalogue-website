@@ -1,0 +1,71 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "format: html\n",
+        "---\n",
+        "\n",
+        "<h1 class=\"page-top\">Top Publishers by Number of Publications</h1>\n",
+        "\n",
+        "<div style=\"margin-top: 60px;\"></div>\n"
+      ],
+      "id": "21d0ed1c"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "import matplotlib.pyplot as plt\n",
+        "from ipywidgets import interact\n",
+        "\n",
+        "\n",
+        "# Load and prepare data\n",
+        "df = pd.read_csv(\"top_publisher.csv\")\n",
+        "\n",
+        "# Pivot table\n",
+        "pivot_df = (\n",
+        "    df.pivot_table(\n",
+        "        index=\"year\",\n",
+        "        columns=\"top_publisher\",\n",
+        "        values=\"num_entry\",\n",
+        "        aggfunc=\"sum\",\n",
+        "        fill_value=0,\n",
+        "    )\n",
+        "    .sort_index()\n",
+        ")\n",
+        "\n",
+        "publisher_options = sorted(pivot_df.columns.tolist())\n",
+        "\n",
+        "def plot_publisher(selected_publisher):\n",
+        "    fig, ax = plt.subplots(figsize=(8, 6))\n",
+        "    pivot_df[selected_publisher].plot(kind=\"line\", ax=ax, color=\"skyblue\", marker=\"o\")\n",
+        "    ax.set_title(f\"Publications for Publisher: {selected_publisher} (1912 – 1922)\")\n",
+        "    ax.set_xlabel(\"Year\")\n",
+        "    ax.set_ylabel(\"Number of Publications\")\n",
+        "    plt.tight_layout()\n",
+        "    plt.show()\n",
+        "\n",
+        "# Dropdown + chart\n",
+        "interact(plot_publisher, selected_publisher=publisher_options);"
+      ],
+      "id": "6df3c52d",
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "english-catalogue-env",
+      "language": "python",
+      "display_name": "english-catalogue-env",
+      "path": "/Users/tanishadeka/Library/Jupyter/kernels/english-catalogue-env"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}

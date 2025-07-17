@@ -21,27 +21,21 @@ website:
         text: Our Data
       - text: Visualizations
         menu:
-          - text: Top Publishers by Year
-            href: publishers.qmd
-          - text: Top Authors by Year
-            href: authors.qmd
-          - text: Independent Visualizations
-            href: independent_viz.qmd
+          - text: Psychology and WWI
+            href: psychology.qmd
+          - text: Top Formats by Number of Publications
+            href: top_formats_interactive.qmd
+          - text: Top Authors by Number of Publications
+            href: top_authors_interactive.qmd
+          - text: Top Publishers by Number of Publications
+            href: top_publishers_interactive.qmd
       - text: Data Explorer 
         menu:
           - text: N-Gram Viewer
-            href: https://english-catalogue-ngram.streamlit.app/
-            target: _blank
+            href: ngram.qmd
           - text: Interactive Map
             href: map.qmd
-      - text: General Visualizations
-        menu:
-          - text: Page 1
-            href: page1.qmd
-          - text: Page 2
-            href: page2.qmd
-          - text: Page 3
-            href: page3.qmd
+        
 
 
 format:

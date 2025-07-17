@@ -1,0 +1,83 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "format: html\n",
+        "---\n",
+        "\n",
+        "<h1 class=\"page-top\">Top Formats by Number of Publications</h1>\n",
+        "\n",
+        "<div style=\"margin-top: 60px;\"></div>\n"
+      ],
+      "id": "0ac57f13"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "import plotly.graph_objects as go\n",
+        "\n",
+        "\n",
+        "df = pd.read_csv(\"top_formats_interactive.csv\")\n",
+        "pivot_df = df.pivot_table(index=\"year\", columns=\"format\", values=\"num_entry\", aggfunc=\"sum\", fill_value=0).sort_index()\n",
+        "\n",
+        "# Create one trace per format\n",
+        "traces = []\n",
+        "buttons = []\n",
+        "\n",
+        "for col in pivot_df.columns:\n",
+        "    trace = go.Bar(name=col, x=pivot_df.index, y=pivot_df[col], visible=True)\n",
+        "    traces.append(trace)\n",
+        "    buttons.append(dict(label=col,\n",
+        "                        method=\"update\",\n",
+        "                        args=[{\"visible\": [c == col for c in pivot_df.columns]},\n",
+        "                              {\"title\": f\"Publications for Format: {col} (1912–1922)\"}]))\n",
+        "\n",
+        "# Add \"All formats\" stacked bar\n",
+        "stacked = []\n",
+        "for col in pivot_df.columns:\n",
+        "    stacked.append(go.Bar(name=col, x=pivot_df.index, y=pivot_df[col]))\n",
+        "buttons.insert(0, dict(label=\"All formats\",\n",
+        "                       method=\"update\",\n",
+        "                       args=[{\"visible\": [True] * len(pivot_df.columns)},\n",
+        "                             {\"title\": \"Top Formats by Number of Publications (1912–1922)\",\n",
+        "                              \"barmode\": \"stack\"}]))\n",
+        "\n",
+        "fig = go.Figure(data=stacked)\n",
+        "fig.update_layout(\n",
+        "    title=\"Top Formats by Number of Publications (1912–1922)\",\n",
+        "    xaxis_title=\"Year\",\n",
+        "    yaxis_title=\"Number of Publications\",\n",
+        "    barmode=\"stack\",\n",
+        "    updatemenus=[dict(\n",
+        "        active=0,\n",
+        "        buttons=buttons,\n",
+        "        direction=\"down\",\n",
+        "        showactive=True,\n",
+        "        x=1.3,\n",
+        "        y=1.15\n",
+        "    )]\n",
+        ")\n",
+        "fig.show()"
+      ],
+      "id": "3871115d",
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "english-catalogue-env",
+      "language": "python",
+      "display_name": "english-catalogue-env",
+      "path": "/Users/tanishadeka/Library/Jupyter/kernels/english-catalogue-env"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}
