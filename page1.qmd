@@ -1,50 +1,45 @@
 ---
+title: "Publications by Format & Year"
 format: html
 ---
 
 <h1 class="page-top">Publications by Format & Year</h1>
 
-
-## Publications by Format
-
 ```{python}
 #| echo: false
 import pandas as pd
-import matplotlib.pyplot as plt
-from ipywidgets import interact
+import plotly.express as px
+import plotly.graph_objects as go
+import ipywidgets as widgets
+from IPython.display import display
 
 # Load and prepare data
 df = pd.read_csv("top_format.csv")
-pivot_df = (
-    df.pivot_table(
-        index="year",
-        columns="format",
-        values="num_entry",
-        aggfunc="sum",
-        fill_value=0,
-    )
-    .sort_index()
-)
-
+pivot_df = df.pivot_table(index="year", columns="format", values="num_entry", aggfunc="sum", fill_value=0).sort_index()
 format_options = ["All formats"] + sorted(pivot_df.columns.tolist())
 
-def plot_chart(selected_format):
-    fig, ax = plt.subplots(figsize=(8, 6))
+# Dropdown widget
+dropdown = widgets.Dropdown(options=format_options, value="All formats", description="Format:")
+output = widgets.Output()
 
-    if selected_format == "All formats":
-        pivot_df.plot(kind="bar", stacked=True, ax=ax)
-        ax.set_title("Top Formats by Number of Publications (1912–1922)")
-        ax.legend(title="Format", bbox_to_anchor=(1.05, 1), loc="upper left")
-    else:
-        pivot_df[selected_format].plot(kind="bar", ax=ax, color="skyblue")
-        ax.set_title(f"Publications for Format: {selected_format} (1912–1922)")
-        ax.legend([selected_format])
+def update_chart(selected_format):
+    output.clear_output()
+    with output:
+        if selected_format == "All formats":
+            fig = go.Figure()
+            for fmt in pivot_df.columns:
+                fig.add_trace(go.Bar(name=fmt, x=pivot_df.index, y=pivot_df[fmt]))
+            fig.update_layout(barmode="stack", title="Top Formats by Number of Publications (1912–1922)")
+        else:
+            fig = px.bar(
+                x=pivot_df.index,
+                y=pivot_df[selected_format],
+                labels={'x': 'Year', 'y': 'Number of Publications'},
+                title=f"Publications for Format: {selected_format} (1912–1922)",
+            )
+        fig.update_layout(xaxis_title="Year", yaxis_title="Number of Publications")
+        fig.show()
 
-    ax.set_xlabel("Year")
-    ax.set_ylabel("Number of Publications")
-    plt.tight_layout()
-    plt.show()
-
-interact(plot_chart, selected_format=format_options);
-
+widgets.interact(update_chart, selected_format=dropdown.options)
+display(output)
 ```
