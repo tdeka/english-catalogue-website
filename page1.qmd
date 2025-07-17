@@ -1,36 +1,57 @@
-## 📊 Interactive Chart with Plotly Dropdown
+---
+title: "Publications by Format & Year"
+format: html
+---
+
+<h1 class="page-top">Publications by Format & Year</h1>
 
 ```{python}
 #| echo: false
 import pandas as pd
 import plotly.graph_objects as go
 
+# Load data
 df = pd.read_csv("top_format.csv")
-pivot_df = df.pivot_table(index="year", columns="format", values="num_entry", aggfunc="sum", fill_value=0).sort_index()
 
-# Create one trace per format
-traces = []
+# Pivot data
+pivot_df = df.pivot_table(
+    index="year",
+    columns="format",
+    values="num_entry",
+    aggfunc="sum",
+    fill_value=0,
+).sort_index()
+
+# Create traces and buttons
 buttons = []
-
 for col in pivot_df.columns:
-    trace = go.Bar(name=col, x=pivot_df.index, y=pivot_df[col], visible=True)
-    traces.append(trace)
-    buttons.append(dict(label=col,
-                        method="update",
-                        args=[{"visible": [c == col for c in pivot_df.columns]},
-                              {"title": f"Publications for Format: {col} (1912–1922)"}]))
+    buttons.append(dict(
+        label=col,
+        method="update",
+        args=[
+            {"visible": [c == col for c in pivot_df.columns]},
+            {"title": f"Publications for Format: {col} (1912–1922)",
+             "barmode": "group"}
+        ]
+    ))
 
-# Add "All formats" stacked bar
-stacked = []
+# Add "All formats" button first
+buttons.insert(0, dict(
+    label="All formats",
+    method="update",
+    args=[
+        {"visible": [True] * len(pivot_df.columns)},
+        {"title": "Top Formats by Number of Publications (1912–1922)",
+         "barmode": "stack"}
+    ]
+))
+
+# Create initial stacked bar chart
+fig = go.Figure()
 for col in pivot_df.columns:
-    stacked.append(go.Bar(name=col, x=pivot_df.index, y=pivot_df[col]))
-buttons.insert(0, dict(label="All formats",
-                       method="update",
-                       args=[{"visible": [True] * len(pivot_df.columns)},
-                             {"title": "Top Formats by Number of Publications (1912–1922)",
-                              "barmode": "stack"}]))
+    fig.add_trace(go.Bar(x=pivot_df.index, y=pivot_df[col], name=col))
 
-fig = go.Figure(data=stacked)
+# Update layout to move dropdown to the LEFT
 fig.update_layout(
     title="Top Formats by Number of Publications (1912–1922)",
     xaxis_title="Year",
@@ -41,10 +62,14 @@ fig.update_layout(
         buttons=buttons,
         direction="down",
         showactive=True,
-        x=1.3,
-        y=1.15
+        x=0,                 # 👈 align to left edge
+        xanchor="left",      # 👈 anchor to left
+        y=1.15,
+        yanchor="top"
     )]
 )
+
 fig.show()
+
 
 ```

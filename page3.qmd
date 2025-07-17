@@ -1,4 +1,5 @@
 ---
+title: "Publications by Publisher & Year"
 format: html
 ---
 
@@ -9,36 +10,71 @@ format: html
 ```{python}
 #| echo: false
 import pandas as pd
-import matplotlib.pyplot as plt
-from ipywidgets import interact
+import plotly.graph_objects as go
 
 # Load and prepare data
 df = pd.read_csv("top_publisher.csv")
 
 # Pivot table
-pivot_df = (
-    df.pivot_table(
-        index="year",
-        columns="top_publisher",
-        values="num_entry",
-        aggfunc="sum",
-        fill_value=0,
-    )
-    .sort_index()
+pivot_df = df.pivot_table(
+    index="year",
+    columns="top_publisher",
+    values="num_entry",
+    aggfunc="sum",
+    fill_value=0,
+).sort_index()
+
+# Create buttons and traces
+buttons = []
+for col in pivot_df.columns:
+    buttons.append(dict(
+        label=col,
+        method="update",
+        args=[
+            {"visible": [c == col for c in pivot_df.columns]},
+            {"title": f"Publications for Publisher: {col} (1912–1922)"}
+        ]
+    ))
+
+# Optional: add "All publishers" view
+buttons.insert(0, dict(
+    label="All publishers",
+    method="update",
+    args=[
+        {"visible": [True] * len(pivot_df.columns)},
+        {"title": "Top Publishers by Number of Publications (1912–1922)"}
+    ]
+))
+
+# Create figure with all traces
+fig = go.Figure()
+for col in pivot_df.columns:
+    fig.add_trace(go.Scatter(
+        x=pivot_df.index,
+        y=pivot_df[col],
+        mode="lines+markers",
+        name=col,
+        visible=True
+    ))
+
+# Update layout with dropdown on the left
+fig.update_layout(
+    title="Top Publishers by Number of Publications (1912–1922)",
+    xaxis_title="Year",
+    yaxis_title="Number of Publications",
+    updatemenus=[dict(
+        active=0,
+        buttons=buttons,
+        direction="down",
+        showactive=True,
+        x=0,             # 👈 Left-aligned
+        xanchor="left",
+        y=1.15,
+        yanchor="top"
+    )]
 )
 
-publisher_options = sorted(pivot_df.columns.tolist())
+fig.show()
 
-def plot_publisher(selected_publisher):
-    fig, ax = plt.subplots(figsize=(8, 6))
-    pivot_df[selected_publisher].plot(kind="line", ax=ax, color="skyblue", marker="o")
-    ax.set_title(f"Publications for Publisher: {selected_publisher} (1912 – 1922)")
-    ax.set_xlabel("Year")
-    ax.set_ylabel("Number of Publications")
-    plt.tight_layout()
-    plt.show()
-
-# Dropdown + chart
-interact(plot_publisher, selected_publisher=publisher_options);
 
 ```
