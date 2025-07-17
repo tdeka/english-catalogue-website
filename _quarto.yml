@@ -21,14 +21,14 @@ website:
         text: Our Data
       - text: Visualizations
         menu:
+          - text: Top Formats
+            href: top_formats_interactive.qmd
+          - text: Top Authors
+            href: top_authors_interactive.qmd
+          - text: Top Publishers 
+            href: top_publishers_interactive.qmd
           - text: Psychology and WWI
             href: psychology.qmd
-          - text: Top Formats by Number of Publications
-            href: top_formats_interactive.qmd
-          - text: Top Authors by Number of Publications
-            href: top_authors_interactive.qmd
-          - text: Top Publishers by Number of Publications
-            href: top_publishers_interactive.qmd
       - text: Data Explorer 
         menu:
           - text: N-Gram Viewer

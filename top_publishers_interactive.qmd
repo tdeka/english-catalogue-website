@@ -1,11 +1,10 @@
 ---
-title: "Publications by Publisher & Year"
 format: html
 ---
 
-<h1 class="page-top">Publications by Publisher & Year</h1>
+<h1 class="page-top">Top Publishers by Number of Publications</h1>
 
-## Publications by Publisher
+<div style="margin-top: 60px;"></div>
 
 ```{python}
 #| echo: false

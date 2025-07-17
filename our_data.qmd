@@ -301,15 +301,13 @@ plt.show()
 ```
 
 
-# EMBEDDED OBSERVABLE TABLE
+<h2>Searchable Data Table</h2>
 
-<h2>Embedded Observable Table</h2>
+<iframe width="100%" height="500" frameborder="0"
+  src="https://observablehq.com/embed/48d25e26ff4e99fb@latest?cell=*">
+</iframe>
 
-''' {ojs}
-data = FileAttachment("ALL DATA.csv").csv
-
-
-'''
+</div>
 
 
 
