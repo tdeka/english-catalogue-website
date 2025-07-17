@@ -12,7 +12,7 @@
         "\n",
         "<div style=\"margin-top: 60px;\"></div>\n"
       ],
-      "id": "21d0ed1c"
+      "id": "97ef9e5f"
     },
     {
       "cell_type": "code",
@@ -53,7 +53,7 @@
         "# Dropdown + chart\n",
         "interact(plot_publisher, selected_publisher=publisher_options);"
       ],
-      "id": "6df3c52d",
+      "id": "38338c4a",
       "execution_count": null,
       "outputs": []
     }

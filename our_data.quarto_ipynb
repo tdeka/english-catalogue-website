@@ -31,7 +31,7 @@
         "\n",
         "<h3>Data Table</h3>"
       ],
-      "id": "28e29485"
+      "id": "86ca5fcd"
     },
     {
       "cell_type": "code",
@@ -42,7 +42,7 @@
         "df = pd.read_csv(\"df_1912.csv\")\n",
         "df.head(15).to_html(classes=\"my-table\")"
       ],
-      "id": "ba62917c",
+      "id": "b378fba2",
       "execution_count": null,
       "outputs": []
     },
@@ -64,7 +64,7 @@
         "\n",
         "<h3>Data Table</h3>"
       ],
-      "id": "b8390bd2"
+      "id": "461254de"
     },
     {
       "cell_type": "code",
@@ -75,7 +75,7 @@
         "df = pd.read_csv(\"df_1913.csv\")\n",
         "df.head(15).to_html(classes=\"my-table\")"
       ],
-      "id": "120835ec",
+      "id": "38bcb06c",
       "execution_count": null,
       "outputs": []
     },
@@ -97,7 +97,7 @@
         "\n",
         "<h3>Data Table</h3>"
       ],
-      "id": "84d1e4b5"
+      "id": "bdd0e087"
     },
     {
       "cell_type": "code",
@@ -108,7 +108,7 @@
         "df = pd.read_csv(\"df_1914.csv\")\n",
         "df.head(15).to_html(classes=\"my-table\")"
       ],
-      "id": "63d469bb",
+      "id": "bc97787f",
       "execution_count": null,
       "outputs": []
     },
@@ -130,7 +130,7 @@
         "\n",
         "<h3>Data Table</h3>"
       ],
-      "id": "a257ecd4"
+      "id": "cff799d2"
     },
     {
       "cell_type": "code",
@@ -141,7 +141,7 @@
         "df = pd.read_csv(\"df_1915.csv\")\n",
         "df.head(15).to_html(classes=\"my-table\")"
       ],
-      "id": "81dc7995",
+      "id": "109203f4",
       "execution_count": null,
       "outputs": []
     },
@@ -162,7 +162,7 @@
         "\n",
         "<h3>Data Table</h3>"
       ],
-      "id": "a9fa00b8"
+      "id": "97254de3"
     },
     {
       "cell_type": "code",
@@ -173,7 +173,7 @@
         "df = pd.read_csv(\"df_1916.csv\")\n",
         "df.head(15).to_html(classes=\"my-table\")"
       ],
-      "id": "8682f457",
+      "id": "ec1396ba",
       "execution_count": null,
       "outputs": []
     },
@@ -195,7 +195,7 @@
         "\n",
         "<h3>Data Table</h3>"
       ],
-      "id": "5735bea4"
+      "id": "d290f2b5"
     },
     {
       "cell_type": "code",
@@ -206,7 +206,7 @@
         "df = pd.read_csv(\"df_1917.csv\")\n",
         "df.head(15).to_html(classes=\"my-table\")"
       ],
-      "id": "2218ceb5",
+      "id": "b78cd2ef",
       "execution_count": null,
       "outputs": []
     },
@@ -228,7 +228,7 @@
         "\n",
         "<h3>Data Table</h3>"
       ],
-      "id": "e5faef0e"
+      "id": "c1bc7f84"
     },
     {
       "cell_type": "code",
@@ -239,7 +239,7 @@
         "df = pd.read_csv(\"df_1918.csv\")\n",
         "df.head(15).to_html(classes=\"my-table\")"
       ],
-      "id": "6983742f",
+      "id": "ab49cd80",
       "execution_count": null,
       "outputs": []
     },
@@ -261,7 +261,7 @@
         "\n",
         "<h3>Data Table</h3>"
       ],
-      "id": "992a09da"
+      "id": "7faf7443"
     },
     {
       "cell_type": "code",
@@ -272,7 +272,7 @@
         "df = pd.read_csv(\"df_1919.csv\")\n",
         "df.head(15).to_html(classes=\"my-table\")"
       ],
-      "id": "44815086",
+      "id": "93a8b0fc",
       "execution_count": null,
       "outputs": []
     },
@@ -294,7 +294,7 @@
         "\n",
         "<h3>Data Table</h3>"
       ],
-      "id": "a9823ba7"
+      "id": "cc95d79b"
     },
     {
       "cell_type": "code",
@@ -305,7 +305,7 @@
         "df = pd.read_csv(\"df_1920.csv\")\n",
         "df.head(15).to_html(classes=\"my-table\")"
       ],
-      "id": "83483b11",
+      "id": "3738142d",
       "execution_count": null,
       "outputs": []
     },
@@ -327,7 +327,7 @@
         "\n",
         "<h3>Data Table</h3>"
       ],
-      "id": "b7b10495"
+      "id": "ac6a9d49"
     },
     {
       "cell_type": "code",
@@ -338,7 +338,7 @@
         "df = pd.read_csv(\"df_1921.csv\")\n",
         "df.head(15).to_html(classes=\"my-table\")"
       ],
-      "id": "a24a73a3",
+      "id": "da8838fe",
       "execution_count": null,
       "outputs": []
     },
@@ -360,7 +360,7 @@
         "\n",
         "<h3>Data Table</h3>"
       ],
-      "id": "9e6b5f1b"
+      "id": "83fb3452"
     },
     {
       "cell_type": "code",
@@ -371,7 +371,7 @@
         "df = pd.read_csv(\"df_1922.csv\")\n",
         "df.head(15).to_html(classes=\"my-table\")"
       ],
-      "id": "e0cad6cc",
+      "id": "0b77376f",
       "execution_count": null,
       "outputs": []
     },
@@ -394,7 +394,7 @@
         "\n",
         "<div style=\"text-align: center;\">"
       ],
-      "id": "4ed81125"
+      "id": "7ffc82c5"
     },
     {
       "cell_type": "code",
@@ -440,7 +440,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "b7c8d63e",
+      "id": "72906b83",
       "execution_count": null,
       "outputs": []
     },
@@ -468,7 +468,7 @@
         "\n",
         "</div>"
       ],
-      "id": "6609c29f"
+      "id": "b45a417d"
     }
   ],
   "metadata": {

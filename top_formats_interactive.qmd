@@ -40,7 +40,6 @@ buttons.insert(0, dict(label="All formats",
 
 fig = go.Figure(data=stacked)
 fig.update_layout(
-    title="Top Formats by Number of Publications (1912–1922)",
     xaxis_title="Year",
     yaxis_title="Number of Publications",
     barmode="stack",
@@ -49,8 +48,10 @@ fig.update_layout(
         buttons=buttons,
         direction="down",
         showactive=True,
-        x=1.3,
-        y=1.15
+        x=0,                 # 👈 align to left edge
+        xanchor="left",      # 👈 anchor to left
+        y=1.15,
+        yanchor="top"
     )]
 )
 fig.show()
