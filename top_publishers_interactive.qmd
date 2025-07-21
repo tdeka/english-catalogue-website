@@ -58,7 +58,6 @@ for i, col in enumerate(publishers):
 
 # Update layout (no "All publishers" button, default = WYMAN)
 fig.update_layout(
-    title=f"Publications for Publisher: {default_publisher} (1912–1922)",
     xaxis_title="Year",
     yaxis_title="Number of Publications",
     margin=dict(t=60),
@@ -67,8 +66,8 @@ fig.update_layout(
         buttons=buttons,
         direction="down",
         showactive=True,
-        x=1,
-        xanchor="right",
+        x=0,
+        xanchor="left",
         y=1.15,
         yanchor="top"
     )]
