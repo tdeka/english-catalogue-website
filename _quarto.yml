@@ -43,6 +43,7 @@ format:
     css: styles.css
     googlefonts: 
       - Literata
+    allow-html: true
   
 metadata-files:
   - _params.yml

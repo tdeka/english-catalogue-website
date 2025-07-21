@@ -67,5 +67,11 @@
   },
   "top_authors_interactive.qmd": {
     "top_authors_interactive.html": "274344c5"
+  },
+  "pub_books.ipynb": {
+    "pub_books.html": "a850d78a"
+  },
+  "test.qmd": {
+    "test.html": "40971e4a"
   }
 }

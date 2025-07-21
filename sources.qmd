@@ -4,5 +4,26 @@ format: html
 
 <h1 class="page-top">About Our Sources</h1>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
+
+Each issue of the English Catalogue of Books begins with an excerpt about the publishing industry in that year, including information like the rate of publications throughout the year, what months were the most popular for book publishing, and other statistics. The excerpt also includes genre-specific information, such as increases and decreases in publications within specific genres. Below is the excerpt from the 1912 issue of the catalogue.
+
+<p style="text-align: center;">
+  <img src="1912_excerpt.jpeg" width="500px">
+</p>
+
+<div style="margin-top: 40px;"></div>
+
+The excerpt page is followed by a table of statistics that states how many books were published in each genre and the total number of books published for that issue of the catalogue. This table includes information on how many of these publications were new books, how many were translations, how many were pamphlets, and how many were new editions. It also includes total publications for the previous year. Another table below shows how many books were published during each month of that catalogue year. Below are the 1912 catalogue statistical tables.
+
+<p style="text-align: center;">
+  <img src="1912_stats.jpeg" width="500px">
+</p>
+
+<div style="margin-top: 40px;"></div>
+
+After the tables, the list of books in the catalogue begins. Below is the first page where publications are listed in the 1912 catalogue.
+
+<p style="text-align: center;">
+  <img src="1912_page_1.jpeg" width="500px">
+</p>

@@ -308,13 +308,3 @@ plt.show()
 </iframe>
 
 </div>
-
-
-
-
-
-
-
-
-
-</div>

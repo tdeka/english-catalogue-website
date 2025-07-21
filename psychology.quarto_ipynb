@@ -8,7 +8,7 @@
         "format: html\n",
         "---"
       ],
-      "id": "50e08c28"
+      "id": "da496e3f"
     },
     {
       "cell_type": "markdown",
@@ -18,7 +18,7 @@
         "\n",
         "<div style=\"margin-top: 60px;\"></div>"
       ],
-      "id": "014d3730"
+      "id": "25781cc9"
     },
     {
       "cell_type": "code",
@@ -51,7 +51,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "45182515",
+      "id": "8b3a72a2",
       "execution_count": null,
       "outputs": []
     },
@@ -63,15 +63,15 @@
         "\n",
         "<div style=\"margin-top: 60px;\"></div>\n"
       ],
-      "id": "c4a7329d"
+      "id": "2f4438bc"
     }
   ],
   "metadata": {
     "kernelspec": {
-      "name": "english-catalogue-env",
+      "name": "python3",
       "language": "python",
-      "display_name": "english-catalogue-env",
-      "path": "/Users/tanishadeka/Library/Jupyter/kernels/english-catalogue-env"
+      "display_name": "Python 3 (ipykernel)",
+      "path": "/Users/tanishadeka/Desktop/english-catalogue-website/.venv/share/jupyter/kernels/python3"
     }
   },
   "nbformat": 4,

@@ -12,7 +12,7 @@
         "\n",
         "<div style=\"margin-top: 60px;\"></div>\n"
       ],
-      "id": "442f5e65"
+      "id": "5dbf02c5"
     },
     {
       "cell_type": "code",
@@ -66,17 +66,17 @@
         ")\n",
         "fig.show()"
       ],
-      "id": "2cd95b39",
+      "id": "f1e202ba",
       "execution_count": null,
       "outputs": []
     }
   ],
   "metadata": {
     "kernelspec": {
-      "name": "english-catalogue-env",
+      "name": "python3",
       "language": "python",
-      "display_name": "english-catalogue-env",
-      "path": "/Users/tanishadeka/Library/Jupyter/kernels/english-catalogue-env"
+      "display_name": "Python 3 (ipykernel)",
+      "path": "/Users/tanishadeka/Desktop/english-catalogue-website/.venv/share/jupyter/kernels/python3"
     }
   },
   "nbformat": 4,

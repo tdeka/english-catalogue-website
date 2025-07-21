@@ -111,3 +111,32 @@ h1, h2, h3, h4, h5, h6 {
 .center-text {
   text-align: center;
 }
+
+.collaborator-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  gap: 2rem;
+}
+
+.collaborator {
+  display: flex;
+  align-items: center;
+  width: 48%;
+  min-width: 300px;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 1rem;
+}
+
+.bio {
+  flex: 1;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
