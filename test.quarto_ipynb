@@ -8,7 +8,7 @@
         "import sys\n",
         "print(sys.executable)"
       ],
-      "id": "ea36fd22",
+      "id": "3cc20b02",
       "execution_count": null,
       "outputs": []
     }

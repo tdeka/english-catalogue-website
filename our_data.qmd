@@ -28,8 +28,9 @@ Click on the different years to see a preview and download link for the CSV of o
 ```{python}
 #| echo: false
 import pandas as pd
+from IPython.display import display, HTML
 df = pd.read_csv("df_1912.csv")
-df.head(15).to_html(classes="my-table")
+display(HTML(df.head(15).to_html(classes="my-table")))
 
 ```
 <a href="df_1912.csv" download>Download full CSV</a>
@@ -49,8 +50,9 @@ df.head(15).to_html(classes="my-table")
 ```{python}
 #| echo: false
 import pandas as pd
+from IPython.display import display, HTML
 df = pd.read_csv("df_1913.csv")
-df.head(15).to_html(classes="my-table")
+display(HTML(df.head(15).to_html(classes="my-table")))
 
 ```
 <a href="df_1913.csv" download>Download full CSV</a>
@@ -70,8 +72,9 @@ df.head(15).to_html(classes="my-table")
 ```{python}
 #| echo: false
 import pandas as pd
+from IPython.display import display, HTML
 df = pd.read_csv("df_1914.csv")
-df.head(15).to_html(classes="my-table")
+display(HTML(df.head(15).to_html(classes="my-table")))
 
 ```
 <a href="df_1914.csv" download>Download full CSV</a>
@@ -91,8 +94,9 @@ df.head(15).to_html(classes="my-table")
 ```{python}
 #| echo: false
 import pandas as pd
+from IPython.display import display, HTML
 df = pd.read_csv("df_1915.csv")
-df.head(15).to_html(classes="my-table")
+display(HTML(df.head(15).to_html(classes="my-table")))
 
 ```
 <a href="df_1915.csv" download>Download full CSV</a>
@@ -111,8 +115,9 @@ df.head(15).to_html(classes="my-table")
 ```{python}
 #| echo: false
 import pandas as pd
+from IPython.display import display, HTML
 df = pd.read_csv("df_1916.csv")
-df.head(15).to_html(classes="my-table")
+display(HTML(df.head(15).to_html(classes="my-table")))
 
 ```
 <a href="df_1916.csv" download>Download full CSV</a>
@@ -132,8 +137,9 @@ df.head(15).to_html(classes="my-table")
 ```{python}
 #| echo: false
 import pandas as pd
+from IPython.display import display, HTML
 df = pd.read_csv("df_1917.csv")
-df.head(15).to_html(classes="my-table")
+display(HTML(df.head(15).to_html(classes="my-table")))
 
 ```
 <a href="df_1917.csv" download>Download full CSV</a>
@@ -153,8 +159,9 @@ df.head(15).to_html(classes="my-table")
 ```{python}
 #| echo: false
 import pandas as pd
+from IPython.display import display, HTML
 df = pd.read_csv("df_1918.csv")
-df.head(15).to_html(classes="my-table")
+display(HTML(df.head(15).to_html(classes="my-table")))
 
 ```
 <a href="df_1918.csv" download>Download full CSV</a>
@@ -174,8 +181,9 @@ df.head(15).to_html(classes="my-table")
 ```{python}
 #| echo: false
 import pandas as pd
+from IPython.display import display, HTML
 df = pd.read_csv("df_1919.csv")
-df.head(15).to_html(classes="my-table")
+display(HTML(df.head(15).to_html(classes="my-table")))
 
 ```
 <a href="df_1919.csv" download>Download full CSV</a>
@@ -195,8 +203,9 @@ df.head(15).to_html(classes="my-table")
 ```{python}
 #| echo: false
 import pandas as pd
+from IPython.display import display, HTML
 df = pd.read_csv("df_1920.csv")
-df.head(15).to_html(classes="my-table")
+display(HTML(df.head(15).to_html(classes="my-table")))
 
 ```
 <a href="df_1920.csv" download>Download full CSV</a>
@@ -216,9 +225,9 @@ df.head(15).to_html(classes="my-table")
 ```{python}
 #| echo: false
 import pandas as pd
+from IPython.display import display, HTML
 df = pd.read_csv("df_1921.csv")
-df.head(15).to_html(classes="my-table")
-
+display(HTML(df.head(15).to_html(classes="my-table")))
 ```
 <a href="df_1921.csv" download>Download full CSV</a>
 
@@ -237,8 +246,9 @@ df.head(15).to_html(classes="my-table")
 ```{python}
 #| echo: false
 import pandas as pd
+from IPython.display import display, HTML
 df = pd.read_csv("df_1922.csv")
-df.head(15).to_html(classes="my-table")
+display(HTML(df.head(15).to_html(classes="my-table")))
 
 ```
 <a href="df_1922.csv" download>Download full CSV</a>
@@ -304,7 +314,7 @@ plt.show()
 <h2>Searchable Data Table</h2>
 
 <iframe width="100%" height="500" frameborder="0"
-  src="https://observablehq.com/embed/20604bfc7257cf3a?cell=*">
+  src="https://observablehq.com/embed/20604bfc7257cf3a@584?cell=*">
 </iframe>
 
 </div>
