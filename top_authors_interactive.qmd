@@ -54,7 +54,6 @@ for i, col in enumerate(authors):
 
 # Update layout
 fig.update_layout(
-    title=f"Publications for Author: {default_author} (1912–1922)",
     xaxis_title="Year",
     yaxis_title="Number of Publications",
     margin=dict(t=60),
@@ -63,8 +62,8 @@ fig.update_layout(
         buttons=buttons,
         direction="down",
         showactive=True,
-        x=1,               # 👈 align to far right
-        xanchor="right",   # 👈 anchor to right
+        x=0,
+        xanchor="left",
         y=1.15,
         yanchor="top"
     )]
