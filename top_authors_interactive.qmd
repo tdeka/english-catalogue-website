@@ -48,8 +48,7 @@ for i, col in enumerate(authors):
         label=col,
         method="update",
         args=[
-            {"visible": visibility},
-            {"title": f"Publications for Author: {col} (1912–1922)"}
+            {"visible": visibility}
         ]
     ))
 
