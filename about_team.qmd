@@ -10,9 +10,9 @@ format:
 <div style="margin-top: 60px;"></div>
 
 ```{=html}
-<div style="display: flex; gap: 6rem;">
+<div style="display: flex; gap: 10rem;">
 
-  <div style="display: flex; align-items: flex-start; gap: 1rem; width: 48%; font-family: inherit; font-size: 1rem; line-height: 1.6;">
+  <div style="display: flex; align-items: flex-start; gap: 1rem; width: 75%; font-family: inherit; font-size: 1rem; line-height: 1.6;">
     <img src="placeholder.jpeg" style="width: 150px; border-radius: 6px;">
     <div>
       <h3 style="margin: 0; color: black;">Person 1</h3>
@@ -21,7 +21,7 @@ format:
     </div>
   </div>
 
-  <div style="display: flex; align-items: flex-start; gap: 1rem; width: 48%;  margin-left: auto; font-family: inherit; font-size: 1rem; line-height: 1.6;">
+  <div style="display: flex; align-items: flex-start; gap: 1rem; width: 75%;  margin-left: auto; font-family: inherit; font-size: 1rem; line-height: 1.6;">
     <img src="placeholder.jpeg" style="width: 150px; border-radius: 6px;">
     <div>
       <h3 style="margin: 0; color: black;">Person 2</h3>
@@ -34,23 +34,23 @@ format:
 
 <div style="margin-top: 70px;"></div>
 
-<div style="display: flex; gap: 6rem;">
+<div style="display: flex; gap: 10rem;">
 
-  <div style="display: flex; align-items: flex-start; gap: 1rem; width: 48%; font-family: inherit; font-size: 1rem; line-height: 1.6;">
-    <img src="placeholder.jpeg" style="width: 150px; border-radius: 6px;">
+  <div style="display: flex; align-items: flex-start; gap: 1rem; width: 85%; font-family: inherit; font-size: 0.7rem; line-height: 1.6;">
+    <img src="anna_iyer_photo.jpg" style="width: 150px; height: 150px; border-radius: 6px;">
     <div>
-      <h3 style="margin: 0; color: black;">Person 3</h3>
+      <h3 style="margin: 0; color: black;">Anna Iyer</h3>
       <div style="margin-top: 10px;"></div>
-      <p style="margin: 0;">Bio text</p>
+      <p style="margin: 0;">Anna is studying industrial & systems engineering with a minor in data science. In her free time, she enjoys working on video production, robotics, and crocheting.</p>
     </div>
   </div>
 
-  <div style="display: flex; align-items: flex-start; gap: 1rem; width: 48%;  margin-left: auto; font-family: inherit; font-size: 1rem; line-height: 1.6;">
-    <img src="placeholder.jpeg" style="width: 150px; border-radius: 6px;">
+  <div style="display: flex; align-items: flex-start; gap: 1rem; width: 85%; font-family: inherit; font-size: 0.7rem; line-height: 1.6;">
+    <img src="val_photo.jpg" style="width: 150px; height: 150px; border-radius: 6px;">
     <div>
-      <h3 style="margin: 0; color: black;">Person 4</h3>
+      <h3 style="margin: 0; color: black;">Valeria Fierro</h3>
       <div style="margin-top: 10px;"></div>
-      <p style="margin: 0;">Bio text</p>
+      <p style="margin: 0;">Valeria is an undergraduate senior pursuing a B.S. in Psychology with a minor in Data Science. She is passionate about the intersection of psychology, design, and technology, and plans to pursue a career in User Experience Design after graduation.</p>
     </div>
   </div>
 
@@ -58,9 +58,9 @@ format:
 
 <div style="margin-top: 70px;"></div>
 
-<div style="display: flex; gap: 6rem;">
+<div style="display: flex; gap: 10rem;">
 
-  <div style="display: flex; align-items: flex-start; gap: 1rem; width: 48%; font-family: inherit; font-size: 1rem; line-height: 1.6;">
+  <div style="display: flex; align-items: flex-start; gap: 1rem; width: 75%; font-family: inherit; font-size: 1rem; line-height: 1.6;">
     <img src="placeholder.jpeg" style="width: 150px; border-radius: 6px;">
     <div>
       <h3 style="margin: 0; color: black;">Person 5</h3>
@@ -69,7 +69,7 @@ format:
     </div>
   </div>
 
-  <div style="display: flex; align-items: flex-start; gap: 1rem; width: 48%;  margin-left: auto; font-family: inherit; font-size: 1rem; line-height: 1.6;">
+  <div style="display: flex; align-items: flex-start; gap: 1rem; width: 75%; font-family: inherit; font-size: 1rem; line-height: 1.6;">
     <img src="placeholder.jpeg" style="width: 150px; border-radius: 6px;">
     <div>
       <h3 style="margin: 0; color: black;">Person 6</h3>
