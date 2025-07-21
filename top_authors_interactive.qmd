@@ -12,7 +12,7 @@ import pandas as pd
 import plotly.graph_objects as go
 
 # Load data
-df = pd.read_csv("top_author_year.csv")
+df = pd.read_csv("top_author.csv")
 
 # Pivot table
 pivot_df = df.pivot_table(
@@ -24,7 +24,7 @@ pivot_df = df.pivot_table(
 ).sort_index()
 
 # Make sure default author exists
-default_author = "William Shakespeare"
+default_author = "Shakespeare (William)"
 authors = pivot_df.columns.tolist()
 if default_author not in authors:
     raise ValueError(f"'{default_author}' not found in author_name column.")

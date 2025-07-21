@@ -13,7 +13,7 @@ import pandas as pd
 import plotly.graph_objects as go
 
 
-df = pd.read_csv("top_formats_interactive.csv")
+df = pd.read_csv("top_format.csv")
 pivot_df = df.pivot_table(index="year", columns="format", values="num_entry", aggfunc="sum", fill_value=0).sort_index()
 
 # Create one trace per format
