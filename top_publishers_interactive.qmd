@@ -67,8 +67,8 @@ fig.update_layout(
         buttons=buttons,
         direction="down",
         showactive=True,
-        x=0,
-        xanchor="left",
+        x=1,
+        xanchor="right",
         y=1.15,
         yanchor="top"
     )]
