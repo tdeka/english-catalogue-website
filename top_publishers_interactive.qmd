@@ -2,6 +2,7 @@
 format: html
 ---
 
+
 <h1 class="page-top">Top Publishers by Number of Publications</h1>
 
 <div style="margin-top: 60px;"></div>
@@ -23,21 +24,29 @@ pivot_df = df.pivot_table(
     fill_value=0,
 ).sort_index()
 
-# Create figure with all traces (initially hidden)
+# Default publisher to display
+default_publisher = "WYMAN"
+publishers = pivot_df.columns.tolist()
+
+# Ensure default exists
+if default_publisher not in publishers:
+    raise ValueError(f"'{default_publisher}' not found in top_publisher column.")
+
+# Create figure with all traces, only WYMAN visible by default
 fig = go.Figure()
-for i, col in enumerate(pivot_df.columns):
+for i, col in enumerate(publishers):
     fig.add_trace(go.Scatter(
         x=pivot_df.index,
         y=pivot_df[col],
         mode="lines+markers",
         name=col,
-        visible=True  # Start with all visible for "All publishers"
+        visible=(col == default_publisher)
     ))
 
-# Create buttons for each publisher
+# Create dropdown buttons for each publisher
 buttons = []
-for i, col in enumerate(pivot_df.columns):
-    visibility = [j == i for j in range(len(pivot_df.columns))]
+for i, col in enumerate(publishers):
+    visibility = [c == col for c in publishers]
     buttons.append(dict(
         label=col,
         method="update",
@@ -47,27 +56,18 @@ for i, col in enumerate(pivot_df.columns):
         ]
     ))
 
-# Add "All publishers" view as the first button
-buttons.insert(0, dict(
-    label="All publishers",
-    method="update",
-    args=[
-        {"visible": [True] * len(pivot_df.columns)},
-        {"title": None}  # No chart title to avoid overlap
-    ]
-))
-
-# Update layout with dropdown on the left
+# Update layout (no "All publishers" button, default = WYMAN)
 fig.update_layout(
+    title=f"Publications for Publisher: {default_publisher} (1912–1922)",
     xaxis_title="Year",
     yaxis_title="Number of Publications",
     margin=dict(t=60),
     updatemenus=[dict(
-        active=0,
+        active=publishers.index(default_publisher),
         buttons=buttons,
         direction="down",
         showactive=True,
-        x=0,               # Left side
+        x=0,
         xanchor="left",
         y=1.15,
         yanchor="top"
@@ -75,7 +75,6 @@ fig.update_layout(
 )
 
 fig.show()
-
 
 
 ```
