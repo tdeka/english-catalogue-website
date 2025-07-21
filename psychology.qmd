@@ -10,17 +10,17 @@ format: html
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv("all_titles_by_year.csv")
-df['year'] = df['year'].astype(int)
+df = pd.read_csv("all_years.csv")
+df['catalogue_year'] = df['catalogue_year'].astype(int)
 df['title'] = df['title'].astype(str).str.lower()
 
 # Filter rows that contain "psychology" in the title
 df_psych = df[df['title'].str.contains('psychology')]
 
 # Count how many times it appears each year
-counts_by_year = df_psych['year'].value_counts().sort_index()
+counts_by_year = df_psych['catalogue_year'].value_counts().sort_index()
 
-all_years = df['year'].sort_values().unique()
+all_years = df['catalogue_year'].sort_values().unique()
 counts_series = pd.Series(0, index=all_years)
 counts_series.update(counts_by_year)
 
