@@ -39,7 +39,7 @@ The English Catalogue of books is a record of books published each year in Engla
     .then(data => {
       // Setup Fuse
       const options = {
-        keys: ["title", "author_name", "publisher", "catalogue_year"],
+        keys: ["title", "author(s)", "publisher", "catalogue_year"],
         threshold: 0.4,
       };
       const fuse = new Fuse(data, options);

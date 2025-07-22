@@ -12,7 +12,7 @@
         "\n",
         "<div style=\"margin-top: 60px;\"></div>"
       ],
-      "id": "d26eeb78"
+      "id": "0d121de1"
     },
     {
       "cell_type": "code",
@@ -65,7 +65,6 @@
         "\n",
         "# Update layout\n",
         "fig.update_layout(\n",
-        "    title=f\"Publications for Author: {default_author} (1912–1922)\",\n",
         "    xaxis_title=\"Year\",\n",
         "    yaxis_title=\"Number of Publications\",\n",
         "    margin=dict(t=60),\n",
@@ -74,8 +73,8 @@
         "        buttons=buttons,\n",
         "        direction=\"down\",\n",
         "        showactive=True,\n",
-        "        x=1,               # 👈 align to far right\n",
-        "        xanchor=\"right\",   # 👈 anchor to right\n",
+        "        x=0,\n",
+        "        xanchor=\"left\",\n",
         "        y=1.15,\n",
         "        yanchor=\"top\"\n",
         "    )]\n",
@@ -83,7 +82,7 @@
         "\n",
         "fig.show()"
       ],
-      "id": "31992857",
+      "id": "37adfd58",
       "execution_count": null,
       "outputs": []
     }

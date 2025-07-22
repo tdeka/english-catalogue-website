@@ -13,7 +13,7 @@
         "\n",
         "<div style=\"margin-top: 60px;\"></div>"
       ],
-      "id": "32e02286"
+      "id": "732c3284"
     },
     {
       "cell_type": "code",
@@ -69,7 +69,6 @@
         "\n",
         "# Update layout (no \"All publishers\" button, default = WYMAN)\n",
         "fig.update_layout(\n",
-        "    title=f\"Publications for Publisher: {default_publisher} (1912–1922)\",\n",
         "    xaxis_title=\"Year\",\n",
         "    yaxis_title=\"Number of Publications\",\n",
         "    margin=dict(t=60),\n",
@@ -78,8 +77,8 @@
         "        buttons=buttons,\n",
         "        direction=\"down\",\n",
         "        showactive=True,\n",
-        "        x=1,\n",
-        "        xanchor=\"right\",\n",
+        "        x=0,\n",
+        "        xanchor=\"left\",\n",
         "        y=1.15,\n",
         "        yanchor=\"top\"\n",
         "    )]\n",
@@ -87,7 +86,7 @@
         "\n",
         "fig.show()\n"
       ],
-      "id": "87a83307",
+      "id": "0f9c3931",
       "execution_count": null,
       "outputs": []
     }

@@ -246,7 +246,7 @@ function updateMap(year) {
   fetch("publishers.json")
     .then(response => response.json())
     .then(data => {
-        console.log(data);
+      
       let filtered = data.filter(d => d.year == year);
       let seenPublishers = new Set();
 

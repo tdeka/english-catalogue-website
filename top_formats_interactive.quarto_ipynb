@@ -12,7 +12,7 @@
         "\n",
         "<div style=\"margin-top: 60px;\"></div>\n"
       ],
-      "id": "73376fbf"
+      "id": "a62648aa"
     },
     {
       "cell_type": "code",
@@ -58,15 +58,15 @@
         "        buttons=buttons,\n",
         "        direction=\"down\",\n",
         "        showactive=True,\n",
-        "        x=1,               # 👈 align to far right\n",
-        "        xanchor=\"right\",   # 👈 anchor to right\n",
+        "        x=0,\n",
+        "        xanchor=\"left\",\n",
         "        y=1.15,\n",
         "        yanchor=\"top\"\n",
         "    )]\n",
         ")\n",
         "fig.show()"
       ],
-      "id": "59ff5daa",
+      "id": "40dd6e61",
       "execution_count": null,
       "outputs": []
     }
