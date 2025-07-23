@@ -274,7 +274,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Load the data
-df = pd.read_csv("entriescaptured.csv")
+df = pd.read_csv("entrycapture.csv")
 
 # Extract values
 years = df['Year'].astype(str)  # make sure years are strings for x-axis
