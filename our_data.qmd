@@ -4,27 +4,35 @@ page-layout: full
 toc: false
 ---
 
+<!-- no title in YAML front matter because it will be covered by the navbar - use html heading instead -->
 <h1 class="page-top">Our Data</h1>
 
+<!-- white space for formatting -->
 <div style="margin-top: 40px;"></div>
 
 Learn more about the data we used for this project!
 
+<!-- white space for formatting -->
 <div style="margin-top: 40px;"></div>
 
+
+<!-- section for viewing image, csv preview, and csv download link for each year -->
 ## Our Data
 
 Click on the different years to see a preview and download link for the CSV of our data.
 
+<!-- start of 1912 block -->
 <details open>
 <summary>1912</summary>
 
+<!-- insert image -->
 <p style="text-align: center;">
   <img src="1912_english_catalogue_cover.jpeg" width="500px">
 </p>
 
 <h3>Data Table</h3>
 
+<!-- show csv with python -->
 ```{python}
 #| echo: false
 import pandas as pd
@@ -33,11 +41,14 @@ df = pd.read_csv("df_1912.csv")
 display(HTML(df.head(15).to_html(classes="my-table")))
 
 ```
+<!-- csv download link -->
 <a href="df_1912.csv" download>Download full CSV</a>
 
 </details> 
+<!-- end of 1912 block - the rest of the blocks are formatted the same way -->
 
 
+<!-- 1913 -->
 <details>
 <summary>1913</summary>
 
@@ -59,7 +70,7 @@ display(HTML(df.head(15).to_html(classes="my-table")))
 
 </details> 
 
-
+<!-- 1914 -->
 <details>
 <summary>1914</summary>
 
@@ -81,7 +92,7 @@ display(HTML(df.head(15).to_html(classes="my-table")))
 
 </details> 
 
-
+<!-- 1915 -->
 <details>
 <summary>1915</summary>
 
@@ -103,6 +114,7 @@ display(HTML(df.head(15).to_html(classes="my-table")))
 
 </details> 
 
+<!-- 1916 -->
 <details>
 <summary>1916</summary>
 
@@ -124,7 +136,7 @@ display(HTML(df.head(15).to_html(classes="my-table")))
 
 </details> 
 
-
+<!-- 1917 -->
 <details>
 <summary>1917</summary>
 
@@ -146,7 +158,7 @@ display(HTML(df.head(15).to_html(classes="my-table")))
 
 </details> 
 
-
+<!-- 1918 -->
 <details>
 <summary>1918</summary>
 
@@ -168,7 +180,7 @@ display(HTML(df.head(15).to_html(classes="my-table")))
 
 </details> 
 
-
+<!-- 1919 -->
 <details>
 <summary>1919</summary>
 
@@ -190,7 +202,7 @@ display(HTML(df.head(15).to_html(classes="my-table")))
 
 </details> 
 
-
+<!-- 1920 -->
 <details>
 <summary>1920</summary>
 
@@ -212,7 +224,7 @@ display(HTML(df.head(15).to_html(classes="my-table")))
 
 </details> 
 
-
+<!-- 1921 -->
 <details>
 <summary>1921</summary>
 
@@ -233,7 +245,7 @@ display(HTML(df.head(15).to_html(classes="my-table")))
 
 </details> 
 
-
+<!-- 1922 -->
 <details>
 <summary>1922</summary>
 
@@ -255,9 +267,10 @@ display(HTML(df.head(15).to_html(classes="my-table")))
 
 </details> 
 
-
+<!-- white space for formatting -->
 <div style="margin-top: 100px;"></div>
 
+<!-- entry capture plot section -->
 ## Entries Captured by Our Dataframes
 
 This visualization shows how many catalogue entries we captured in our data relative to how many total entries were listed in each issue.
@@ -266,6 +279,7 @@ This visualization shows how many catalogue entries we captured in our data rela
 
 <div style="text-align: center;">
 
+<!-- generate entry capture plot -->
 ```{python}
 
 #| echo: false
@@ -311,6 +325,7 @@ plt.show()
 ```
 
 
+<!-- embed observable data table -->
 <h2>Searchable Data Table</h2>
 
 <iframe width="100%" height="1000" frameborder="0"

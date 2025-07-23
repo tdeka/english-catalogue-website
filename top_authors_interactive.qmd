@@ -1,7 +1,7 @@
 ---
 format: html
 ---
-
+<!-- no title in YAML front matter because it will be covered by the navbar - use html heading instead -->
 <h1 class="page-top">Top Authors by Number of Publications</h1>
 
 <div style="margin-top: 60px;"></div>

@@ -42,11 +42,9 @@ format:
   html:
     css: styles.css
     googlefonts: 
-      - Literata
+      - Literata 
     allow-html: true
   
-metadata-files:
-  - _params.yml
 
 
 

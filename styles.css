@@ -35,7 +35,7 @@ body {
   color: #333;
 }
 
-/* Optional: adjust other content containers */
+/* adjust other content containers */
 .container, .main-content, .page-content {
   background-color: #fff; /* lighter beige/cream */
   padding: 1.5rem;
@@ -47,12 +47,12 @@ body {
   font-family: 'Literata', serif;
 }
 
-/* Optional: match headers too */
+/* match headers */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Literata', serif;
 }
 
-
+/* homepage title with background image */
 .full-width-title {
   margin-top: 10;
   width: 100vw; /* full width of the viewport */
@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
-/* Optional: better contrast for title text */
+/* better contrast for title text */
 .full-width-title h1,
 .full-width-title h2,
 .full-width-title p {
@@ -112,31 +112,4 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-.collaborator-row {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-bottom: 2rem;
-  gap: 2rem;
-}
 
-.collaborator {
-  display: flex;
-  align-items: center;
-  width: 48%;
-  min-width: 300px;
-}
-
-.profile-pic {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-right: 1rem;
-}
-
-.bio {
-  flex: 1;
-  font-size: 0.95rem;
-  line-height: 1.4;
-}

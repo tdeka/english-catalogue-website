@@ -1,9 +1,10 @@
 ---
 format: html
 ---
-
+<!-- no title in YAML front matter because it will be covered by the navbar - use html heading instead -->
 <h1 class="page-top">N-Gram Viewer</h1>
 
+<!-- embed n-gram viewer -->
 <iframe
   src="https://english-catalogue-ngram.streamlit.app/?embed=true"
   width="100%"
